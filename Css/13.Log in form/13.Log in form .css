@@ -1,0 +1,42 @@
+body {
+	background: #74C35A;
+}
+.Loginbox{
+	background: white ;
+	color: ;
+	width:400px;
+	padding: 50px;-
+	margin: auto;
+	margin-top: 220px;
+}
+.Loginbox Input {
+	
+	width: 94%;
+	display: block;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 20px;
+	background: #F2F2F2;
+	border:none;
+	margin-bottom: 20px;
+	font-size: 17px;
+
+}
+.Logonbutton{
+	background: #00B242 !important;
+	color: white;
+	width: 100% !important;
+}
+
+.regesterlink {
+	text-align: center;
+
+}
+.regesterlink a {
+	color: #00B242;
+	text-decoration:none;
+
+}
+.regesterlink span {
+	color: #C4C4C4;
+}

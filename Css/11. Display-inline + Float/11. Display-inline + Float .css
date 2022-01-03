@@ -1,0 +1,76 @@
+.a {
+	background: tomato;
+	color: white;
+	width: 160px;
+	padding: 10px;
+	border: solid 2px black;
+	
+
+}.b {
+	background: green;
+	color: white;
+	width: 160px;
+	padding: 10px;
+	border: solid 2px red;
+	
+	
+
+}.c {
+	background: blue;
+	color: white;
+	width: 160px;
+	padding: 10px;
+	border: solid 2px red;
+
+
+} .d {
+	background: red;
+	color: white;
+	width: 160px;
+	padding: 10px;
+	border: solid 2px red;
+}
+
+.a,.b,.c,.d{
+	float: left;
+}
+
+
+
+.a1 {
+	background: tomato;
+	color: white;
+	width: 160px;
+	padding: 10px;
+	border: solid 2px black;
+	
+
+}.b2 {
+	background: green;
+	color: white;
+	width: 160px;
+	padding: 10px;
+	border: solid 2px red;
+	
+	
+
+}.c3 {
+	background: blue;
+	color: white;
+	width: 160px;
+	padding: 10px;
+	border: solid 2px red;
+
+
+} .d4 {
+	background: red;
+	color: white;
+	width: 160px;
+	padding: 10px;
+	border: solid 2px red;
+}
+
+
+
+.a1,.b2,.c3,.d4 {
+	display: inline-block;}

@@ -1,0 +1,22 @@
+.d1{
+    width: 100px;
+    height: 100px;
+    background: rgb(78, 21, 143);
+    text-align: center;
+    font-family: arial black;
+    color: white;
+    display: grid;
+    place-items: center;
+    
+    animation-name: a;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+      
+}
+@keyframes a{
+0%{margin-left: 0px; margin-top: 0px;}
+25%{margin-left: 200px;margin-top: 0px;}
+50%{margin-left: 200px;margin-top: 200px;}
+75%{margin-left: 0px; margin-top: 200px;}
+100%{margin-left: 0px; margin-top: 0px;}
+}

@@ -1,0 +1,33 @@
+.div1 {
+  position: relative;
+  perspective: 100px;
+  width: 700px;
+  background: blue;
+
+  margin: auto;
+
+}
+.div2 {
+  margin: 300px;
+  background: tomato;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  font-family: Arial black;
+  transform-style: preserve-3d;
+  transform: rotatex(10deg);
+  text-transform: uppercase;
+}
+
+.div1 h2 {
+  position: absolute;
+  font-size: 30px;
+  font-family: Arial black;
+  top: 52%;
+  left: 51%;
+  text-shadow: 1px -5px 5px white;
+  text-align: center;
+  text-transform: uppercase;
+}

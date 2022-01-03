@@ -1,0 +1,42 @@
+.glink{
+	
+}
+.glink1:visited{
+	color: red;
+
+}
+.glink2:active{
+	color: yellow;
+
+
+}
+.glink3:hover{
+	color: red;
+	background: orange;
+}	
+.glink3{text-decoration:none;
+
+}
+
+
+
+
+.glinkevery{
+	text-decoration:none;
+
+}
+.glinkevery:visited{
+	color: gray;
+}
+.glinkevery:hover{
+	color: red;
+}
+.glinkevery:active{
+	color: black;
+	background: yellow;
+}
+
+.ul2{
+	    list-style: decimal-leading-zero;
+}
+}

@@ -1,0 +1,29 @@
+body{
+	background:url(https://i.pinimg.com/474x/77/d9/ea/77d9ea3117e6fc24325f0374ffb89394.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	
+	
+}
+
+.one1{
+	color:white;
+	border:10px solid red;
+	
+	margin-left:30px;
+	margin-top:40px;
+	height:300px;
+	width:300px;
+	border-radius:25px;
+	outline:7px dashed green;
+	
+	
+			background:url(https://lh3.googleusercontent.com/proxy/fX_Y7WX7KA6glQPu7IQKga7VL5iSdWKNZqwKQpETRPhNy7xDJ9WMHh_WXmdCpY2U9uBbGEZHAm09fUng65_9SQRPssrMQgICl6j6XySXt5aocsm7fSgvw3VVHJFTA4vEVeqi496KQlJ6m2FeaqiA);
+   background-repeat:no-repeat;
+   height:200px;
+	width:500px;
+   display:block
+    
+	
+}
+

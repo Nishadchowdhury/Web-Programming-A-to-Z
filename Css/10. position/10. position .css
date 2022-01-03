@@ -1,0 +1,63 @@
+
+.d1{
+	border: 3px solid darkmagenta;
+	padding: 4px;
+	width: 350px;
+	position: static;
+	
+	;
+}
+.d2{
+	border: 3px solid rgb(255, 0, 0);
+	padding: 4px;
+	width: 350px;
+	position:relative;
+	left: 20px;
+	top:20px;
+	
+	
+}
+.d3{
+	border: 3px solid rgb(5, 153, 190);
+	padding: 4px;
+	width: 350px;
+	position: fixed;
+	left: 30px;
+	/top: 0px;
+	
+}
+.d4{
+	border: 3px solid rgb(255, 0, 221);
+	padding: 4px;
+	width: 350px;
+	height: 300px;
+	position: relative;
+
+	
+}
+
+.d5{
+	border: 2px dotted red ;
+	width: 25%;
+	margin-left: 200px;
+	margin-top: 80px;
+	position:absolute ;
+}
+.d6{	border: 3px solid rgb(30, 255, 0);
+	padding: 4px;
+	position:absolute ;
+	width: 350px;
+	background:rgb(255, 0, 221);
+	right:20px ;
+}
+.d7{
+	background: black;
+	color:white;
+	padding: 6px;
+	width: 300px;
+	margin-left: 30px;
+	text-align: center;
+	position: sticky;
+	top: 0%;
+	bottom: 0%;
+}

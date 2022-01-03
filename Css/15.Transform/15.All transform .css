@@ -1,0 +1,63 @@
+body {
+  background: rgba(255, 1, 1, 0.575);
+}
+.d1:hover {
+  transform: scaleX(1.1);
+}
+.d1 {
+  background: linear-gradient(blue, green);
+  width: 100px;
+  padding: 50px;
+  height: 70px;
+}
+.d1 input {
+  width: 80px;
+}
+.d2:hover {
+  transform: rotate(30deg);
+}
+.d2 {
+  background: linear-gradient(rgb(255, 0, 0), green);
+  width: 100px;
+  padding: 50px;
+  height: 70px;
+}
+.d2 input {
+  width: 80px;
+}
+.d3:hover {
+  transform: skew(30deg);
+}
+.d3 {
+  background: linear-gradient(blue, rgb(0, 250, 208));
+  width: 100px;
+  padding: 50px;
+  height: 70px;
+}
+.d3 input {
+  width: 80px;
+}
+.d4:hover {
+  transform: translateY(30px);
+}
+.d4 {
+  background: linear-gradient(rgb(51, 255, 0), rgb(0, 0, 0));
+  width: 100px;
+  padding: 50px;
+  height: 70px;
+}
+.d4 input {
+  width: 80px;
+}
+.d1,
+.d2,
+.d3,
+.d4 {
+  margin: auto;
+}
+h4 {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 6px;
+}

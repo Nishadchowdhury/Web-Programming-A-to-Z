@@ -1,0 +1,62 @@
+.tooltip1 {
+  background: purple;
+  width: 70px;
+  color: white;
+  display: block;
+}
+
+a {
+  border-bottom: 2px solid tomato;
+  text-decoration: none;
+  background-color: tomato;
+  width: 100px;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 7px;
+  border-bottom: 2px solid#bb3030e0;
+  position: relative;
+}
+a span {
+  
+  background: black;
+  display: block;
+  width: 150px;
+  border: 2px rgb(0, 0, 0) solid;
+  border-radius: 5px;
+  height: ;
+  font-size: 14px;
+  padding: 5px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 1s;
+}
+a:hover span {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+a span:before {
+    
+  content: "";
+  border-left: 20px #ffffff00 solid;
+  border-bottom: solid 20px black;
+  position: absolute;
+  transform: rotate(45deg) translateX(-50%);
+  left: 50%;
+  top: 22px;
+}
+
+body p {
+  width: 600px;
+  background: rgb(25, 11, 156);
+  font-size:20px;
+  line-height:30px;
+  color:white ;
+  padding-left: 10px;
+  padding-top: 10px;
+}

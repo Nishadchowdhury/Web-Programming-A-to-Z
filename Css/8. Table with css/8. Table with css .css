@@ -1,0 +1,96 @@
+.Table1{
+	border-collapse: collapse;
+	border-color:#ddd;
+}
+
+
+.Table1 thead tr th{
+	padding: 10px;
+	background: tomato;
+	color: white;
+	text-transform: uppercase;
+	font-family: arial black;
+}
+
+.Table1 tbody td{
+	padding: 10px;
+}
+
+
+.Table2 {
+	border-collapse: collapse;
+		border-color:#ddd; 
+
+
+}
+
+.Table2 thead th{
+	padding: 10px;
+	background: orange;
+}
+
+.Table2 tbody td{
+	padding: 12px;
+}
+
+.Table2 tbody tr:first-child{
+	background: red;
+	color: white;
+}
+.Table2 tbody tr:last-child{
+	background: red;
+	color: white;
+}
+.Table3 {
+	border-collapse: collapse;
+	border-color: blue;
+}
+
+.Table3 thead th{
+	padding: 10px;
+}
+
+.Table3 tbody td{
+	padding:10px;
+}
+
+.Table3 tbody tr:nth-child(2){
+	background: red; color: #ddd;
+}
+.Table3 tbody tr:nth-child(3){
+	background: red; color: white;
+}
+
+.Table4{
+	border-collapse: collapse;
+	border-color: red;
+
+}
+.Table4 thead th{
+	padding: 10px;
+}
+.Table4 tbody tr:nth-child(odd){
+	background: #555;color: red;
+}
+
+.Table5 tbody tr:nth-child(even){
+	background: #555;color: red;
+}
+
+
+
+.Table5{
+	border-collapse: collapse;
+	border-color: red;
+
+}
+.Table5 thead th{
+	padding: 10px;
+}
+
+.tow{
+	background:linear-gradient(red,blue);
+}
+.three{
+	background:radial-gradient(blue,red);color: white;
+}

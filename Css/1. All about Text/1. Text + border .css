@@ -1,0 +1,47 @@
+.hb1{
+	text-transform: uppercase;
+	
+	
+}
+.hb2{
+	
+	text-transform:lowercase;
+	font-family:arial black;
+	
+}
+
+
+.bd1{
+	color:blue;
+	border:2px dotted red;
+}
+
+
+.bd10{
+	border-top: 3px solid green;
+	border-bottom: 3px double #FF4240;
+	border-left: 3px dashed #FF9900;
+	border-right: 4px dotted red;	
+}
+
+.bd2{
+	border:2px dashed;
+	background:linear-gradient(green,red,blue);
+	width:20px;
+	height:20px;
+	
+}
+.bd3{
+	border:2px dashed;
+	background:radial-gradient(red,green,blue);
+	
+}
+
+
+.bd4{
+	border:2px solid;
+	background:url(https://i.pinimg.com/originals/0b/a3/d6/0ba3d60362c7e6d256cfc1f37156bad9.jpg);
+	width:200px;
+	height:300px;
+	display:block;
+}

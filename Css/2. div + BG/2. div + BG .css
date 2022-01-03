@@ -1,0 +1,23 @@
+body{
+	
+		background:linear-gradient(red,blue,green,red);
+	background-size:content;
+	background-repeat:no-repeat;
+
+	}
+
+.about1{
+	border:2px dashed black;
+	width:300px;
+	background:linear-gradient(red,blue,green);
+	
+}
+
+.about2{
+	border:2px solid black ;
+	width:300px;
+	background:url(../../importent_Files/2-----img.jpg);
+	background-size:content;
+	
+	
+}

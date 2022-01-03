@@ -1,0 +1,73 @@
+.title1{
+	background: tomato;
+	color: white;
+}
+
+.title2{
+	background: yellow;
+	color: black;
+	display: inline;
+}
+
+.title3{
+	background: green;
+	color:#ddd;
+}
+.title4{
+	background: blue;
+	color: white ;
+	display: block;
+}
+.title5{
+	display: none; ;
+}
+.title6{
+	font-weight: bold;
+	background: linear-gradient(red,blue);
+	color: white;
+	display: block;}
+
+.title7{
+	visibility: hidden;
+}
+.title8{
+	font-weight: bold;
+	background: red ;
+	max-width:700px;
+}
+.title9{
+	background: blue;
+	width: 600px;
+
+
+}
+.title9 b {
+	color: white;
+}
+.title9 img {
+	width: 90%;
+}
+
+.title10{
+	width: 700px;
+	background: radial-gradient(red,blue);
+}
+.title10 img {
+	width: 300px;
+}
+
+.title11 {
+	width: 350px;
+	height: 220px;
+	background:green;
+	overflow: auto;
+
+}.title12{
+	width: 350px;
+	height: 220px;
+	background: radial-gradient( blue,red);;
+	overflow: scroll; }
+
+ .title12 P {
+
+ }

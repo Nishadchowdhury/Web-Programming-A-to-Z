@@ -1,0 +1,44 @@
+.a {
+	background: tomato;
+	color: white;
+	width: 100px;
+	padding: 10px;
+	border: solid 2px black;
+	
+
+}.b {
+	background: green;
+	color: white;
+	width: 100px;
+	padding: 10px;
+	border: solid 2px red;
+	
+	
+
+}.c {
+	background: blue;
+	color: white;
+	width: 100px;
+	padding: 10px;
+	border: solid 2px red;
+
+
+} .d {
+	background: red;
+	color: white;
+	width: 100px;
+	padding: 10px;
+	border: solid 2px red;
+}
+
+.a,.b,.c,.d{
+	float: left;
+	text-align: center;
+	margin:auto;
+}
+
+.a1{
+	 
+	width: 500px;
+	margin: auto;
+}
