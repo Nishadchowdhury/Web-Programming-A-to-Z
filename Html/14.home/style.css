@@ -1,0 +1,21 @@
+nav{
+    list-style: none;
+    color: black;
+}
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+nav li a {
+    color: green;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+nav li :hover{
+    padding: 0px 10px;
+    background-color:hotpink;
+}
