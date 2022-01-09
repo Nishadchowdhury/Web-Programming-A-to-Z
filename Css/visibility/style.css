@@ -1,0 +1,33 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid indigo;
+}
+#box-1{
+    background-color: khaki;
+}
+#box-2{
+    background-color:maroon;
+}
+#box-3{
+    background-color:orangered;
+    visibility: hidden;
+}
+#box-4{
+    background-color:purple;
+}
+
+.div-2 #box-1{
+    background-color: khaki;
+    display: none;
+}
+#box-2{
+    background-color:maroon;
+}
+.div-2 #box-3{
+    background-color:orangered;
+    visibility:visible;
+}
+#box-4{
+    background-color:purple;
+}
