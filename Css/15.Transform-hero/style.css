@@ -1,0 +1,49 @@
+.container , .inner{
+  width: 150px;
+  height: 150px;
+  border: 2px solid khaki;
+}
+
+.container{
+  background-color: lightblue;
+}
+
+.inner{
+  background-color: lightcoral;
+  transform: scale(.75);
+
+}
+
+
+.container-2 , .inner-2{
+  width: 150px;
+  height: 150px;
+  border: 2px solid khaki;
+}
+
+.container-2{
+  background-color: lightblue;
+}
+
+.inner-2{
+  background-color: lightcoral;
+  transform: rotate(17deg);
+
+}
+
+
+.container-3 , .inner-3{
+  width: 150px;
+  height: 150px;
+  border: 2px solid khaki;
+}
+
+.container-3{
+  background-color: lightblue;
+}
+
+.inner-3{
+  background-color: lightcoral;
+  transform: scale(.30) translate(350px);
+
+}
