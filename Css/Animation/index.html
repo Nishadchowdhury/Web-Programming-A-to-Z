@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>let's explore Animation</h1>
+
+    <p>আমরা চাইলেই কোন এলিমেন্ট কে transtion: transition এর সাহায্যে এক স্থান থেকেও অন্য থানে সরাতে পারি , কিন্তু এটাকে যদি বার বার করতে চাই তাহলে Animation করতে হবে । <br><br>
+        <br>
+
+        <h2>structure of Animation</h2>
+        <p>প্রথমে একটা keyframes নিতে হবে । <br>
+        তারপর একটা 2n bracket এর ভেতর from { first condition } এর ভেতর Animation এর প্রথম অবস্থা লিখতে হবে । <br><br>
+        তারপর to { second condition } এর ভেতর animation এর second condition লিখতে হবে ।  
+        animation structure এর ২টা ধরন আছে  
+    
+    </p> 
+
+    <div class="animition-structre-1">
+      <span><h1>structure-1</h1></span>
+@keyframes sliding {<br>
+    from{<br>
+        background-color: lightblue; 
+        <br> etc }<br> <br>
+
+    to{<br>
+        background-color: magenta; <br>
+    etc }<br><br>
+  }<br>
+        <br>
+    </div>
+    <div class="animition-structre-2">
+        <h1>structure-2</h1>
+        <p>position:relative; করতে হবে class এর । </p>
+        <img src="./ifile/animation structure-2.png" alt="">
+    </div>
+    </p>
+
+
+    <p class="animation-apply">
+        animation কোন element এ apply করতে হলে সেই element এর class এর মধ্যে animation: proparty এর সাহায্যে apply করতে হয় । <br><br>
+
+    .class or #id {<br>
+        animation: name duration timing-function  delay iteration-count direction fill-mode;<br>
+    }<br> <br>
+
+    name =  ( keyframes এর সাথে যে animation এর নাম দিয়েছিলাম সেটা ) <br>
+    duration = কত সময় ধরে animation চলবে । <br>
+    timing-function = animation যে গতি পথে চলবে (ease-out ) <br>
+    delay = animation শুরু হওয়ার আগে কতক্ষণ দেরি করতে হবে । <br>
+    iteration-count = animation টা কয়বার চলবে । (infinite / n) <br>
+    direction = animation এর দিক নির্দেশ করা । <br>{ (reverse = পেছন/শেষ থেকে শুরু) , ( forwards/normal = শুরু থেকে শুরু ) , ( alternate = শুরু > শেষ > শুরু ) , (alternate-reverse = শেষ > শুরু > শেষ )} <br>
+    fill-mode = (এই বিষয়-টা ক্লিয়ার হয় নাই । )
+
+    </p>
+
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
