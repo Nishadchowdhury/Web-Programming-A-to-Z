@@ -27,7 +27,97 @@
   <div class="box container-3">
     <div class="inner-3">box-3</div>
   </div>
+ <br><br><hr><br><br>
 
+<div class="advance-transform div-border">
+  <h1>1</h1>
+  <img class="bat" src="../../projects/Cricket Match Animation/ifile/bat .png" alt=""> <br>
+  <p>
+    এখানে div কে hover করলে bat টা {transform: rotate(-60deg);} anti clockwise rotate করছে । ব্যাট যেহেতু এভাবে ঘুরে না , সেহেতু সেটার ঘুরার সঠিক দিক বলে দিতে হবে । 
+  </p>
+
+
+</div>
+
+<div class="advance-transform-2 div-border">
+  <h1>2</h1>
+  <img class="bat" src="../../projects/Cricket Match Animation/ifile/bat .png" alt=""> <br>
+  <p>
+    উপরের ব্যাট ( 1 ) যদিও মধ্য-বিন্দু এর সাপেক্ষে  ঘুরছে ব্যাট ( 2 ) কিন্তু সঠিক নিয়মে ঘুরছে । কারন এটাকে transform-origin  Property এর সাহায্যে দিক নিরদেশনা দেয়া হয়েছে । <br>
+  </p> 
+
+</div>
+
+
+<div class="advance-transform-3 div-border">
+  <h1>3</h1>
+  <p>বিষয় টা আরো রিয়েলিস্টক করার জন্য একটা বল নিই</p>
   
+  <div class="flex-div">
+    
+  <img class="bat" src="../../projects/Cricket Match Animation/ifile/bat .png" alt="">
+  
+  <div class="ball"></div>
+</div>
+  </div> 
+
+
+<div class="advance-transform-4 div-border">
+  <h1>4</h1>
+  <p>এখানে ব্যাট টা অতি দ্রুত সরে যাচ্ছে কোন সময়ের ব্যবধান ছাড়া , এটাকে স্লো করতে হলে এখানে transition Property ব্যবহার করতে হবে ।
+    
+  transition যেহেতু transform এর উপরে হবে সেহেতু 
+
+</p>
+  
+  <div class="flex-div">
+    
+  <img class="bat bat-transition" src="../../projects/Cricket Match Animation/ifile/bat .png" alt="">
+  
+  <div class="ball"></div>
+</div>
+  </div> <br><br><hr><br>
+  
+
+
+
+<div class="advance-transform-5 div-border">
+  <h1>5</h1>
+  <p> এখানে ব্যাট টা বল কে হিট করলেও বল টা সরে যাচ্ছেনা এটাকে সরানর জন্য transform এর translate property ব্যেবহার করতে হবে । <br>
+    sturcture of transition  <br>
+    transition : কাকে করবা (translate) time (.25s) type (ease-out) transition-delay (.33s)
+    ()
+</p>
+  
+  <div class="flex-div">
+    
+  <img class="bat bat-transition" src="../../projects/Cricket Match Animation/ifile/bat .png" alt="">
+  
+  <div class="ball ball-translate"></div>
+</div>
+</div>
+
+
+<div class="advance-transform-6 div-border">
+  <h1>6</h1>
+  <p> Transform: translate ( x,y ) দুইটা ভ্যেলু থাকে । <br>
+    x = ডানে <br>
+    y = বামে <br>
+    কাজ করে । <br>
+    এখানে 
+    transform: translate(1462px , -100px); ব্যেবহার করা হয়েছে । <br>
+</p>
+  
+  <div class="flex-div">
+    
+  <img class="bat bat-transition-1 bat-transition" src="../../projects/Cricket Match Animation/ifile/bat .png" alt="">
+  
+  <div class="ball ball-translate-2"></div>
+</div>
+  </div>
+  
+
+
+  <br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

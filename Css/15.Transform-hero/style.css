@@ -1,49 +1,128 @@
-.container , .inner{
+.container,
+.inner {
   width: 150px;
   height: 150px;
   border: 2px solid khaki;
 }
 
-.container{
+.container {
   background-color: lightblue;
 }
 
-.inner{
+.inner {
   background-color: lightcoral;
-  transform: scale(.75);
-
+  transform: scale(0.75);
 }
 
-
-.container-2 , .inner-2{
+.container-2,
+.inner-2 {
   width: 150px;
   height: 150px;
   border: 2px solid khaki;
 }
 
-.container-2{
+.container-2 {
   background-color: lightblue;
 }
 
-.inner-2{
+.inner-2 {
   background-color: lightcoral;
   transform: rotate(17deg);
-
 }
 
-
-.container-3 , .inner-3{
+.container-3,
+.inner-3 {
   width: 150px;
   height: 150px;
   border: 2px solid khaki;
 }
 
-.container-3{
+.container-3 {
   background-color: lightblue;
 }
 
-.inner-3{
+.inner-3 {
   background-color: lightcoral;
-  transform: scale(.30) translate(350px);
+  transform: scale(0.3) translate(350px);
+}
+/* advanced transform section cricket match  */
 
+.div-border {
+  border: 2px solid;
+  margin-top: 70px;
+}
+.advance-transform:hover .bat {
+  transform: rotate(-60deg);
+}
+
+.advance-transform-2:hover .bat {
+  transform: rotate(-60deg);
+  transform-origin:top right ;
+}
+
+
+
+.advance-transform-3:hover .bat {
+  transform: rotate(-60deg);
+  transform-origin:top right ;
+}  
+
+.ball
+{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  left: 145px;
+}
+.bat{
+  width: 100px;
+}
+
+.advance-transform-4:hover .bat {
+  transform: rotate(-60deg);
+  transform-origin:top right ;
+  
+}.advance-transform-5:hover .bat {
+  transform: rotate(-60deg);
+  transform-origin:top right ;
+  
+} 
+.bat-transition{
+  transition:transform .33s ease-in ;
+
+}
+.ball-translate {
+  transition: transform .25s ease-out .33s;
+
+}
+
+.advance-transform-5:hover .ball-translate{
+  transform: translate(1462px);
+  
+  
+}
+
+.advance-transform-6:hover .bat {
+  transform: rotate(-60deg);
+  transform-origin:top right ;
+  
+} 
+.bat-transition{
+  transition:transform .33s ease-in ;
+
+}
+.ball-translate-2 {
+  transition: transform .25s ease-out .33s;
+
+}
+
+.advance-transform-6:hover .ball-translate-2{
+  transform: translate(1462px , -100px);
+  
+  
+} 
+.bat-transition-1{
+  transition:.33s;
 }
