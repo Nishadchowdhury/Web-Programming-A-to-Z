@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>All About Display Flex</h1>
+    <h3>
+        {i(font-size:1em;) is defult / 1x size of font}</h3>
+        
+        <p>এই বক্স টা এখন নরমাল অবস্থায় আছে </p>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div> <br><hr><br>
+
+    <p>এটা display-flex এ আছে </p>
+    <div class="container-1">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div>
+
+    <br><hr><br>
+
+    <p>এই বক্স গুলাকে center এ নিয়ে যেতে হলে এদের parent অর্থাৎ container কে ( justify-content: center; ) করতে হবে ।  </p>
+    <div class="container-1 container-2">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div>
+    <br><hr><br>
+
+    <div class="container-3">
+        <p>justify-content: flex-end ;<br>
+        defult (justify-content: flex-start ;) </p>
+        <div class="container-1 container-3">
+            <div class="box">Box-1</div>
+            <div class="box">Box-2</div>
+            <div class="box">Box-3</div>
+        </div>
+    
+    </div>
+<br><hr><br>
+
+    <div class="container-4">
+    <h2>justify-content: space-between;</h2>
+    <p>এটার কাজ হল যত গুলা HTML element আছে সে সেগুলাকে এক এক করে সাজাবে এবং বাকি খালি জায়গা সবার মাঝে ভাগ করে দিবে , । </p>
+        <div class="container-1 container-4">
+            <div class="box">Box-1</div>
+            <div class="box">Box-2</div>
+            <div class="box">Box-3</div>
+            <div class="box">Box-4</div>
+        </div>
+    </div>
+  <br><hr><br>
+        <div class="container-5">
+        <h2> justify-content: space-evenly;</h2> <p>justify-content: space-between; এর ক্ষেত্রে html element এর শুরুতে এবং শেষে কোন space ছিলনা , কিন্তু space-evenly তে সেটা আছে । </p>
+        <div class="container-1 container-5">
+           
+            <div class="box">Box-1</div>
+            <div class="box">Box-2</div>
+            <div class="box">Box-3</div>
+            <div class="box">Box-4</div>
+        </div></div>
+   <br><hr><br>
+     <div class="container-6">
+         <h2>
+            justify-content: space-around;</h2>
+            <p>দুইটা html element এর মধ্যে যে পরিমান ফাঁকা থাকবে তার অর্ধেক থাকে প্রথম-টার শুরুতে আর শেষ-টার শেষে । </p>
+        <div class="container-1 container-6">
+           
+            <div class="box">Box-1</div>
+            <div class="box">Box-2</div>
+            <div class="box">Box-3</div>
+            <div class="box">Box-4</div>
+        </div></div>
+        <br><hr><br>
+      
+    <h1>align-items: ;</h1>
+       <div style="display: block;" class="container-7"> 
+         <h2>align-items: flex-end; {By default ( align-items:Flex-Start)}</h2> 
+         <p>এখানে align-items: flex-end; করাতে Horizontal (উপর থেকে নিচে) লাইনের শেষে যাবে </p>
+
+        <p></p> 
+        <div class="container-1 container-7">
+           
+            <div class="box">Box-1</div>
+            <div class="box">Box-2</div>
+            <div class="box">Box-3</div>
+            <div class="box">Box-4</div>
+        </div>
+       </div> <br><br><br><br><br>
+     <br><hr><br>
+     <div class="contaienr-8">
+         <h2>center elements </h2>
+         <p>এক বা একাধিক আইটেম কে Horizontally and vertically center করার জন্য , , , flex box ব্যেবহার করতে হবে । <br>
+            Horizontally center করার জন্য justify-content:center; <br>
+            vertically center করার জন্য 
+            align-items: center; ,,, করতে হবে । 
+         </p>
+     <div class="container-1 container-8">
+           
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+    </div></div>
+    <br><hr><br>
+    <div class="contianer-9-main">
+        <p> align-items: stretch;</p>
+    <div class="container-9">
+       <div class="box-9">Box-1</div>
+       <div class="box-9">Box-2</div>
+       <div class="box-9">Box-3</div>
+       <div class="box-9">Box-4</div>
+    </div></div>
+    
+   
+    <br><hr><br>
+
+    <div class=""> 
+        <h2>flex / flex-grow: ;</h2> 
+        <p>
+        এখানে 2 নাম্বার box কে flex-grow: 1; করা হয়েছে । এর ফলে box 1 তার জায়গা ধরে রাখলেও box 2 তার জায়গা হিসাবে screen এর বাকি জায়গা নিয়ে নিয়েছে । <br> এটা সাধারণত যখন কোন পেজের সাইড মেনুটা fixed থাকবে এবং বাকি জায়গা অনেক চওড়া হবে সে ক্ষেত্রে flex-box কে এভাবে ব্যেবহার করা হয় । 
+        </p>
+    </div>
+
+    <div class="container-9 container-10">
+        <div class="box-9">Box-1</div>
+        <div id="box-2-id" class="box-9">Box-2</div>
+       
+     </div>
+
+
+
+ <br><hr><br>
+
+    <div class=""> 
+      <h1>order: ;</h1>
+      <p>এখানে box-2 এর order সেট করা হয়েছে 1 তাই সেটা left এ বা প্রথমে চলে এসেছে । এভাবে order এর মাধ্যমে box এর স্থানান্তর করা জায় । </p>
+      
+    </div>
+    <div class="container-9 container-10 container-11">
+        <div id="box-1" class="box-9">Box-1</div>
+        <div id="box-2" class="box-9">Box-2</div>
+       
+     </div>
+
+</body>
+</html>
