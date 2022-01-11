@@ -1,0 +1,32 @@
+.log-in-container {
+  display: flex;
+  justify-content: center;
+}
+.log-in-form {
+  display: flex;
+  flex-direction: column;
+}
+.log-in-form input,
+button {
+  font-size: 1.5em;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.log-in-form button {
+  color: whitesmoke;
+  background-color: orangered;
+  padding: 5px;
+  border: 0;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}

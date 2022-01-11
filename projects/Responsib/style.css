@@ -1,0 +1,26 @@
+.menu-container{
+    display: flex;
+}
+.food{
+    border: 3px solid rosybrown;
+    width: 300px;
+}
+.food img {
+    width: 75%;
+}
+@media (max-width: 700px) { 
+    
+.food{
+    background-color: orangered;
+}
+.menu-container{
+    flex-direction: column;
+}
+    
+}
+@media ( min-width:900px ) {
+    .food{
+        background-color: blueviolet;
+    }
+    
+}

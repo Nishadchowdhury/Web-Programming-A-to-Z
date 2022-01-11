@@ -1,0 +1,7 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 200px);
+}
+.grid-cell{
+    border: 1px goldenrod solid;
+}
