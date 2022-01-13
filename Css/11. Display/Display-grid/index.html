@@ -1,32 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Display-Grid</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Display Grid</h1>
-    <p>HTML element গুলাকে যদি horizontally and vertically বা সোজা বা উলম্ব বরাবর সাজাতে চাই তাহলে display-grid ব্যাবহার করতে হবে ।  </p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="explain-intro">
+      <h1>Display Grid</h1>
+      <p>
+        HTML element গুলাকে যদি horizontally and vertically বা সোজা বা উলম্ব বরাবর সাজাতে চাই তাহলে display-grid
+        ব্যাবহার করতে হবে ।
+      </p>
+      <div class="grid-vs-flex-box">
+        <h2>গ্রিড এর সাথে flex এর ডিফারেন্স .</h2>
+        <p>
+          Grid layoyt হল One dimensional layout যার সাহায্যে row অথবা column যেকোনো একটির উপর ভিত্তি করে ডিজাইন করা যাবে
+          । <br />
+          কিন্তু grid layout হল Two dimensional layout যার সাহায্যে row এবং column দুইটা একসাথে নিয়ে দিজাইন করা যাবে ।
+          <br /><br />
+        </p>
+      </div>
+      <div style="display: flex" class="flex-vs-grid-img">
+        <img style="width: 400px; height: 300px" src="./images/flex-box vs grid.jpg" alt="" />
+        <img style="width: 350px; height: 300px" src="./images/grid-vs-flexbox.png" alt="" />
+      </div>
+      <div class="grid-vs-flex-box">
+        <p>
+          grid layout এর ভেতর যে গ্রিড আইটেম গুল আছে সে গুলোকে ইচ্ছা মত width এবং height নির্দিষ্ট করে দেওয়া যায় ।
+          <br />
+        </p>
+        <img style="width: 750px" src="./images/gridpng.png" alt="" />
+      </div>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <p>এটা একটা সাধারন layout</p>
+      <div class="grid-container-0">
+        <div class="">1</div>
+        <div class="">2</div>
+        <div class="">3</div>
+        <div class="">4</div>
+        <div class="">5</div>
+      </div>
+      <br />
+      প্রথমে এটাকে grid layout এ নিয়ে যেতে হবে । <br />
+      সে জন্য , parent Dvi এর display:grid করে দিতে হবে । কিন্তু এতে করে তেমন কোনো পরিবর্তন আসবে না । <br /><br />
+      তাই আমাদেরকে বলে দিতে হবে যে আমরা কত গুলো column চাচ্ছি <br />
+      grid-template-columns: ; এর সাহায্যে । <br />
+      এখানে দুইটা জিনিস বলে দেয়া যাবে ( column এর সংখা এবং width )<br />
+      <br />
+      grid-template-columns: 40px auto auto 120px; <br />
+      এখানে বলে হয়েছে parent div এ থাকা সব আইটেম কে চার ভাগে ভাগ কর এবং <br />
+      width বলা হয়েছে প্রথম ও শেষ column এর জন্য 40px এবং 120px । আর মাঝের দুই column কে বলা হয়েছে auto অর্থাৎ প্রথম এবং
+      শেষ div তাদের জন্য নির্ধারিত জায়গা নিলে অবশিষ্ট জায়গা তারা সমান দুই ভাগে ভাগ করে নিবে । <br />
+      <span style="background-color: lightskyblue"
+        >এখানে যদি আর একটি width দেওয়া হত তবে আরও একটি column বেরে যেত ।
+      </span>
+      <br />
+      <br />
 
-    <h2>গ্রিড এর সাথে flex এর ডিফারেন্স . </h2>
+      height for rows একই ভাবে row কে-ও নিজের মত করে তৈরি করা যাবে <br />
+      grid-template-rows: ; এর সাহায্যে । <br /><br />
 
-    <br><br><br>
-    <div class="grid-container">
-    <div class="grid-cell">Cell Number-1</div>
-    <div class="grid-cell">Cell Number-2</div>
-    <div class="grid-cell">Cell Number-3</div>
-    <div class="grid-cell">Cell Number-4</div>
-    <div class="grid-cell">Cell Number-5</div>
-    <div class="grid-cell">Cell Number-6</div>
-    <div class="grid-cell">Cell Number-7</div>
-    <div class="grid-cell">Cell Number-8</div>
-    <div class="grid-cell">Cell Number-9</div>
-    <div class="grid-cell">Cell Number-10</div>
-    <div class="grid-cell">Cell Number-11</div>
-    <div class="grid-cell">Cell Number-12</div>
+      এখানে grid-template-rows: auto 30px auto 120px; ব্যেবহার করা হয়েছে । <br />
+      এখানে row গুলার height বলা হয়েছে । <br />
+      <span style="background-color: lightskyblue">এখানে যদি আর একটি height দেওয়া হত তবে আরও একটি row বেরে যেত । </span>
+      <br />
+      <br />
     </div>
-</body>
+
+    <img width="100%" src="./images/grid-without-gap.png" alt="" /> <br />
+    <p>
+      এখানে grid এর row এবং column গুলার মধ্যে কোন gap দিতে হলে <br />grid-column-gap: 10px; এর সাহায্যে দিতে হবে ।
+      <br />
+      একই ভাবে row গুলার মধ্যে gap দিতে হলে grid-row-gap: 20px; এর সাহায্যে দিতে হবে ।
+      <span class="red"
+        >এই দুইটা কে এক সাথেও ব্যেবহার করা জায় ( grid-gap: 20px 10px; ) এর সাহায্যে । এ ক্ষেত্রে আগে row এবং পরে column
+        এর gap বসবে ।
+      </span>
+    </p>
+
+    <div class="grid-container-1">
+      <div class="grid-iteam-1">1</div>
+      <div class="grid-iteam-1">2</div>
+      <div class="grid-iteam-1">3</div>
+      <div class="grid-iteam-1">4</div>
+      <div class="grid-iteam-1">5</div>
+      <div class="grid-iteam-1">6</div>
+      <div class="grid-iteam-1">7</div>
+      <div class="grid-iteam-1">8</div>
+      <div class="grid-iteam-1">9</div>
+      <div class="grid-iteam-1">10</div>
+      <div class="grid-iteam-1">11</div>
+      <div class="grid-iteam-1">12</div>
+      <div class="grid-iteam-1">13</div>
+      <div class="grid-iteam-1">14</div>
+      <div class="grid-iteam-1">15</div>
+      <div class="grid-iteam-1">16</div>
+    </div>
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <div class="explain-2">
+      <p>
+        একটা column কোথা-থেকে শুরু হবে , কতটুকু পর্যন্ত যাবে সেটা <br />
+
+        <span class="lsb-bg">grid-column-start: ;</span> এর সাহায্যে । <br />
+        সে জন্য directly iteam গুলাকে নিয়ে কাজ করতে হবে । আমরা চাচ্ছি যে 1 নাম্বার iteam এর width 50% করতে । সে জন্য 1
+        নাম্বার iteam এর আলাদা একটা id নিতে হবে । আমরা চাচ্ছি যে এই আইটেমের width টা 1 - 3 নাম্বার column পর্যন্ত এই div
+        টা জায়গা নিবে । <br /><br />
+
+        #iteam-1{<br />
+        grid-column-start: 1;<br />
+        grid-column-end: 3;<br />
+        }<br />
+        এখানে iteam বা div টা ১ নাম্বার থেকে ৩ নাম্বার column লাইন পর্যন্ত জায়গা নিয়েছে । <br />চাইলে এই দুইটা এক সাথেও
+        ব্যেবহার করা যাবে <span class="red-bg">grid-column: 1 / 3;</span> এভাবে । <br />
+      </p>
+    </div>
+    <img width="100%" src="./images/grid-column-stard-end-1.png" alt="" />
+
+    <br />
+    <hr />
+    <br />
+    এখানে grid-column-end এর আগে একটা span ব্যেবহার করলে তখন iteam টা এক সাথে তিনটি column নিয়ে কাজ করবে । ex:-
+    <span class="red-bg"> grid-column: 1 / span 3;</span> <br />
+
+    <img src="./images/grid-column-stard-end-2.png" alt="" /> <br /><br /><br />
+
+    একই ভাবে row এর খেত্রেও একই কাজ করা যায় । <br />
+    <br />
+    #iteam-1{<br />
+    grid-row-start: 1;<br />
+    grid-row-end: span 3;<br />
+    অথবা <br />
+    grid-row: 1 / span 3 ;<br />
+    }<br />
+    <br />
+    <img src="./images/grid-row-stard-end-1.png" alt="" /> <br /><br />
+    <p>grid-column এবং grid-row দুইটা একসাথে নিয়েও কাজ করা যায় ।</p>
+
+    <h1>A simple grid layout</h1>
+
+    <div class="grid-container-2 grid-container-1">
+      <div class="grid-iteam-2 grid-iteam-1" id="iteam-1">1</div>
+      <div class="grid-iteam-2 grid-iteam-1">2</div>
+      <div class="grid-iteam-2 grid-iteam-1">3</div>
+      <div class="grid-iteam-2 grid-iteam-1">4</div>
+      <div class="grid-iteam-2 grid-iteam-1">5</div>
+      <div class="grid-iteam-2 grid-iteam-1">6</div>
+      <div class="grid-iteam-2 grid-iteam-1">7</div>
+      <div class="grid-iteam-2 grid-iteam-1">8</div>
+    </div>
+    <br /><br /><br />
+  </body>
 </html>
