@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1 class="text-center">i am started bootstrup while wearing boots</h1>
+    <br /><br /><br />
+
+    <p class="fw-bold text-center bg-secondary text-white">
+      এখানে কোন এলিমেন্টের background color দিতে color এ থাকা class গুলা ব্যেবহার করেতে হবে ।
+    </p>
+    <br />
+
+    <b> to know about bg class </b>
+    <a href="./images/bootstrup-bg.png" target="_blank"
+      >click here <img class="mimi-image-of-me" src="./images/bootstrup-bg.png" alt=""
+    /></a>
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+  
+
+    <!-- exflore borders -->
+
+  <div class="border border-danger">
+      <p class="fw-bold text-center bg-warning">
+        এখানে কোন এলিমেন্টের border দিতে হলে লিঙ্ক এর class গুলা ব্যেবহার করেতে হবে ।
+      </p>
+    </div>
+
+
+    <b> to know about border class </b>
+    <a href="https://getbootstrap.com/docs/5.1/utilities/borders/" target="_blank"
+      >click here <img class="mimi-image-of-me img-thumbnail" src="./images/bootstrup-border.png" alt=""
+    /></a> <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+
+      <div class="shadow-lg w-100 rounded me-auto position-relative">
+      <div class="fw-bold text-center bg-info rounded-top position-absolute top-0 end-0 ">
+        এখানে কোন এলিমেন্টের border দিতে হলে লিঙ্ক এর class গুলা ব্যেবহার করেতে হবে ।
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      
+      <br>
+      <br>
+      <br>
+      <br>
+    
+    </div>
+
+        <br>
+        <button type="button" class="btn btn-primary position-relative">
+            Profile
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">ehe boi </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          eta holo first modal
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">দুই নাম্বার টা খুল ,যা ।</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">lol bro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           Hello bro keomon aso ?
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">এক নাম্বার টা খুল , যা ।</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+    <br>
+    <br>
+
+<!-- end  -->
+ <hr>
+
+<div class="off-canvas-container w-50 m-auto">
+  
+  <h2 class="m-auto">Offcanvas components</h2>
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Button with data-bs-target
+  </button>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> <hr>
+<br><br><br><br>
+
+
+    <br>
+    <br>
+  </body>
+</html>
