@@ -1,0 +1,72 @@
+.ms-25 , .ml-25 {
+  margin-left: 25%;
+  margin-bottom: 30px;
+}
+.mx-auto{
+    text-align: center;
+}
+
+.first-h1::after {
+  content: " after পরে";
+  color: red;
+}
+
+.first-h1::before {
+  content: 'before আগে ';
+  color:lime;
+}
+
+.Quote-with-sing::after , .Quote-with-sing::before {
+  content: ' " ' ;
+  color: red;
+}
+
+blockquote::before{
+  content: open-Quote; 
+  color:lime;
+  background-color: red;
+  font-size: 1.25rem;
+}
+
+blockquote::after{
+  content: close-Quote;
+  color:red;
+  font-size: 1.25rem;
+}
+
+.underline-1 , .underline-2 {
+  display: inline-block;
+
+}
+.underline-1::before{
+  content: '';
+  display: inline-block;
+  background-color: rebeccapurple;
+  height: 2.5px;
+  width: 100%;
+}
+.underline-1::after{
+  content: '';
+  display: inline-block;
+  background-color: rebeccapurple;
+  height: 2.5px;
+  width: 100%;
+}
+
+.underline-2::before{
+  content: '';
+  display: inline-block;
+  background-color: rebeccapurple;
+  height: 2.5px;
+  width: 100%;
+}
+.underline-2:hover::after{
+  content: '';
+  display: inline-block;
+  background-color: rebeccapurple;
+  height: 2.5px;
+  width: 100%;
+}
+.form-name span::after{
+  content:'*';
+}

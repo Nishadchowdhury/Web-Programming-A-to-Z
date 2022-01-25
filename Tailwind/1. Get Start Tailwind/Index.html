@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get start Tailwind N</title>
+    <link rel="shortcut icon" href="./Tailwind-fav-icon.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sec-me">
+      <p style="background-color: coral; text-align: center; margin: auto">
+        Tailwind css এ সব ট্যাগ এর font size একই থাকে যতক্ষণ Tailwind এর কোন ক্লাস না দেয়া হয় ।
+      </p>
+      <br />
+
+      <h1>It's a h1</h1>
+      <h3>It's a h3</h3>
+      <p>it's a Paragraph</p>
+      <span>It's a span </span> <br />
+      <small>It's a small </small> <br />
+      <button>it's a button</button>
+    </section>
+
+    <section class="sec-me-2">
+      <p class="sec-2-p">Tailwind css এ সব ট্যাগ এর font size একই থাকে যতক্ষণ Tailwind এর কোন ক্লাস না দেয়া হয় ।</p>
+      <br />
+
+      <h1 class="text-6xl inline-block">It's a h1</h1>
+      <span> text-6xl = font-size: 3.75rem; line-height: 1; ,, Display-inline = display-I-B</span> <br />
+
+      <h3 class="text-3xl inline-block">It's a h3</h3>
+      <span> text-3xl = font-size: 1.875rem; line-height: 2.25rem; ,, inline-block = Display-i-B</span> <br />
+      <br />
+
+      <p class="font-extrabold inline-block">it's a Paragraph</p>
+      __<span> font-extrabold = Extrabold</span> <br />
+      <p class="font-bold inline-block">it's a Paragraph</p>
+      __<span> font-extrabold = bold</span> <br />
+      <p>it's a Paragraph</p>
+      <p>it's a Paragraph</p>
+      <span>It's a span </span> <br />
+      <small>It's a small </small> <br />
+      <button class="bg-emerald-500 text-white px-3">it's a button</button>
+      <span>
+        bg-emerald-500 = এর জন্য bg color , text-white = এটা text এর color (White) , px-3 = Padding auto in x axis
+      </span>
+    </section>
+    <br /><br /><br />
+
+    <!-- second sec end -->
+
+    <section id="comparison Tailwind vs Bootstrasp" class="">
+      <p>Bootstrasp এবং Tailwind দুইটাই responsive framework ,,, দুইজনেই responsive ,, web design করার সুযোগ দেয় ।</p>
+
+      <p>Tailwind এর অনেক breakpoint আছে Bootstrasp এর মতই তবে সামান্য আলাদা</p>
+      <h1 class="text-center bg-red-400">breakpoints</h1>
+      যেমন
+      <a class="bg-blue-300" target="_blank" href="https://tailwindcss.com/docs/responsive-design">For Tailwind</a>
+      <br />
+      যেমন
+      <a
+        class="bg-blue-300"
+        target="_blank"
+        href="https://getbootstrap.com/docs/5.1/layout/breakpoints/#available-breakpoints"
+        >For Bootstrasp</a
+      >
+      <br />
+      <br /><br />
+
+      <h1 class="text-center bg-red-400">Container</h1> 
+      Container Bootstrasp
+      <a  target="_blank" class="bg-blue-300" href="https://getbootstrap.com/docs/5.1/layout/containers/#how-they-work">Bootstrasp</a><br />
+      Container Bootstrasp <a target="_blank" class="bg-blue-300" href="https://tailwindcss.com/docs/container">Tailwind</a> <br />
+      <br />
+      <div><p class="text-center"> .container এর bootsatrap এ দুইপাশ থেকে সামান্য কিছু margin নেয় । কিন্তু Tailwind এর সেটা নেয়না </p></div>
+
+      <br />
+    </section>
+
+<section class="container mx-auto bg-blue-300" >
+hello
+
+hello
+</section>
+
+
+<div class="container ml-10 bg-red-300 mx border-4 border-indigo-500/100">
+    <!-- ... --> <br><br> hello
+  </div>
+  </body>
+  <br><br>
+  <br><br>
+  <br><br>
+</html>

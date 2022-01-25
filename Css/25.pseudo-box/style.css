@@ -1,0 +1,41 @@
+h1{
+    background-color: indianred;
+}
+h1:hover{
+    color: red;
+    background-color: skyblue;
+   
+    font-size: 25px;
+    font-weight: 700;
+}
+.middle-man:focus{
+    color: red;
+    font-weight: ;
+    
+}
+.middle-man{
+    color:blue;
+}
+a:visited{
+    color:red
+}
+li{
+    color: chocolate;
+}
+li:first-child{
+    color:darkblue ;
+    font-weight:bold;
+}
+li:last-child{
+    
+}
+li:nth-child(even){
+    color: rgb(245, 0, 0);
+    font-weight: bold;
+}
+/* li:nth-child(){
+    color: rgb(25, 0, 245);
+} */
+.one{
+    position: fixed;
+}
