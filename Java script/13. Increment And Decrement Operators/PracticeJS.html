@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      body{
+        text-transform: capitalize;
+      }
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .spanc{
+        font-size: 20px;
+      }
+      .scc{
+        font-size: 19px;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript <span class="spanc">'Increment And Decrement Operators'</span> </h1>
+    <div class="p">
+      <p>
+        increment and decrement Operator শুধু মাত্র ভেরিএবলের সাথে ব্যাবহার করা যায় । <br><br>
+        কোন ভ্যালুর সাথে ব্যাবহার করা যাবেনা ।<br>
+        ex:- <br>
+        <img src="i file/5.png" alt="">
+    </div>
+
+    <div class="p">
+      <h2>>>> Increment <span class="scc" >Operator (++)</span>  <<<</h2>
+      <p>
+        Increment Operator (++) কোন ভ্যালুকে 1 করে বারাতে হলে এই Increment Operator (++) এর ব্যাবহার করা হয় । <br><br>
+           
+        ex:- (js line 3 ) & <br>
+       <img src="i file/1.png" alt=""><br> 
+
+       এখানের result = 2 <br><br>
+       ex2:- <br>
+       <img src="i file/2.png" alt=""><br>
+        এখানের result = 7 <br>
+
+       <div class="span1">
+        <h1>attention</h1>
+        <div class="p p2">
+          <span>এখানে += ব্যাবহার করা যাবে না কারন += ব্যাবহার করা হয় কোন ভ্যালুর সাথে অন্য যেকোনো মানের ভ্যালুকে যোগ করার জন্য । <br><br>
+          আর ++ বা Increment Operator ব্যাবহার করা হয় কোন ভেরিএবলের সাথে 1 করে যুক্ত হবে ।  </span>
+        </div>
+      </div> 
+       
+      </p>
+    </div>
+
+    <div class="p">
+      <h2>>>> decrement <span class="scc" >Operator (- -) </span><<<</h2>
+
+      <p>
+        Decrement Operator (- -) এর কাজের পদ্ধতি increment Operator এর মতই । <br>
+        পার্থক্য শুধু এটা 1 করে বিয়োগ করবে ।<br>
+        অর্থাৎ ভেরিএবল টাকে এক এক করে কমায় ।<br><br>
+        
+        ex:- <br>
+        <img src="i file/3.png" alt=""><br>
+        এখানের result = 4 <br><br>
+
+        ex2:- <br>
+        <img src="i file/4.png" alt=""> <br>
+         এখানের result = 3 <br>
+      </p>
+    </div>
+    <div class="p">
+      <h2>>>Form of <span class="scc">Increment & decrement</span><< </h2>
+
+      <p>
+        <img src="i file/6.png" alt=""> <br><br>
+        যদি increment বা decrement Operator কে ভেরিএবলের আগে দেয়া হয় তবে তা perfix । <br><br>
+        আর ভেরিএবলের পরে দেয়া হয় তবে তা postfix ।
+
+      </p><br>
+      <h2>>>> use of postfix operator <<<</h2>
+      <p>
+        ex:-<br>
+        <img src="i file/7.png" alt=""><br> এখানে result = 5<br><br>
+        মনে হতে পারে এখানে 6 result টা store হওয়ার কথা কিন্তু এই postfix Operator টার কাজের পদ্ধতিই এমন । যে সেটা আগের ভেরিএবল এর variable কেই store করবে তারপর increment বা decrement এর কাজ করবে  ।<br><br>
+        এটাই postfix Operator এর ধর্ম । 
+
+      </p><br>
+      
+      <h2>>>> use of prefix operator <<<</h2>
+
+      <p>
+        ex:-<br><br>
+      
+        let num = 5 ;<br>
+
+        let red = ++num;<br>
+
+        console.log(red);<br>
+        
+        <br>এখানে result = 6 <br><br>
+
+        এখানে prefix operator টা ব্যেবহার করার কারনে <br>
+         সে red ভেরিএবলে  আগের ভ্যালুর সাথে 1 যোগ করে স্টোর করে এই নতুন 6 ভ্যালুটাকে ।
+      </p>
+      <div class="span1">
+      <h1>attention</h1>
+      <div class="p p2">postfix retrun করে ex এর num বলে ভেরিএবলটার আগের ভ্যালুটাকে । <br> <br>
+
+      আর prefix retrun করে ex এর num  বলে ভেরিএবলটার current , বর্তমান বা ক্যালকুলেট হওয়ার পরের ভ্যালুটাকে । 
+
+
+      </div>
+    </div>
+
+    </div>
+
+    <div class="span1">
+      <h1>attention</h1>
+      <span>a importent equestion </span>
+      <img src="i file/9.png" alt="">
+      <div class="p p2">
+        <p>
+          এখানে , <br><br>
+      >>> 5 নম্বর লাইনে test ভেরিএবলে (num--) num কে postfix decrement করে স্টোর করা হয়েছে ।<br>
+      >>> এবং এখানে যথা রিতি test এর ভেতর স্টোর হয়েছে আগের ভ্যালুটা ( 5 ) <br>
+      
+      আর 5 নাম্বার লাইনের postfix decrement (num--) করা num-- তার মধ্যে স্টোর করে রেখেছে ক্যেলকুলেশন অনুযায়ী ( 4 ) <br><br>
+      
+      তাই  7 নাম্বার লাইনের >>> alert(test);<br>
+      >>> এর result = 5  <br><br>
+
+      আর 8 নাম্বার লাইনের >>> alert(num);<br>
+      এর result = 4 <br><br>
+
+      10 নাম্বার লাইনের <br>
+      >>> let test2 = --num;<br>
+      ক্যেলকুলেশন অনুযায়ী <br><br>12 নাম্বার লাইনের <br>
+      >>> alert(test2);<br><br>
+
+
+      >>>  এর result = 3 ।<br>
+      কারন num এর মধ্যে আগেই 4 স্টোর করা হয়েছিল 5 নাম্বার লাইনে ।
+
+
+        </p>
+      </div>
+    </div>
+    <div class="span1">
+      <h1>a big attention</h1>
+     <div class="p2 p">
+
+      <p>
+        অর্থাৎ prefix আর postfix এর কাজ একই শুধু তাদের retrun আলাদা । <br>
+        যেমন :- <br>
+        তাদের instant ব্যেবহার করলে retrun করবে postfix তার আগের ভ্যালুটা আর prefix ব্যেবহার করলে retrun করবে তার বর্তমান letest ভ্যালুটা ।<br><br>
+
+        increment & decrement এর precedence addition & subtraction এর থেকে বেশি । 
+
+      </p>
+     </div>
+    </div>
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   g
+  </body>
+</html>

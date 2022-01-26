@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+        display: inline-block;
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript 'if , Else statement' </h1>
+    <div class="p">
+      <h2>>>> If <<<</h2>
+      <p>
+        if boolean অর্থাৎ true or false নিয়ে কাজ করে । <br><br>
+        javascript এ কোন কাজকে শর্ত সাপেক্ষ ভাবে করা করাই if statement এর কাজ । <br><br>
+
+        যেমন মুল কথাটা হল <br>'' যদি এটা হয় তাহলে আমি এই কোড টা run করবো নাহয় করবো না । <br><br>
+
+        <h2>>>> rule to <span class="minispan">write if statement </span> <<< </h2>
+        ex:-<br>
+        js line 3 . 
+       <br> <br>
+        ex2:-<br>
+        <img src="ifile/1.png" alt=""><br>
+
+        এখানে শর্ত টা হল ,,, যদি বন্ধু আমার বারিতে আশে ,,,<br><br>
+        
+        আর এর শর্তটা পুরন করলে তারপর<br> ,,, আমি ঘুরতে যাব ,,, কাজটা হবে । <br><br>
+        এখানে >>> আমি ঘুরতে যাব <<< কাজটা হবে কিনা সেটা নির্ভর করছে ।<br>
+         ==>>> যদি বন্ধু আমার বারিতে আশে <<< <br>শর্তটা <p class="number">true</p> কিনা তার উপর । 
+         যদি ( first bracket ) এ থাকা শর্ত টা true হয় তাহলেই { socond bracket } এর কোড টা run করবে । 
+
+      </p>
+    </div>
+
+
+    <div class="span1">
+      <h2> working rules </h2>
+     <div class="p">
+      if statement এ <br> comparison operator আর logical operator নিয়ে কাজ করে ।  <br><br>
+
+      if statement (first bracket) এ থাকা শর্ত থেকে তার output নেয় ।
+      <br> <br>তারপর if সেটাকে boolean এ convert করে । <br> এবং তারপর boolean এ convert করে <br><br> if ,,, true পেলে {second bracket } কে run করে । <br><br>
+      আর যদি  if ,,, false পায় তবে সে {second bracket } কে run করে না ।
+     </div>
+    </div> 
+
+ 
+
+    <div class="p">
+      <h2>>>> Else statement  <<<</h2>
+      <p>যেমন if statement শেখার সময় যে উধাহরন টা দেখেছিলাম সেটা হল <br>
+      
+      <img src="ifile/1.png" alt=""><br><br> 
+      এটা হল if এর উধাহরন । <br><br>
+      
+     If এর কাজ হল<br> ( Jodi tumi amar barite na asho)  <br><br> 
+
+     Else এর কাজ হল<br> ( tahole ami tomake ghurate niye jabona)  <br><br>
+     ex:- <br>
+     <img src="ifile/2.png" alt=""><br><br>
+     Result:-Else<br>
+     কারন  <span class="number">Let amount </span> এর ভেতর store করা আছে <span class="number">21</span> কিন্তু if এর condition এ store আছে <span class="number">10</span>  <br> এখন এখানে যেহেতু false retrun হয়েছে if বলবে তাহলে তুমি <span class="number"> 6 num </span> লাইনে জেতে পারবে না । <br> তো এখন তুমি <span class="number"> 8 num </span>লাইনের else ব্লকে চলে জাও । 
+
+      </p>
+    </div>
+
+       <div class="span1">
+      <h1>অর্থাৎ</h1>
+      <div class="p">মুল বিষয়টা হল <br><br>
+      
+      যদি এটা কর এটা হবে (if)<br>
+      আর যদি এটা না কর তবে (Else )<br>
+      </div>
+      <span></span>
+    </div> 
+
+    <div class="p">
+      <h2> >>> <span class="minispan">(if Else)</span> condition In Else <<< </h2>
+      <h2>>>> else (if Else) <<<</h2>
+      <p>
+        যখন if = false আসে অর্থাৎ if এর condition এর সাথে user input match করেনা তখন else Run হয় ।   
+        else এর কোন condition থাকেনা । <br><br>
+
+        কিন্তু কখনো কখনো else এর condition দেয়ার প্রয়োজন পরে । <br>তখন exeple এর else এর ও একটি condition দেওয়া হয় । <br> আর তখন elas run করার ক্ষেত্রে retrun = false এর পাশাপাশি user input এর সাথে else এর condition ও মিলতে হবে ।<br><br>
+        ex:-<br>
+        <img src="ifile/3.png" alt=""><br><br>
+        
+        এখানে যেহেতু  amount এর সাথে if এর condition মিলছে না সেহেতু js else এ যাবে ।<br>
+         আর else এর condition এর সাথে ও ammount এর ভ্যালু না মেলার কারনে কিছুই alert না হওয়ার কথা <br><br>
+          কিন্তু এখানে else  এর else আছে তাই এখানে কোন কিছুই alert না হওয়ার কোন chance নাই ।<br> এখানে  else এর else alert হবে । <br><br> এভাবে যতবার ইচ্ছা else if condition লিখা যাবে । 
+        <br><br>
+      
+      </p>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+      }
+      
+      /* attention Div's css */
+      .span1 { margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+        position: relative;
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      h2{
+        text-align: center;
+        color: red;
+      }
+      span{
+        font-size:18px;
+      }
+      .hisapn{
+        position: relative;
+        width: 300px;
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript 'Assignment Operator' </h1>
+    <div class="p">
+      <h2>>>> Assignment Operator <span>( = ) </span><<<</h2>
+      <p>Assignment Operator ( = ) এটি একটি Operator । এর কাজ হচ্ছে ডান পাশের calculation কে বাম পাশের ভেরিএবলের মধ্যে স্টোর করা । <br>Assignment Operator এর priority প্রায় সব থেকে কম তাই এটার কাজ সবার শেষে হয় । <br>
+      <br>যেমন <br> 
+        let num = 3 + 2 ;<br>
+        Console.log(num); result = 5 .
+        
+        <br> এখানে Assignment Operator এর operand হচ্ছে <br> <br>
+        
+        3 + 2 এবং num <br><br>
+        
+        Assignment Operator ডান পাশের calculation কে বাম পাশের num ভেরিএবলে স্টোর করেছে ।
+
+
+    </p>
+    </div>
+<div class="p">
+  <h2>>>> Chaining Assignment  <<<</h2>
+  <p>
+  যেমন <br>
+  let num = 2;<br>
+  let num2 = 2;<br>
+  let num3 = 2;<br><br>
+
+  এই এখানে যেহেতু সব ভেরিএভলের ভ্যালু একই <br> তো এখানে Chaining Assignment করা যাবে ।
+  
+  <br> <br>উপরের কোড টাকে যদি Chaining Assignment করি তবে নিম্ন রুপের হবে  ঃ- <br> <br>
+
+  let num = num2 = num3 = 2;<br><br>
+  Chaining Assignment কাজ করে ডান দিক থেকে বাম দিকে । <br><br> 
+
+  উক্ত ক্ষেত্রে<br> প্রথমে 2 টা num3 এর মধ্যে স্টোর হবে তারপর num2 তারপর num এর মধ্যে স্টোর হবে । <br><br>
+    <img src="i file/1.png" > <br>
+
+    এভাবেও Che Assignment করা যায় । 
+  </p>
+</div>
+
+    
+    <div class="span1">
+      <h1>attention</h1>
+      <div class="hisapn">Chaining Assignment এ আগে থেকে ভেরিএবল declare করতে হবে যদি Script লিখার শুরুতে ভুল ধরিয়ে দেয়ার জন্য <br>
+       "Use Strict" ব্যেবহার করে থাকি । </div>
+    </div>
+  </body>
+</html>

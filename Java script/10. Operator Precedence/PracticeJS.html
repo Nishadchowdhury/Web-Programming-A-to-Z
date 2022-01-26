@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      img{
+        width:470px
+      }
+      a{
+        display: inline-block;
+        padding: 20px;
+        margin-bottom: 36px;
+        background: #fb5200;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-family: arial;
+        border: 2px solid;
+        border-radius: 5px;
+        font-weight: bolder;
+      }
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      
+      /* attention Div's css */
+      .span1 { margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .offft{
+        color: red;
+      }
+      .h2_attention{
+        color: red;
+        background: radial-gradient(rgb(4, 0, 255),red);
+        text-transform: uppercase;
+        margin: auto;
+        text-align: center;
+        border-radius: 5px;
+      }
+      h2{
+        text-align: center;
+      color: red;     
+     }
+     .h2s{
+font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript "Operator Precedence" </h1>
+    <div class="p">
+      <h2>>>> Operator Precedence <<<</h2>
+      <p>
+        Operator Precedence সঠিক ভাবে calculation করার জন্য ব্যাবহার করা হয় ।
+      </p>
+      <p> যেমন <br>
+        alert( 2 * 4 + 3 )<br>
+        এখানে গুন বা Multiplication এর কাজ আগে হবে । অর্থাৎ যে Operator এর presedence যত বেশি হবে তার কাজ javascript তত আগে করবে ।  এখানে + এর থেকে presedence , priority বা গুরুত্ব * এর তুলুনায় কম । <br><br> 
+        অর্থাৎ যখন একটা expression এর মধ্যে অনেক গুলা Operator বেয়বহার করা হবে তখন যে operator এর precedence সব থেকে বেশি সেই operator টার কাজ আগে করবে । 
+      </p>
+      <h2 class="h2_attention">attention</h2>
+      <p>
+        let num = 2 * 3 + 4 ; <br>
+        এখানে যদি আমরা নিয়ম অনুসারে * Multiplication গুনের কাজ আগে হবে । <br> কিন্তু যদি আগে + Addition যোগের কাজ করাতে চাই তাহলে আমরা frist bracate ব্যেবহার করে তার ভেতর নির্দিষ্ট expression রাখতে হবে । <br>
+        যেমন <br> 
+        let num = 2 * (3 + 4) ; <br>
+        তাহলে result = 14 হবে ।
+
+      </p>
+    </div>
+
+
+    <div class="p">
+      <h2 class="h2s">>>>precedence level of operator<<<</h2><p>
+        প্রতিটা operator এর নির্দিষ্ট priority বা precedence Number   থাকে । আর সেই level বা precedence number এর উপর ভিত্তি করেই oprator গুলি আগে পরে কাজ করে । <br> 
+        যদি কোন expression এর একাদিক একই precedence level এর হয় <br>
+        Ex:-let num = 3 - 2 + 4; <br>
+         তবে সেটা বা দিক থেকে ডান দিকে কাজ করে । <br>
+        result = 5 <br>
+            </p>
+    </div>
+    
+    <a href="precedence.png">all precedence here</a>
+
+
+
+    <div class="p">
+      <p>
+        <h3 class="offft">off topic</h3>
+        let num = 2 + 3; <br><br>
+        এখানে <br> 
+         2 এবং 3 হচ্ছে operand <br>
+         +  হল Operator <br>
+         2 + 3 একসাথে পুরোটার নাম হল expression .
+      </p>
+    </div>
+
+
+    
+    <div class="span1">
+      <h1></h1>
+      <span></span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .border{
+        border-top: red 1px solid;
+      }
+      .number{
+        color: rgb(38, 98, 230);
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(234, 232, 236);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript "While Loop"</h1>
+
+    <div class="p">
+      <h2>>>> while loop <<<</h2>
+      <p>
+    যেমন if ___ Else এর একটা syntax থাকে , ঠিক সেরকম while loop এরও একটা syntax থাকে । <br><br>
+    structure of while loop <br>
+    <img src="../ifile/while1.png" alt=""> <br>
+    এটা হল while loop এর syntax বা structure <br>
+    এখানে condition এর জায়গায় condition দিতে হবে আর যে কাজটাকে বার বার করাতে চাইছি এই loop body এর মধ্যে সেটাকে দিতে হবে । <br><br>
+    loop এর body টা কতবার run করবে সেটা নির্ভর করে loop এর condition এর উপর । <br> 
+    জেমন if এর condition জেমন true আর  false  এর উপর নির্ভর করে loop এর ক্ষেত্রেও তাই । <br>
+  loop এর condition টা যতক্ষন true  থাকবে তার body টা ততক্ষণ run করতে থাকবে ।  <br><br>
+
+  এবং যেই মুহূর্তে loop এর condition টা false হয়ে যাবে তখন আর loop এর body ,, run করব না ।  <br><br>
+
+  তাই সবসময় loop এর condition টা অনেক বুঝে শুনে দেয়া উচিত তা,না হলে while loop টা তো বন্ধই হবে না loop এর body run হতেই থাকবে এবং সেটা অনাকাংখিত infinite loop এ পড়ে যাবে ( infinite loop মানে যে loop টার শেষ নেই  )।  <br>
+        
+      </p> 
+    </div>
+  
+    <div class="p">
+      <h2>>>> working process <<<</h2><br>
+      <p>
+        while loop এর condition এ <br>
+         ভেরিএভল , comparison operator , logocal operator ইত্যাদি ব্যেবহার করা যায় । <br>
+          তারপর loop তার condition কে boolean এ convert করে তারপর true পেলে  body ,, run করে । false পেলে বাইরে বেরিয়ে আসবে  ।  <br> <br>
+
+          <img src="../ifile/while2.png" alt=""><br>
+          একটা ভেরিএভল নিলাম <br> Let counter = 0 ;<br>
+          variable নেয়া মানে initialistion এর কাজ শেষ । <br><br>
+          তারপর while এর condition টা লিখলাম । 
+          এখানে condition টা true কারন <br>counter ,, less than ,<, 5 মানে true <br> তাই while তার body ,, run করবে ।<br> 
+          body ,, run করার পর js while এর বাইরে বেরিয়ে আসবে না কারন সে তার body কে ততক্ষণ run করবে যতক্ষণ সে তার condition কে true পাবে । <br><br>
+          এবং এখানে js যতবার সে while এর condition এর কাছে যাবে সে ততবারই true পাবে কারন পরের বারে আবার যখন while এর condition এর কাছে যাবে সে দেখবে counter এ সেই 0 ই স্টোর করা আছে তাই js আবার ও true পাবে ।<br> তাই এটা একটা infinite loop হয়ে যাবে । <br><br>
+
+          এখানে এই infinite loop টাকে নির্দিষ্ট loop এ পরিনত করার জন্য loop body এর ভেতরে  চাহিলে এটা যোগ করতে পারি যেমন <img src="../ifile/while3.1.png" alt=""> বা <img src="../ifile/while3.2.png" alt=""> ভেরিএবল এর সাথে increment ব্যেবহার করার কারনে<br>
+           এই <img src="../ifile/while3.2.png" alt=""> লাইনটা js এ যতবার যোগ হবে ততবার 1 এক করে যোগ হবে ভেরিএবলের সাথে । আর এই লাইনটাকে বলা হয় stepping । 
+           <br><br>
+           মুল statement টা হবে এরকম । <br>
+           <img src="../ifile/while3.png" alt=""><br>
+           এখানে js , while এর condition এ ঢুকবে তারপর সে পাবে <br>
+           counter < 5 = true তাই সে loop body ,, run করবে । <br>
+           loop body এর পরবর্তী লাইনে যাওয়ার পর js ,, counter++ কে execute করার পর counter এর সাথে 1 যোগ হয়ে counter এর ভেতর store হবে 1 ।<br>
+            এখন যেহেতু  1 < 5 সেহেতু আগের মত আবার js ,, true পেয়ে body ,, run করবে । এবং js যখন আবার counter++ ,, execute করবে তখন সে আবার while এর condition এ 1 যোগ করবে তাই এই মুহূর্তে while এর condition এ store আছে 2 । <br> 
+           যেহেতু 2 < 5 সেহেতু js ,, true পেয়ে সে আবার <br>body , run করবে ।<br>
+            এভাবে চলতেই থাকবে যতক্ষণ while এর condition ভেরিএবলে 5 স্টোর <br>
+             হয়ে 5 < 5 condition টা false হয় । <br><br><br>
+             
+
+             আগের বার counter টা প্রতিবারই 0 থেকে যাচ্ছিল যার কারনে প্রতিবার true আসছিল । <br>কিন্তু যখন loop এর body তে <img src="../ifile/while3.2.png" alt=""> এই stepping exprission টা যোগ করেছি তখন থেকে প্রতি iteration (loop একবার ঘুরা কে একটা iteration বলে) এ counter এর value 1 করে বাড়তে থাকবে । <br> এবং এভাবে এক এক করে বাড়তে বাড়তে যখন counter এর value টা  5 হয়ে যাবে তখনি loop এর condition ,, false হয়ে যাবে এবং  loop টা stop হয়ে যাবে । এবং js ,, loop টা থেকে বের হয়ে যাবে ।  <br>
+             <br> 
+
+             যেমন counter = 5 হলে while loop টা এই অবস্থায় যাবে । <br>
+             ex:- <br><img src="../ifile/while4.png" alt=""><br>
+             এখানে ,, 5 < 5 ,, mean false ।<br>
+      </p>
+    </div>
+    <div class="p">
+      <h2>>>> working process <<<</h2>
+      <p>
+        যেমন কখন একটা<br>
+
+         <br>< select > <br>
+                   < option> 2000 - 2005 < option>
+         <br>< select > <br><br>
+
+         এই রকম একটা markUP বানাতে হতে পারে এবং সেটার মধ্যে দিতে হবে<br> 50+ select এর option আর এটার জন্য option এর 50+ লাইন কপি লাগবে না ।<br> সে কাজটা অনেক সহজে ও সর্টে while loop এর সাহায্যে করা যায় । <br><br>মানে যখনি এরকম কোন setution আসবে যে একই কাজ বার বার করতে হবে তখনি এই loop এর ব্যেবহার করা হয় । 
+      </p>
+    </div>
+    <div class="span1">
+      <h1>attention</h1>
+      <div class="P">
+        <div class="p">
+          <P>
+            viwe the js with a text editor .there some more<br> <br>
+            এমন ভাবে loop এর condition টা দিতে হবে যেন সেটা একটা পর্যায় গিয়ে false হয় । 
+        </P>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
+  

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+        line-height: 1.5;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript " <span class="minispan">Logical operator</span> " </h1>
+  
+    <div class="p">
+      <h2>>>> Logical (!) Not Operator <<<</h2>
+
+      <p>
+        এই operator এর মুল কাজ হচ্ছে true কে false আর false কে true করে দেওয়া । <br>
+        logical operator এর ধর্ম অনুযায়ী  not (!) operator তার operand কে boolean এ কনভার্ট করবে । <br>
+         তারপর তার কাজ হল সেটাকে reverse বা বিপরিত করে দেওয়া ,<br>হ্যাঁ কে না আর না কে হ্যাঁ করা ।<br>
+         অর্থাৎ operand এ  true থাকলে সেটাকে false করে দেওয়া । 
+        <br><br> 
+       
+
+      <div class="p p2">
+       
+        And ( && ) -- OR ( || ) operator  2 টা operand নিয়ে কাজ করলেও ,<br>
+         Not ( ! ) operator শুধু মাত্র 1 টা operand নিয়ে কাজ করে । 
+      </div>
+      not operator প্রথমে তার operand কে boolean এ কনভার্ট করে , <br>
+      আর boolean এ কনভার্ট করার পরে সে  একটা result হিসেবে true বা false পাবে । <br> 
+      যেহেতু এটা not operator সেহেতু তার operand থেকে পাওয়া result কে  reverse করে সেটা retrun করবে । 
+       
+      <br><br>
+
+        অনেক সময় logic build করতে গিয়ে এমন এমন logic build করতে হয় যে , <br>
+        এটা যদি এটা না হয় তবে এটা দেখাও । <br>
+        ঠিক এমন পরিস্থিতিতে একটা equal condition বানিয়ে সেটাকে একটা first bracket এর মধ্যে রেখে তার ডান একটা Not (!) operator  দিয়ে দিলেই কাজ হবে । <br>
+        যেমনঃ- 
+        
+        <br><br>
+      ex:-<br>
+      <img src="../ifile/not1.png" alt=""><br><br>
+      এখানে prompt এর মধ্যে যদি 10 ছাড়া অন্য যেকোনো value দেওয়া হয় তবে if , run হবে । <br>
+      আর যদি 10 দেওয়া হয় তবে else , run হবে । <br>
+      কারন এখানে not (!) operator এর সাহায্যে একটা statement build করা হয়েছে যেখানে if এর condition টাকে reverse করে ফেলবে ।<br>
+      তাই এখানকার  <br>
+      num Equal 10 __ (num == 10) এর আগে ! not operator টা ব্যেবহার করার কারনে পুরো condition টা not বা reverse হয়ে গেছে । এর মানে false . 
+      </p>
+    </div> 
+
+    <div class="p">
+      <h2> <span class="minispan">>>> string's length calculation <<<</span> </h2>
+      <p>
+        মাঝে মাঝে কোন string এর length এর কোন limitation set করতে হয় যে যদি user 4 থেকে 6 length এর সমান সংখ্যক কোন value দেয় তবে তাকে  দেখাও  invalid এর  আর যদি 4 এর কম ও 6 এর বেশি lenght এর userName দেয় তবে দেখাও valid । <br> <br>
+
+        ex:- <br>
+        <span class="number">মনেকরি UserName = 7</span> 
+        <br>
+        <img src="../ifile/not2.png" alt=""><br>
+        এখানে and operator , retrun করবে false কারন তার বাম  পাশের operand , false ।<br><br>
+        
+        <img src="../ifile/not3.png" alt=""><br>
+        এখানে and operator , false , retrun করার পরে সেটা not operator এর সাথে evluate হয়ে  and operator এর retrun করা false সে reverse হয়ে true হয়ে যাবে । <br><br>
+        main ex:- <br>
+        <img class="p p2" src="../ifile/not4.png" alt=""><br>
+
+        এখন prompt এর মধ্যে যেহেতু 7 আছে , সেহেতু সেটা if এর condition এর সাথে evluate হয়ে true পাবে এবং তাই if , run হবে । <br>
+        so result = valid । <br><br>
+
+
+      </p>
+    </div>
+
+    <div class="span1">
+    <h1>attention</h1>
+    <div class="p p2">
+      <p>
+        ex:-<br>
+        <img src="../ifile/not5.png" alt=""><br>
+        এখানে null কে boolean এ কনভার্ট করলে false পাওয়া যাবে । তারপর (!) operator এর সাথে evluate হয়ে সেটা true হয়ে যাবে  । <br><br>
+
+        <img src="../ifile/not6.png" alt=""><br>
+        এখানে দুইটা (!) not operator আছে বলে প্রথম not (!) এর জন্য null , true হবে আর  দ্বিতীয় not (!) এর জন্য সেটা true থেকে আবার false হয়ে যাবে ।
+        অর্থাৎ double not (!!) আর null তাকে boolean এ কনভার্ট করা একই কথা ।  <br><br>
+      </p>
+ 
+    </div>
+ </div>
+   
+  </body>
+</html>
+<br><br> <br> 

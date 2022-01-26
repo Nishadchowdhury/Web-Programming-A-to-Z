@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+      }
+
+      /* attention Div's css */
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      img{
+        width:470px;
+        margin-bottom: 20px;
+      }
+      .h1{
+        background: black;
+        color: white;
+        width: 360px;
+        border: red 1px solid;
+      }
+     .span2{
+       transform: rotate(30deg);
+     }
+      </style>
+  </head>
+  <body>
+    <h1>hello javascript "type conversion" / type casting</h1>
+    <div class="p">
+      <h3>the type casting / type conversion is -</h3>
+      <p>
+        একটা টাইপ থেকে অন্য একটা টাইপে কনভার্ট করাকেই বলে টাইপ কাস্টিং । <br />
+        যেমন কোন লেখা >>> 10 <<< string এ আছে তো এটাকে Number এ কনভার্ট করা , অথবা >>> 10 <<< এটা number টাইপ থেকে
+        string এ কনভার্ট করাকে বলে টাইপ কাস্টিং ।
+      </p>
+    </div>
+
+    <div class="p">
+      <h2>number to String (conv)</h2>
+      <p>
+        ex:- js line 2 <br />
+        let age = 21; এখন নাম্বর । <br />
+        <br />
+        তারপর এখন <br />
+        <br />
+        let newAge = String(age); <br /><br />
+        এর মাধ্যমে এটাকে এখন newAge এর মধ্যে store করলাম . <br />
+        <br />
+        >>> যে টাইপে কনভার্ট করব সে টাইপের প্রথম অক্ষর capital হতে হবে <<<
+      </p>
+    </div>
+
+    <div class="p">
+      <h2>string to Number (conv)</h2>
+      <p>
+        <br />
+        অবশ্যই যে ডাটা টাকে নাম্বারে কনভার্ট করব সেটা String বা অন্য কোন অবস্থায় সেটা সংখ্যা বা number হতে হবে ।
+      </p>
+    </div>
+
+    <div class="p">
+      <h2>null to String (conv)</h2>
+      <p>
+       ex:- js line 15
+      </p>
+      <h2>undefined to String (conv) </h2>
+      <p>
+        ex:- js line 28
+      </p>
+    </div>
+    <h1 class="h1">any type conv to number <span class="span2">^</span> </h1>
+    <img src="any_type_conv_to_number.png" alt="">
+   
+    <div class="p">
+      <h1>any type to boolean conv</h1>
+      <p>যেকোনো ফাঁকা নয় এমন ভ্যালুই হচ্ছে True ।
+        
+      </p>
+    </div>
+    <img src="any_type_to_boolean.png" alt="">
+    <div class="span1">
+      <h1>attention</h1>
+      <span>viwe the js in a code editor</span>
+    </div>
+  </body>
+</html>

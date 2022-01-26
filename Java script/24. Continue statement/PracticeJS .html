@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      .small{
+        text-transform: lowercase;
+      }
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .border{
+        border-top: red 1px solid;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript  <span class="minispan">"Continue Statement"</span></h1>
+
+    <div class="p">
+      <h2>>>> Continue Statement <<<</h2>
+      <p>
+      যেমন যদি আমি চাই যে loop টা 5 পর্যন্ত চলে loop থেকে বের হয়ে চলে আসুক তাহলে সে ক্ষেত্রে ব্যেবহার করা হয় break Statement । <br><br>
+      আর কখনো কখনো একটা loop এর নির্দিষ্ট কোন iteration বাদ দিয়ে loop টাকে complete করতে হয় তখন এই Continue Statement টার ব্যেবহার করতে হয় । <br> <br>
+      ex:-<br>
+      <img src="ifile/continue1.png" alt=""><br>
+      এখানে আমি চাইছি 5 এর iteration টা না হোক আর বাকি সব হোক<br> 
+      তাই এখানে 4 number লাইনে একটা 
+      Continue Statement দেওয়া আছে<br>
+       এবং এটা তার condition অনুযায়ী<br>
+       অর্থাৎ red==5 হয়ে যখন statement টা true হবে 
+       তখনি যেন loop এর এই iteration টা এখানেই শেষ হয়ে পরবর্তী iterationএ চলে যাটা । <br>
+       আর এখানে তাই হবে <br><br>
+
+
+       <img src="ifile/continue1.png" alt=""><br>
+       যেমন প্রথমে loop টা তার মুল condition এ যাবে তারপর red = 1 হবে <br>
+       তাপর red <= 10 এটা check করবে এবং true পেলে সে চলে যাবে loop bodyর ভেতর এবং 4 number লাইনের if এর condition টাকে check করবে যে red == 5 কিনা ।<br> যেহেতু এই মুহূর্তে বা এই iteration এর ক্ষেত্রে red এর মধ্যে 1 store করা আছে সেহেতু loop টা if এর condition থেকে false retrun পাবে এবং <br>
+       তাই loop ,, if এর থেকে  বের হয়ে পরবর্তী অর্থাৎ 6 number লাইনে চলে যাবে এবং function অনুযায়ী log এ তার মধ্যে থাকা ডাটা প্রিন্ট করবে । <br><br>
+       এভাবে 2-3-4 পর্যন্ত iteration চলবে কারন দ্বিতীয় iteration থেকে loop এর মুল condition এ আর variable assignment এর কাজ টা হবে না এটা শুধু প্রথম iteration এর ক্ষেত্রেই হবে । <br> তাই loop সরাসরি 2 <= 10 চেক করবে এবং এভাবে 2-3-4 এর ক্ষেত্রে 4 number লাইনের if টা false হয়ে যাবে । <br>
+        2-3-4 এর ক্ষেত্রে if এর condition ,, false হওয়ায় if এর body run করবে না ।<br>
+        এখন 5 এর ক্ষেত্রে ব্যেপারটা ভিন্ন হবে কারন যথারিতি loop তার মুল condition এ 5 <= 10 চেক করে true পেয়ে  তারপর  চলে যাবে if এর কাছে এবং যেহেতু এই iteration এর ক্ষেত্রে red এর value এখন 5 সেহেতু 5 == 5 . if এর condition ,, true হয়ে যাবে এবং if এর body তে থাকা continue statement  টা run হবে এবার যে মুহূর্তে loop ,, continue statement পেয়ে গেল সে আর current iteration টা আর continue করবে না অর্থাৎ যখন loop ,, continue টা পেল ঐ মুহূর্তে current iteration এর জন্য loop এর নিচে থাকা কোন কিছুকেই run হতে দেবে না তাই 5 এর ক্ষেত্রে যেহেতু console.log ,, function টা execute হলনা সেহেতু console এ এই iteration এর ক্ষেত্রে কিছুই print হবে না । <br>
+        
+        result:-<br>
+        <img src="ifile/continue2.png" alt=""><br>
+        এখানে 5 number ,, iteration টা print হয়নি ।<br><br>
+        
+        একই যদি চাই 5 & 8 এর ক্ষেত্রে iteration না হোক তাহলে তা এভাবে logical operator এর সাহায্যে করতে পার । <br>
+        ex:-<br>
+        <img src="ifile/continue3.png" alt=""><br>
+        result :-<br>
+        <img src="ifile/continue4.png" alt=""><br>
+
+        <p class="p p2"></p><br>
+
+         <span class="number">মোট কথা</span> <br>
+        break statement মানে হল আমি যখন চাইব একটা condition এর উপর ভিত্তি করে loop থেকে বের হয়ে আসতে পারব <br><br> 
+        continue statement মানে হল আমি যখন চাইব একটা condition এর উপর ভিত্তি করে loop এর নিচের যতগুলো section বা statement  আছে সে গুলুকে skip করে পরের iteration এ চলে যেতে পারব । <br> 
+        continue statement মানে loop টা বন্ধ হওয়া নয় , এর মানে হল condition অনুযায়ী loop এর নির্দিষ্ট কোন iteration কে complete না করে পরবর্তী iteration এ চলে যাওয়া । <br>
+
+      </p>
+
+    </div>
+
+    <div class="p">
+      <h2>>>> Continue in <span class="minispan">while loop </span> <<<</h2>
+      <p>
+        while loop এ যখন continue operator ব্যেবহার করবো তখন একটু সতর্কতা অবলম্বন করতে হবে । <br> <br>
+        যেমন while loop এর নিয়ম অনুযায়ী loop এর বাইরেই variable নিয়ে নিতে হবে । <br>
+        যেমন আমরা যদি loop টাকে এভাবে করি <br>
+        <img src="ifile/continue5.png" alt=""><br>
+        তবে এটা একটা infinite loop এ পড়ে যাবে । <br>
+        কারন loop টা প্রথমে condition টা true পাবে তারপর if টা false পাবে<br>
+         (তাই continue statement রান হবে না ।) 
+         তারপর console.log ,, function রান হবে এবং <br>
+         এর পরে 9 number লাইনে stpping এর কাজটা হয়ে যাবে । <br>
+         তারপর আবার loop এর পরবর্তী iteration গুলা চলবে 4 পর্যন্ত তারপর যখন 5 number ,, iteration এ আসবে তখন loop ,, if condition ,, true পাবে এবং continue statement রান করবে ফলে  loop এর current iteration এখানেই শেষ হয়ে যাবে <br>
+         তাই stapping টা আর রান হতে পারবে না । <br>
+         তো এর জন্য আবার blue এর মধ্যে পূর্বের value 5 ই থেকে যাবে এবং তাই আবার if condition ,, true হয়ে আবারও continue statement রান হবে আর এই loop টা এভাবেই চলতে থাকবে এবং এটা একটা infinite loop এ পড়ে যাবে ।  <br><br>
+         
+         তো এই সমস্যার সমাধান করতে হলে এভাবে loop টা বানাতে হবে । <br>
+         <img src="ifile/continue6.png" alt=""><br>
+
+         বাকি সব আগের loop এর মতই শুধু মাত্র এখানে continue statement এর ভেতর continue; এর আগের লাইনে একটা stapping দিয়ে দিলাম ।<br><br>
+
+         এতে করে যখনি if ,, true হয়ে যাবে তখন continue statement এর জন্য iteration টা শেষ হয়ে যাওয়ার আগেই stapping এর কাজ হয়ে যাবে <br> 
+         ফলে যেই iteration এ condition statement রান হবে সে iteration এ'ও stapping এর মাধ্যমে blue এর value  6 হয়ে যাবে ফলে loop টা infinite loop এর মধ্যে না পড়ে সঠিক ভাবেই শেষ হবে । <br> 
+         continue statement এর ক্ষেত্রে for loop ব্যেবহার করাই সুবিধাজনক । 
+      </p>
+
+    </div>
+
+    <div class="span1">
+      <h1>attention</h1>
+      <div class="p">
+        <p>
+          break & continue statement কখনই tarnery operator এর সাহায্যে ব্যেবহার করা যাবে না । <br><br>
+         
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

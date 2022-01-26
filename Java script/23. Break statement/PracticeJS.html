@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .border{
+        border-top: red 1px solid;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript <span class="minispan"> "break statement"</span> </h1>
+    <div class="p">
+      <h2>>>> Break statement <<<</h2>
+      <p>
+        কোন একটা loop থেকে নির্দিষ্ট একটা condition আসার পরে সে loop থেকে বের হয়ে আসার কাজই করা হয় এই break statement এর  
+        সাহায্যে । <br><br>
+
+        যেমনঃ-<br>
+        <img src="ifile/break1.png" alt=""><br>
+        এখানে condition অনুযায়ী loop টা ততক্ষন চলার কথা যতক্ষণ পর্যন্ত
+        <span class="number">red</span> এর মান  <span class="number">10</span> এর বেশি হয় ।<br> <br>
+        কিন্তু এখানে যেহেতু if এর সাহায্যে <br>
+         break ,, statement টা দেওয়া হয়েছে <br>
+         সেহেতু এখানে if এর condition টা true হলেই if তার body রান করে দিবে , <br>
+         এবং loop টা এখানেই break হয়ে যাবে । <br>
+          ফলে js loop টা থেকে বের হয়ে যাবে  । 
+
+      </p> 
+    </div>
+
+
+      <div class="p">
+        <h2>>>> another use of break <<<</h2>
+        <img class="p p2" src="ifile/break3.0.1.png" alt="">
+       <p>
+        break ,, statement টা 2 ভাবে ব্যেবহার করা যায় । <br>
+        যেমন মনে করি loop ,, body তে এই 3 টা আলাদা আলাদা কাজের 3 টা statement আছে ।  <br><br>
+
+        <img src="ifile/break3.png" alt=""> 1<br><br>
+        <img src="ifile/break3.1.png" alt=""> 2<br><br>
+        <img src="ifile/break3.2.png" alt=""> 3<br><br>
+
+        এখানে <br>
+        1 নাম্বার লাইনটার কাজ হচ্ছে console এ কিছু print করা । <br><br>
+
+        2 নাম্বার লাইনটার কাজ হচ্ছে তার condition অনুযায়ী তার body তে থাকা statement গুলুকে run করা । <br><br>
+
+        আর <br>3  নাম্বার লাইনটার কাজ হচ্ছে কোন variable এর সাথে loop এর iteration প্রতি 1 করে যোগ করা । <br><br>
+
+        js যেহেতু উপর থেকে line by line নিচের দিকে পড়তে পড়তে আসে সেহেতু loop তার body তে যে statement টা আগে ব্যেবহার করা হবে সেটা আগে execute হয়ে সে কাজ টা আগে হবে । <br><br>
+
+        তো এখন মুল কথা হচ্ছে <br>
+        যদি আমরা break statement টা console এর উপরে ব্যেবহার করি তবে তবে console টা 9 বার run হবে না কারন এক্ষেত্রে js ,, loop ,, body তে আগে break এর statement টা দেখতে পাবে এবং variable টা increment হতে হতে যখন তার মধ্যে 9 store হবে তখন break এর if ,, statement টা true হয়ে যাবে এবং js ,, loop টা থেকে বের হয়ে যাবে । <br>
+        যেহেতু break এর জন্য js তখনি loop থেকে বের হয়ে যায় তাই ঐ break ,, statement এর পরে loop body তে যা বাকি থকবে সেগুলু আর কিছুই run হবে না । <br><br>
+        আর যদি break ,, statement টা console এর পরে ব্যেবহার করা হয় তবে আগে console run হবে তারপর js , break ,, statement টা execute করবে ।  <br>
+
+      </p>
+      
+
+      </div>
+     
+
+
+
+      <div class="p">
+        <h2>>>> infinite to finite conv <<<</h2>
+      <p>
+        কোন কোন loop এমন থাকে যে তা শুরু হয় <br> infinite ,, loop হিসেবে  <br>( কারন সে loop টার condition হিসেবে থাকে শুধু true ) <br>কিন্তু সে loop টা যেন একটা পর্যায় গিয়ে থেমে যায় সে ব্যেবস্থা করতে পারি । <br>
+        তখন break ,, statement টা loop ,, body র ভেতরে দিতে পারি । <br><br>
+        ex:-<br>
+        <img src="ifile/break2.png" alt=""><br>
+        এখানে console.log টা মাত্র 9 বার'ই রান হবে <br>
+        কারন এটা একটা infinite ,, loop হিসেবে নিজের কাজ শুরু করলেও js যখন loop টার 6 নাম্বার লাইনের increment ,, statement টা execute করবে তখন সে প্রতি iteration এ red এর সাথে 1 করে যোগ করতে থাকবে ।<br> এভাবে 1 করে যোগ করতে করতে এক পর্যায় গিয়ে red এর মধ্যে যখন 9 store হয়ে যাবে 
+        তখন js ,, loop টা থেকে বের হয়ে যাবে । 
+
+      </p>
+    </div>
+    
+
+    <div class="p">
+
+      <h2> >>> exemple <<< </h2>
+      <p>
+      কখনো কখনো এমন করতে হয় যে ইউজার কোন prompt এ input নিবো । <br>
+      তারপর সে যতবার যা ডাটা দিবে তা ঐ আগের valueর সাথে যুক্ত করতে হবে ।<br><br>
+      আর যদি কোন value না দিয়ে ইউজার prompt টা escape করে যায় তখনি prompt টা শেষ করতে হবে । <br>তখন<br><br>
+ 
+      ex:-<br>
+      <img class="p p2" src="ifile/break4.png" alt=""><br>
+      এই কাজ করতে হল ঃ-<br>
+      ১.<br>
+      প্রথমে যেকোনো একটা empty string ,, variable নিতে হবে । <br><br>
+      
+      ২.<br>
+      তারপর যেহেতু  এখানে ইউজার যতবার ডাটা দিতে থাকবে ততবার prompt টা ততবারই শো করবে এবং একটা variable এ ডাটা বার বার store করতে থাকবে সেহেতু এখানে একই কাজ বার বার করা হয়েছে তাই এখানে একটা loop নিতে হবে । <br><br>
+
+      ৩.<br>
+      ইউজার থেকে ডাটা নেয়ার জন্য একটা prompt নিলাম । <br><br>
+      
+      ৪.<br>
+        প্রয়োজন অনুযায়ী সঠিক অবস্থানে break statement নিলাম । <br>
+        যার কাজ হচ্ছে ইউজার যদি value নামের prompt টায় কোন value না দিয়ে ok করে বা cancel করে দেয় তবে if statement এর condition  অনুযায়ী js ,, loop থেকে বের হয়ে যাবে । <br><br>
+
+         {(!value)= not value} <br>
+         অর্থাৎ value তে কোন data আসলে সেটা true আর true ,, not operator এর সাথে execute হয়ে false হয়ে যাবে তাই যতক্ষণ ইউজার prompt এ ডাটা দিবে ততক্ষণ if break statement টা false হবে । 
+        <br><br>
+        
+      ৫.<br>
+      এখানে 10 নাম্বার লাইনে <br>
+      একটা += (plus equal) statement নিলাম ।<br><br>
+      এটার কাজ হচ্ছে (+ addition) এর জন্য,<br>
+       value নামের prompt এর মধ্যে store হওয়া ডাটা red নামের variable এর সাথে যোগ হয়ে (= assignment ) এর জন্য red নামের variable এ store হয়ে থাকবে । <br><br>
+
+       ৬.<br>
+       এখানে 11 নাম্বার লাইনে <br>
+      alert এর সাহায্যে prompt থেকে এক বা একাদিক বার  ডাটা নিয়ে সেটা একটা variable এ store করা হয়েছে কিনা সেটা পরিক্ষা করে দেখার কাজ করা হয়েছে । 
+ 
+      </p>
+
+      <div class="span1">
+      <h1>attention</h1>
+     <div class="p p2">
+       <p>
+         এখানে প্রথমে 1 নাম্বার লাইনে যে variable নেয়া হয়েছে সেটা অবশ্যই loop এর বাইরে declare এবং empty string এর সাথে assignment করে নিতে হবে । <br>
+         কারন যদি loop এর ভেতরে variable টা নি তবে loop এর প্রতিটা iteration এ variable টা reset হয়ে যাবে কারন এখানে যেহেতু <img src="ifile/break4.1.png" alt=""> variable এর মধ্যে empty string ,, assignment করা হয়েছে । <br>
+         তাই js ,, loop এর মধ্যে এটাকে execute করা মানে এটার মধ্যে পুনরায় empty string ,, store করা ।  
+       </p>
+     </div>
+    </div>
+
+    </div>
+
+
+    <div class="span1">
+      <h1>df</h1>
+      <span></span>
+    </div>
+  </body>
+</html>

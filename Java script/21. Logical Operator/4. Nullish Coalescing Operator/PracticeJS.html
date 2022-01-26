@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+        line-height: 1.5;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1> <span class="minispan">hello javascript</span> " <span class="minispan">Logical nullish operator (??) </span> " </h1>
+
+
+    <div class="p">
+
+      <h2>>>> <span class="minispan">Logical nullish operator (??) </span> <<<</h2>
+
+      <p>
+        যখন কোন ভেরিএবল বা statement _ undefine বা null অবস্থায় আছে কিনা সেটা চেক করার দরকার হয় ,<br> তখন সেটা অতি সহজে ও সর্টে যাচাই করার কাজটা করা হয় nullish operator এর সাহায্যে । 
+      </p>
+
+      <p>
+        যেমন ternary operator if _ else এর একটা short form ছিল । <br> ঠিক তেমনি শুধু মাত্র এই nullish operator টা এই ক্ষেত্রে trenary operator ব্যেবহার করতে গেলে সেটাকে আরও short করে লিখার সুবিধা দেয় । <br><br>
+
+
+        যেমনঃ-<br>
+        ex:-If _ else রুপ <br>
+        <img class="p p2" src="../ifile/nullish1.png" alt=""><br><br> 
+        ex:-2 ,, ex:-1 এর ternary রুপ <br>
+        <img class="p p2" src="../ifile/nullish2.png" alt=""> 
+        pure ternary
+        <img class="p p2" src="../ifile/nullish2.1.png" alt="">
+        <br><br>
+
+
+
+        এইযে উপরের জিনিস গুল এত বড় করে লিখা হয়েছে সেগুলোকে আর ছোট করে লিখার কাজটাই করা হিয়  এই nullish operator দিয়ে ।<br><br>
+        ex:-3 ,,, ex:-2 এর ternary operator এর nullish রুপ । <br>
+        <img src="../ifile/nullish3.png" alt="">
+
+      </p>
+
+    </div>
+  
+    <div class="p">
+      <H2>>>> Working prosess <<<</H2>
+      <p>
+        এই operator এর মুল কাজ হল , <br>
+        কোন ভেরিএবল বা statement ___ undefine বা  null অবস্থায় আছে কিনা । <br><br>
+        যেমনঃ-<br>
+        <img src="../ifile/nullish4.png" alt="">
+        <img src="../ifile/nullish4.1.png" alt=""><br><br>
+        result = raj <br>
+
+       যেহেতু এই ভেরিএবল টা undefine বা  null  নয় সেহেতু nullish operator এই ভ্যেরিএবলে যে ডাটা স্টোর আছে সে সেটা print করছে । <br>
+
+       অর্থাৎ যদি সে ভেরিএবল টাকে false পায় তবে সে nullish statement এর ভ্যেলুটা স্টোর করে । <br>
+       
+       আন্যথায় যদি ভ্যেরিএবিল টা  true হয়ে যায় তবে সে ভ্যেরিএবলে যে ডাটা স্টোর আছে সেটা nullish retrun করে । <br><br>
+
+
+       মোট কথা :- <br>
+       এখানে  প্রথমে myName ভ্যেরিএবল কে চেক করে দেখা হয়েছে যে এটা null বা undefine কিনা । তারপর যখন nullish বা null Coalescing oprator ,, retrun পেল যে true তখন সে myName এ store থাকা ভ্যেলু test এ store করেছে ।  <br><br> 
+
+       মোট কথা 2 :- <br>
+       কোন ভ্যেরিএবল set বা define করা আছে কিনা সেটা চেক করা হয় এই nullish বা null Coalecing operator এর সাহায্যে ,<br>
+       আর যদি operator দেখে যে ভ্যেরিএভল টা null বা undefine অবস্থায় নেই তখনই সেই ভ্যেরিএবল টাকে সেট বোঝায় , <br> set বা define থাকলে ভ্যেরিএবিলের ডাটা স্টোর হবে । <br>
+       আর সেট না থাকলে nullish operator এর ডাটা স্টোর হবে । <br>
+      </p>
+    </div>
+
+    <div class="p">
+      <h2>>>> exemples  <<<</h2> 
+      <p> 
+        ex:-1 <br>
+        <img src="../ifile/nullish5.png" alt=""><br>
+        এখানে myname টা define করা নেই তাই এখানে test এ স্টোর হবে undefine আর তাই alert হবে byy । <br> 
+        result = byy <br><br>
+
+        ex:-2<br>
+
+        <img src="../ifile/nullish6.png" alt=""><br>
+        এখানে myname empty string দ্বারা define করা আছে ।<br> তাই এখানে test এ স্টোর হবে ' ' আর তাই alert হবে (empty) <br><br>
+
+        ex:-3 <br>
+        <img src="../ifile/nullish7.png" alt=""><br>
+        এখানে operator myname এ undefine পেয়ে YourName এ যাবে তারপর সে yourName এর ভ্যেলুটা test এ স্টোর করবে । <br>
+        এবং তারপর test alert করবে anything .<br><br>
+
+        ex:-4<br>
+        <img src="../ifile/nullish8.png" alt=""><br>
+        যেহেতু nullish operator টা খুব সাম্প্রতিক তৈরি হয়েছে তাই আগে developer রা OR operator ব্যেবহার করত ।<br>
+        এখানেও একই কাজ হবে আর আমরা জানি oR operator সব সময় true কে খুঁজে তাই সে  myname এর মধ্যে undefine ,, means ,, falseপাওয়ার পর সে yourName কে পড়ে দেখবে , এবং এটা true হওয়ায় সে এর ভ্যালু  anything , retrun করে দিবে ।  <br><br><br>
+
+      <img src="../ifile/nullish11.png" alt=""><br>
+
+      এখানে alert হবে 200 <br>
+      কারন এখনে যেহেতু first backet ব্যেবহার কর হয়েছে সেহেতু আগে left first bracket এর condition টা execute হবে <br>
+      
+      তারপর right first bracket এর condition টা execute হবে তারপর  multiplication হবে এবং multiplication এর retrun করা ভ্যালু a এর মধ্যে স্টোর হবে । <br>
+      এবং এটাই alert হবে । <br><br>
+
+      <img src="../ifile/nullish12.png" alt=""><br>
+
+      এখানে alert হবে 10 । <br>
+      কারন , যদিও এখানে multiplication এর কজটা আগে হবে কিন্তু যেহেতু js ,, left side থেকে পড়ে পড়ে আসবে সে myName এর মধ্যে 10 পেয়ে যাবে এবং  nullish operator সেটা স্টোর করে দিবে আর পরবর্তী অর্থাৎ ডান দিকের ভ্যালু গুলুকে execute এবং store করবে না । 
+
+
+      </p>
+    </div>
+    <div class="span1">
+      <h1>attention</h1>
+      <div class="p">
+        <p>
+          এখন । <br>
+          or আর null Coalescing operator এর মধ্যে অনেক বড় একটা পার্থক্য আছে । <br>
+          সেটা হল । <br>
+          <img src="../ifile/nullish9.png" alt=""><br>
+          এখানে or operator ,, myname এর মধ্যে <br>দেখতে পাবে 0 আর or এর কাছে 0 মানে false তাই সে yourname এর ভ্যেলুকে test এ স্টোর করবে । <br><br>
+
+          <img src="../ifile/nullish10.png" alt=""><br>
+
+          কিন্তু এখানে null coalecing operator দেখবে যে কোন একটা ভ্যেরিএবল set আছে কিনা সেটা । <br>
+          আর এখনে যেহেতু myname ০ এর দ্বারা হলেও define করা আছে তাই null coalecing operator ,, myname কে true ধরে নিবে । <br> এটাকে যদি or operator এর সাহায্যে করতাম তাহলে আমার লজিক আমার মত করে কাজ করত না । 
+        </p>
+      </div>
+    </div>
+   
+  </body>
+</html>
+<br><br> <br> 

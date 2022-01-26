@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .i{
+        width:470px;
+      }
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript</h1>
+    <div class="p">
+      <h1>Primitives Data Type</h1>
+      <p>
+        Primitives Data Type হল যে সকল ডাটা টাইপের মধ্যে at a time শুধু মাত্র একটা টাইপের dataই রাখা যায় ।  <br /><br />
+        Primitive data type সাধারনত ৬ প্রকার <br /><br />
+
+        1. Boolean <br />
+        2. Number <br />
+        3. String<br />
+        4. Null<br />
+        5.Undefined<br />
+        6. Symbol<br />
+      </p>
+    </div>
+    <div class="p">
+      <p>
+        1. Boolean <br />
+        Boolean সত্য এবং মিথ্যা represent করে ।<br />>>>>>> {Output (true,false) } <br /><br />
+      </p>
+    </div>
+    <div class="p">
+      <p>
+        2. Number <br />
+        javascript এ যখন শুধুমাত্র কোন number কে represent করতে হয় তখন number data type ব্যবহার করা হয় । নাম্বার কে
+        Decimal(দশমিক) সহ ব্যবহার করা যায় ।<br />
+        >>>>>>>>{Output (20 , 5.7)} <br />
+        <br /><br />
+        Number এর ২ টা ভ্যালু আছে । {Infinity , NaN} কোন Number কে 0 দিয়ে ভাগ করলে >>>>Infinity<<< দেখাবে । <br />
+        কোন "String" কে কোন Number দিয়ে ভাগ করলে >>>>NaN<<<< দেখাবে ।
+      </p>
+    </div>
+    <div class="p">
+      <p>
+        3. String <br />
+        Double Quote বা single Quote এর মধ্যে যা থাকে তাই String সেটা Number বা text যেকোন কিছু হতে পারে । <br />
+        >>>>>>>>{Output (Hello , Nishad , 20 , 5.7)} <br /><br />
+        <br />
+
+        সতর্কতা ঃ- " " এর মধ্যে থাকা কোন লেখার মাঝে যদি আবার কোন Double Quote আসে তখন সেই Double Quote ডান পাশে back
+        slash (\) দিতে হবে <br /><br />
+        Single Quote এর খেত্রেও বেপারটা একই । <br />
+
+        >>>Ex:- <br />
+        [let name = "red , it's the mame \" of a color"; <br /><br />
+
+        console.log(name); <br /><br />
+        {Output >>>> (red , it's the mame " of a color)} ]
+
+        <br />
+        <br />
+        এর বাইরেও backtick ব্যাবহার করা যায় Qoute এর পরিবর্তে (``) <br />
+        backtick এর ভেতরে ভেরিএবল এবং String একই সাথে রাখা যায় । এখেত্রে ভেরিএবল কে
+         String এর ভেতর <br>
+         <img class="i" src="ifile/data1.png" alt=""><br>
+         result:-<br>
+         <img src="ifile/data2.png" alt=""><br>
+        এভাবে লিখতে হবে ।<br /><br>
+        এখানে js $ Symbol টাকে দেখা মাত্রই বুজবে যে এর পাশের second bracket এ কিছু আছে যা আমাকে execute করতে হবে । <br> 
+        <br />
+      </p>
+    </div>
+
+    <div class="p">
+      <p>
+        4. Null <br />
+        <img src="ifile/data3.png" alt=""><br>
+        যেমন যে ভ্যালুটা আমি জানি না কি হবে তখন সে ক্ষেত্রে সে ভেরিএবল এর ভ্যালু (Null) দিব , যাতে করে পরবর্তীতে সেটাকে এসাইন করা যায় । <br />
+        <br />
+        আবার ,, <br />
+        Null মানে হল Nothing অর্থাৎ কিছুইনা । Null data কে একটা
+        object হিসেবেও বিবেচনা করা হয় , কারন javascript এ Null কে object হিসেবে ধরা হয় ।  <br /><br />
+		Error:-<br />
+		javascript এর কোন error যদি Null হয় তবে বুজতে হবে যে ঐ ভেরিএবলে কোন ভ্যালু প্রবেশ করেনি । 
+      </p>
+    </div>
+
+    <div class="p">
+      <p>
+        5. Undefined <br />
+        javascript এ Undefined ও null এর মতই । এটার দ্বারা কন variable এ কিছু বিদ্যমান নেই বু্ঝায় ।  পার্থক্য হল javascript এ Null কে
+        একটা object এবং Undefined কে একটা Data type হিসেবে ধরা হয় । <br /> <img src="ifile/data4.png" alt=""> <br>
+		অর্থাৎ কোন ভেরিএবল ডিক্লের করার পর যদি সেটা কোন প্রকার ভ্যালু দিয়ে এসাইন না করা হয় তবে সেটা বাই ডিফল্ট Undefined টাইপের হয় ।
+        >>>>>>>>{Output (Undefined)}
+		<br /><br />
+		Error:-<br />
+		javascript এর কোন error যদি Undefined হয় তবে বুজতে হবে ঐ ভেরিএবলে কোন ভ্যালু এসাইন করা হয়নি । 
+      </p>
+    </div>
+    <div class="p">
+      <p></p>
+    </div>
+  </body>
+</html>

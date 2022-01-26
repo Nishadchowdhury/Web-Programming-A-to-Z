@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript</h1>
+    <div class="p">
+      <h2>>>> strict <span class="minispan">exect</span> equal ( === ) <<<</h2>
+      <p>
+        ex:- <br>
+        <img src="i file/1.png" alt=""><br>
+        এখানে result false হওয়ার কারন হল । strict equal এক সাথে দুইটা কাজ করে । 
+        সে প্রথমে তার উভয় operand একই data type এর কিনা , আর ২য় এদের valu একই কিনা । উপরেরে
+        উদাহরনের valu একই হলেও তাদের type টা একই না । তাই সে false retrun করবে ।<br><br>
+
+    আর যদি এখানে double equal ব্যাবহার করা হতো তাহলে সে শুধু উভয় দিকের operand এর valu একই কিনা সেটা চেক করে দেখতো । <br> যেমন <img src="i file/2.png" alt=""><br><br>
+
+      </p>
+      <p>
+      strict equal কখনো তার operand কে convert করে না । <br><br>
+        কিন্তু double convert করে <br>
+
+      </p>
+    </div>
+
+    <div class="p">
+      <h2>>>> strict <span class="minispan">exect</span> not equal ( !== ) <<<</h2>
+      <p>
+        ex:-<br>
+        এটা অনেক অংশে strict <span class="Sminispan">exect</span> equal এর মতই কাজ করে থাকে ।
+        <br><br>
+
+        strict not equal প্রথমে চেক করে দুইটা operand এর type আলাদা কিনা <br>
+        এবং তারপর চেক দুইটা operand এর valu আলাদা কিনা । 
+      </p>
+
+    </div>
+
+    <div class="span1">
+      <h1></h1>
+      <span></span>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>

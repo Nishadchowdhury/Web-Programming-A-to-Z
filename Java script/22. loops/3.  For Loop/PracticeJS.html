@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .border{
+        border-top: red 1px solid;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript "for loop" </h1>
+    <div class="p">
+      <h2>>>> for loop <<<</h2>
+      <p>
+        while loop ,, do while loop & for loop <br>
+        এই টা loop  এর মধ্যে কাজের ক্ষেত্রে  সব থেকে বেশি ব্যেবহার হয় for loop । 
+        
+        <h2>>>> Structure <<<</h2>
+        <p>
+          <img src="../ifile/for1.png" alt=""><br>
+          for loop এর বিশেষত্ব হল loop এর শুরুতেই <br> 
+          ভেরিএবল , condition , stepping এর কাজ এক সাথে এক first bracket এর মধ্যে হয়ে যায় । <br><br> 
+
+          এখানে <br><br>
+          begin = variable declare <br>
+          condition = শর্ত <br>
+          stepping = increment or decrement expression <br>
+          <br>
+          সব কিছু বসিয়ে পুরনাঙ্গ for loop । <br>
+          <img src="../ifile/for2.png" alt="">
+
+          <h2>>>> working process <<<</h2>
+
+          js যখন দেখে for তখনি js বুজতে পারে এটা for loop <br>
+          তারপর js প্রথমে first bracket এর মধ্যে থাকা variable কে execute করে এই variable execute টা অন্য সব loop এর মত এখানেও একবারই হয়ে থাকে । <br> 
+
+          তারপর js চলে যায় condition এর কাছে এটা চেক করতে যে condition ,, true না flase <br>
+
+          তারপর js যদি condition ,, true পায় js সরাসরি loop body ,, run করে দেয় । <br><br>
+
+          এবং loop body , run করে তারপর চলে যায় আবার উপরেরে first bracket এ । এবং সেখানে গিয়ে সে stepping কে execute করে । <br> <br>
+          stepping এ increment থাকলে  1 করে বারে decrement থাকলে 1 করে কমে । <br>
+          এভাবে js যতবার condition ,, true পাবে তত বারই iteration চলতে থাকবে । <br>
+          এক্ষেত্রে প্রতিটা iteration এ কিন্তু variable টা execute হবে না ,<br> variable ,, execute শুধু মাত্র 1 বারই হবে ।<br> আর পরবর্তী iteration এর সময় আগে condition তারপর true পেলে body রান করেই <br>stepping ,, expression টা execute করবে তারপর আবার condition ,, execute ।
+        </p> 
+        <p>
+          এখানে চাইলে অন্য loop গুলর মত <br>
+          stepping এর ক্ষেত্রে<br>
+           increment (++) এবং decrement (--) জেটা প্রয়োজন সেটা ব্যেবহার করা যাবে । <br><br>
+           আর condition এর ক্ষেত্রে <= বা >= , < , > etc যেটা ইচ্ছা প্রয়োজনে ব্যেবহার করা যাবে । 
+        </p>
+      </p>
+    </div>
+    <div class="p">
+    কখনো কখনো দেখা যায় যে<br> for loop এর condition এর মধ্যে<br> variable নেই এবং stepping expression  নেই<br>
+     তখন সেটা যেভাবে কাজ করে । <br><br>
+     ex:-<br>
+    <img src="../ifile/for3.png" alt=""><br>
+
+    এখানে বাইরে declare করে রাখা variable ব্যাবহার করা হয়েছে ।<br>
+     তো js যেভাবে বুজবে কোন variable টা এখানে ব্যেবহার করা হয়েছে সেটা হল<br>
+      js যখন for loop এর condition টা পড়বে তখন সে begin এর জায়গায় কিছু পাবেনা শুধু একটা _ ; _ ছাড়া ।<br>
+       এবং js তখন condition টা চেক করবে , <br>
+     condition এর variable টা যেহেতু আগে থেকেই declare করে আছে সেহেতু সে variable টার value র সাথে execute করে তারপর ture পেলে loop body রান করবে । <br>
+     তারপর loop body তে inline ,, stepping ব্যাবহার করা হয়েছে সেটাকে execute করে variable এর সাথে 1 যোগ করে , আবার condition টাকে execute করবে এভাবে iteration চলবে যতবার condition টা true হয় । <br><br>
+
+<div class="p p2">
+  <p>
+
+     তবে এক্ষেত্রে অবশ্যই <br>condition এর আগে একটা _ ; _ দিতে হবে । <br>
+
+     কারন এতে করে js বুজবে যে এখানে যে variable টা থাকার কথা সেটা এই loop এর বাইরে declare করা আছে । 
+
+  </p>
+</div>
+
+    </div>
+
+
+
+
+
+       <div class="span1">
+         <h1>attention</h1>
+      <div class="p">
+        for loop এর ভেতরে থাকা variable কে বলা হয় inline variable কারন এই loop এর বাইরে এই variable এর কোন অস্তিত্ত নেই । <br>
+        এই ভেরিএবল কে loop এর বাইরে ব্যেবহার করতে চাইলে variable টাকে loop এর বাইরে একবার declare করতে হবে । 
+      </div>
+       </div>
+     </body>
+</html>

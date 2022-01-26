@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+      .red img{
+        width: 450px;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+        
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .lstdv{
+        width: 350px;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript 'Comma operator' </h1>
+    <div class="p">
+      <h2>>>> comma operator <<<</h2>
+      <p>
+        comma operator , অনেক গুলু expression এক সাথে comma operator এর মাধ্যমে ব্যেবহার করা যায় । <br> <br> 
+        ex:-<br> 
+        <img src="i file/1.png" alt=""><br> <br> 
+
+        এখানে দুইটা expression আছে , <br> comma operator তার সাথে থাকা সব সকল expression কে কার্যকর বা ক্যেলকুলেট করবে , কিন্তু retrun করবে সবার শেষের expression টাকে ।<br><br>
+        
+        এখানে যেহেতু comma এর থেকে addition এর precedence বেশি সেহেতু <br>
+        আগে <span class="number">5 + 2 = 7</span> and <span class="number">7 + 2 = 9</span> এর কাজ হবে । <br><br>  অর্থাৎ num ভেরিএভল টার ভেতর <span class="number">7 + 2 = 9 </span>
+        দেখতে পাবেন ।
+        <br><br>
+        
+        comma operator ব্যেবহার করলে অবশ্যই expression দ্বয় একটা ( first bracket ) এর মধ্যে রাখতে হবে । 
+      </p>
+    </div>
+
+    <div class="span1">
+      <h1>attention</h1>
+      <div class="red">
+        <img src="i file/2.png" alt=""><br><br>
+        <div class="p">
+          <p>
+          এখানে num ভেরিএভল টাতে স্টোর হবে 6 ।<br><br>
+          প্রথমে amount এর মধ্যে 1 স্টোর হবে <br>
+          তারপর amount2 এর মধ্যে 5 স্টোর হবে <br><br>
+          তারপর comma operator অনুযায়ী সর্ব শেষের expression<br> amount + amount2 = 6 স্টোর হবে num এর মধ্যে ।<br><br>
+
+        </p> 
+        </div>
+        
+      </div>
+    </div>
+
+    <br><br><br><br><br>
+  </body>
+</html>

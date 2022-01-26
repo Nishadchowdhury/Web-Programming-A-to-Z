@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+        line-height: 1.5;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript "<span class="minispan">Logical ( && And ) operator  </span> " </h1>
+
+    <div class="p">
+      <h2>>>> ( && And ) operator <<<</h2>
+      <p>
+        যখন কোন কাজ করার জন্য ২ এর মধ্যে ২ খানা শর্তই পুরন করতে হয় তখন ( && ) And operator ব্যেবহার করা হয় । <br>
+        যেমন কোন dynamic website এ প্রবেশ করতে গেলে lig in করতে হয় আর login করার জন্য দরকার username এবং password উভয়কেই একদম সঠিক , এদের মধ্যের যেকোনো একটা ভুল বা false হলে  কিন্তু ঐ profile এ access দেওয়া হবে না । <br><br>
+
+        অর্থাৎ এই operator এর উভয় operand ই true হতে হবে তাহলেই আর তাহলেই operator retrun করবে true  । <br><br>
+        
+        
+        operand1 operand2 এর মধ্যে 2টাই true হলে <br>
+        retrun = true ।  
+
+      </p>
+    </div>
+    <div class="p">
+      <h2>>>>And && operator work <<<</h2>
+      <p>
+        And operator প্রথমে operand গুলুকে boolean এ কনভার্ট করে । <br>
+        and operator সাধারণত if else condition এ ব্যেবহার করা হয় ।  <br><br>
+        মাঝে মাঝে  <span class="number">rang</span> নিয়ে কাজ করার দরকার পরে । <br><br>
+
+        যেমন যদি ভ্যালুটা 50 থেকে 80 এর মধ্যে হয় তাহলে (Under Hundeard)-এটা দেখাও । <br><br>
+
+
+        বা যদি ভ্যালুটা 500 থেকে 800 এর মধ্যে হয় তাহলে (under 1k)-এটা দেখাও ।<br><br>  
+        তখন এই <span class="number">rang</span> related কাজ গুল করার জন্য && and operator ব্যেবহার করতে হবে ।<br>
+
+        Ex:- Js line 14 <br>
+        <img src="../ifile/and2.png" alt="">
+      </p>
+      
+      <h2>>>> data store <<<</h2>
+      and operator সবসময় false এর খোঁজ করে । <br>
+      যেমনঃ-<br>
+      <img src="../ifile/and1.png" alt=""><br>
+      এখানে retrun = 0 <br><br>
+      operand গুলু যদি boolean না হয় && operator সেটাকে boolean এ কনভার্ট করে । <br>
+      তারপরঃ-<br> সে false কে খুঁজতে থাকে । এবং যখন false পায় সে আর ডান অর্থাৎ সামনের দিকে না গিয়ে false এর value retrun করে দেয় । <br>
+      
+    </div>
+
+    <div class="p">
+      <h2>>>> (&& AND)_( || oR)  <<<</h2>
+      <h2>Use together</h2>
+      ex:-<br>
+      <img src="../ifile/and3.png" alt=""><br>
+      এখানে যদি <br> 
+      val1 && val3 || val2 এর কাজ আগে করে retrun valueর সাথে
+       && val4 এর কাজ হোক <br>
+       তাহলে এই তিনটা কে আলাদা করে একটা first bracket এর মধ্যে রেখে দিতে হবে । <br>
+       ex:- <br>
+       <img src="../ifile/and4.png" alt=""><br><br>
+
+       এবার যদি চাই যে এই তিনটার মধ্যে উল্লেখিত OR operator এর কাজ আগে হোক তবে OR operator এর exprission কে আলাদা আর একটা first bracket এর মধ্যে রাখতে হবে । <br>
+       ex:-<br>
+       <img src="../ifile/and5.png" alt="">
+       
+
+    </div> 
+
+  
+    <div class="span1">
+      <h1></h1>
+      <span></span>
+    </div>
+   
+  </body>
+</html>
+<br><br> <br> 

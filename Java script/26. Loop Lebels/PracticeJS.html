@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .border{
+        border-top: red 1px solid;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript "Loop Lebels" </h1>
+    <div class="p">
+      <h2>>>> use of Loop Lebels <<<</h2>
+      <p>logical and operator (&&) এর সাহায্যে তৈরি করা condition দ্বারা কোন break statement ,, inner loop এ দিয়ে সেই break statement মাধ্যমে inner loop  থেকে বের হয়ে আশা যায় কিন্তু inner loop এ থাকা  break statement দ্বারা একই সাথে inner এবং outer loop থেকে বের হয়ে আশা জায়না । <br>
+      ex 1:-<br>
+      <img src="ifile/Lebels1.png" alt=""><br>
+      result 1:-<br>
+      <img src="ifile/Lebels2.png" alt=""><br>
+      প্রথমে outer loop থেকে outer 1 ,, print করবে । <br>
+      তারপর inner loop থেকে -----nested 1 , 2 , 3 print করবে । <br>
+      তারপর ex 1 এর inner loop এ থাকা break statement এর প্রভাবে inner loop complete হয়ে তারপর আবার outer loop এর দ্বিতীয় iteration শুরু হবে  । 
+      <br>
+      এবং break statement টা যেহেতু logical and operator ব্যেবহার করে করা হয়েছে সেহেতু logical and operator এর উভয় operandই true হতে হবে । <br> 
+      আর এখানে outer loop এর দ্বিতীয় iteration এ inner loop এর দ্বিতীয় itaration এ and operator এর উভয় operandই true হয়ে যায় । nested loop এর এই iteration টা এখনেই শেষ হয়ে যায় <br>
+      যেমনঃ-<br> result1:- এ outer loop এর দ্বিতীয় iteration থেকে print হয়েছে = outer2 তারপর inner loop এর ৩ এর পরিবর্তে  ২ iteration ,, complate হয় । 3 numner ,, iteration complete হয়না break এর কারনে । এখানে inner এর সাথে outer loop টাও শেষ হয়ে যায়নি । <br><br><br>
+
+
+      <span class="number">loop Lebel </span> ব্যেবহার করা হয় যেন inner এর একটা break দ্বারা inner এবং outer উভয় loop থেকেই বের হয়ে আশা যায় । <br>
+
+      <br> </p> </div>
+
+      <div class="p">
+        <h2>
+           <span class="minispan">>>> working process Loop Lebel <<<</span></h2>
+        <p>
+         inner loop এবং perent loop  নিয়ে কাজ করার সময়<br>
+          কখনো কখনো inner loop এ break এর condition true হলে একসাথে inner , outer উভয় loop থেকে বের হয়ে আসার কাজ করতে হলে loop Lebel ব্যেবহার করা হয় । <br> <br>
+          
+          loop Lebel মুলত html এর class এর মত । <br>
+          যেমন কোন div এর class name কে টার্গেট করে css দ্বারা style দেয়া যায় ।<br>
+          ঠিক একই ভাবে js কোন loop এর class দেয়াকেই বলে Lebel ।<br>
+          ex:- 2<br>
+          <img class="i" src="ifile/Lebels3.png" alt=""><br>
+          loop এর Lebel দিতে হয় loof এর আগে দিতে হয় <br>
+          অর্থাৎ কোন loop তৈরি করার আগে সে loop এর Lebel দিতে হয় <br>
+          Lebel দিয়ে loop শুরু করার আগে একটা কলন চিহ্ন দিতে হয় । Lebel এবং loop এর মাঝে একটা colon sing ( : ) দিতে হয় <br><br>
+          <p class="number">
+            Lebel : while (condition){<br>
+            loop body<br>
+          }<br></p><br>
+          
+          এখানে ex 2:- তে  2 number লাইনে for loop  শুরু করার আগেই তার Lebel declere করা হয়েছে । <br>
+          এটাই সঠিক নিয়ম তারপর 8 number লাইনে inner for loop এর break statement এর মধ্যে break এর সাথে একটা space ( ) দিয়ে লিখা হয়েছ । <br><br>
+          এতে করে আমি বলে দিলাম যে যখনি এই break statement টা run হবে তখন এই loop এর সাথে যে loop টার Lebel এখানে উল্লেখ করা হয়েছে তাকেও break করে দাও । <br> এখানে মুলত একটা loop এর break এর পাশাপাশি অন্য একটা loop কেও break করা হয়েছে । <br> <br>
+
+          এটার result = <br>
+          <img src="ifile/Lebels4.png" alt=""><br>
+          এখানে outer loop এর দ্বিতীয় iteration যখন inner loop এর দ্বিতীয় iteration এর পরের iteration এ loop break করল break এর সাথে outer loop এর Lebel টা দেয়ার কারনে । <br>
+           inner এর পাশাপাশি outer loop টাও break হয়ে গেল । <br>
+           এটাই Lebel এর কাজ ।<br>
+        </p>
+      </div>
+      <div class="p">
+        <h2><span class="minispan">>>> Use Continue with Lebels <<<</span>  </h2>
+        <p>
+          loop lebel কে যেমন করে break এর সাথে ব্যাবহার করাযায় ঠিক একই ভাবে continue এর সাথেও ব্যাবহার করাযায় । <br>
+          ex:- 3 / js line- 8  <br> 
+          <img src="ifile/Lebels7.png" alt=""><br>
+          এখানে continue টা inner loop টাকে শেষ করবে যখনি তার statement টা true হবে । <br><br>
+         তার পাশাপাশি যেহেতু এখানে lebel আছে সেহেতু এখানে মোট কাজ হবে<br>
+         inner loop এর current iteration টা skip কর আর যে loop এ continue দেয়া হয়েছে সে loop এর বাকি সব iteration শেষ হলে ,<br> যে loop টার নাম বা lebel এখানে দেয়া আছে সে loop টারও current iteration টা শেষ করে পরবর্তী iteration এ চলে যাওয়া । <br> 
+
+
+        </p>
+      </div>
+
+
+    <div class="span1">
+      <h1>attention</h1>
+      <div class="p">
+        <p>
+          যখন Lebel ব্যাবহার করবো সেটা যেখানে ইচ্ছা ব্যেবহার করা জায়না । <br>  Lebel শুধু মাত্র loop শুরু হওয়ার আগেই লিখতে হয় ।  <br><br><br>
+
+          break statement কখনই  যেকোন জায়গায় ব্যেবহার করা যায়না , এটা শুধু মাত্র কোননা কোন block এর মধ্যে ব্যেবহার করতে হবে । অর্থাৎ if statement বা loop body র ভেতরে ব্যাবহার করতে হবে ।  <br> <br>
+          যেমনঃ-<br>
+          <img src="ifile/Lebels5.png" alt=""><br> 
+          এভাবে ব্যাবহার করা জায়না 
+          <img src="ifile/Lebels6.png" alt=""><br>
+          এভাবে ব্যাবহার করতে হয় । 
+
+
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

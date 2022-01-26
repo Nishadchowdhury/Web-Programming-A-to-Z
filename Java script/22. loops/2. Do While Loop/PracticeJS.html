@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .border{
+        border-top: red 1px solid;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript "Do while loop" </h1>
+
+    <div class="p">
+      <h2>>>> do while loop <<<</h2>
+
+      <p>
+        while loop  এ যেরকম আগে condition টা run হত , এবং condition  টা  true হলে তবেই loop body ,, run করত কিন্তু <br> কিন্তু do while loop এর ক্ষেত্রে আগে loop body টা run হয় এবং তার পর do while loop এর condition টা check হয় এবং while loop এর condition টা true হলে তবে আবার loop ta iteration হয় । <br><br>
+
+        <h2> <sapn class="minispan">>>> structure of ,, do while loop <<<</sapn></h2> 
+        <img src="../ifile/do while1.png" alt=""><br><br>
+
+        <h2>>>> working process <<<</h2>
+        <p>
+         সবার প্রথমে js , do  দেখা মাত্রই সে loop body কে রান করে দেয় তারপর সে body , run করার পর চলে যায় ।
+         while loop এর কাছে এবং iteration বা looping  চলতে থাকে যতক্ষণ না  while এর condition false হয়ে ।<br><br>
+         
+         <span class="number">Do while loop </span> হল এক মাত্র loop যে কিনা শুধু মাত্র প্রথম বার loop এর condition চেক না করেই js কে তার body , run করার অনুমুতি দেয় ।  
+         <br>
+          <br>
+          do loop এর 
+          যখন while এর condition টা false হয়ে যাবে তখনি js ,, loop টা থেকে বের হয়ে যাবে । <br><br>
+          যখন কোন কারনে আমি চাইব যে loop এর body টা একবার অনতত run হোক তারপরে loop টা condition এর উপর নির্ভর করুক , তখন এই do while loop টার বব্যেবহার করতে হয় । 
+
+        </p>
+
+        <p>
+          <img src="../ifile/do while2.png" alt=""><br>
+          এখানে একটা do while loop নিলাম যেটা বর্তমানে একটা infinite ,, loop এ আছে কারন । <br>
+
+          এখানে js ,, do এর body রান করার পর সে do while loop এরে while  অংশে চলে যাবে কোন condition থাকলে সেটা check করার জন্য । <br><br>
+
+          এই সম্পূর্ণ loop structure এ এমন কোন  exprassion নেই যেটা while এর condition কে modify বা পরিবর্তন করবে । <br>
+          যেহেতু do while loop এর while অংশের condition এর কোন পরিবর্তন হবে না সেহেতু এটা একটা infinite loop হিসেবে কাজ করবে । <br><br>
+
+          তো এটাকে infinite loop থেকে নির্দিষ্ট loop এ কনভার্ট করতে হলে একটা stepping exprassion যোগ করতে হবে  , যেহেতু এখানের ভেরিএবলে store আছে 1 তাই এটাকে ++ increment operator এর সাহায্যে প্রতি iteration এ 1 করে বারানোর কাজ করতে হবে ।<br> যদি এখানে আগে থেকেই ভেরিএবলে 1 দেওয়া আছে সেহেতু 1 কে আর decrement না করাই ভাল । 
+          <br><br><br><br>
+          
+
+          <img src="../ifile/do while3.png" alt=""><br>
+          এখানে যেহেতু do while loop এর body তে ভেরিএবল টাকে modify করে রেখেছি stepping exprassion এর সাহায্যে সেহেতু প্রতবার loop টা iteration বা ঘুরার পর 1 করে ভেরিএবলে যোগ হতে থাকবে । <br>
+          এবং একটা পর্যায় গিয়ে ভেরিএবল red এর মধ্যে 6 স্টোর হবে <br>
+          এখন যেহেতু 6 <= 5 = false । <br>সেহেতু js ,, do while loop টা থেকে বের হয়ে যাবে । 
+        </p><br>
+        <p>
+          <h2> while loop এবং do while loop এর মধ্যে পার্থক্য ।  </h2>
+          
+          <br><br>
+           <span class="number">while loop</span> এ আগে condition চেক হয় তারপর true হলে loop body রান করে  false হলে করে না ।<br><br>
+           <span class="number">do while loop</span> এ condition চেক করা ছারাই একবার loop body রান করে । এবং দ্বিতীয় বার থেকে condition ,, true হলেই body রান করে অন্যথায় js loop থেকে বের হয়ে যায় ।  <br>
+
+ 
+
+        </p>
+        
+      </p>
+    </div>
+
+
+
+    <div class="span1">
+      <h1>attention</h1>
+      <div class="p">
+        <p>
+          যেকোনো loop এর condition কে এমন ভাবে লিখতে হবে জাতে করে loop টা infinite loop এর মধ্যে পড়ে না যায় । 
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+        line-height: 1.5;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript " <span class="minispan">Logical ( || OR operator )</span> " </h1>
+  
+  <section class="or_operator" >
+
+    <div class="p">
+       <h2>>>> || OR operator <<<</h2>
+       যেমন কোন ফোনের লক খোলার জন্য সাধারনত fingerprint ব্যেবহার করা হয় । <br>
+       
+       কিন্তু যদি কোন কারনের fingerprint টা কাজ না করে তখন সে ফোনের লক খোলার জন্য ব্যেবহারকারি pin বা password ব্যাবহার করেতে পারবে । <br>আর এর altenative একটা উপায় রাখার কাজটাই করা হয় OR operator এর সাহায্যে । if এর condition এর মদ্যেও এই একই কারনে or operator ব্যেবহার করা হয় ।   <br><br>
+
+       <h2>>>> Data store <<<</h2>
+
+       or operator সবসময় true এর খোঁজ করে । <br>
+       যেমনঃ-<br>
+       <img src="../ifile/5.png" alt=""> <br>
+       retrun = 20 <br>
+
+      operand গুলু যদি boolean না হয় || operator সেটাকে boolean এ কনভার্ট করে । <br>
+      তারপরঃ-<br>
+      সে true কে খুঁজতে থাকে । এবং যখন true পায় সে আর ডান অর্থাৎ সামনের দিকে না গিয়ে true এর value retrun করে দেয় । 
+
+
+
+      <h2>attention</h2>
+      or operator শুধু তখনি দেয়া হয় যখন কোন শর্ত অথবা বা থাকে শুধু মাত্র তখনি এই or operator ব্যেবহার করে হয় ।<br>  <br> যেমন ইউজার এর দেওয়া নির্দিষ্ট আকাধিক ডাটা যদি নিতে হয় তবে if এর একাধিক condition দেয়ার ক্ষেত্রে এই or operator ব্যেবহার করা হয় ।<br> <br><br>
+
+       এই or operator <br> if condition এ ব্যেবহার করার নিয়ম ঃ-<br> <img src="../ifile/2.png" alt=""><br>
+       তির চিহ্ন দিয়ে মার্ক করা হয়েছে 6 নাম্বার লাইনে ।<br><br><br>
+
+
+       অন্যান্য operator গুলার মত or operator ও তার operand  কে boolean কনভার্ট করে । <br><br> 
+
+       or operator তার condition operator দের থেকে যেকোনো একটাকে true পেলেই সেই (or operator ) true retrun করে  ।<br>
+        OR operator এর প্রত্যেকটা operand কে first bracket এর মধ্যে রাখতে হয় , এটা আন্তর্জাতিক standard । <br><br>
+      
+       javascript বাম পাশ থেকে code evaluate করে এবং <br> ( || OR ) সবসময় true কে খুঁজে ।<br><br>
+
+       যেমন 6 নাম্বার লাইনে javascript প্রথমে বাম পাশের exprission কে evaluate করবে যদি বাম পাশের  এ true পেয়ে যায় তবে সে আর ডান পাশে যাবে না true এর জন্য ।<br> সে কোড run করে দিবে ।   <br><br>
+
+       operand1 operand2 এর মধ্যে যেকোনো একটা true হলে <br>
+       retrun = true । 
+ 
+    </div>
+
+
+  <div class="p">
+    <h2>>> || OR use in Variable <<<</h2>
+    ex:-<br>
+
+    <img src="../ifile/3.png" alt=""><br>
+    result:-<br>
+    <img src="../ifile/4.png" alt="">
+     result =5<br><br>
+
+    এখানে প্রথমে or operator 0 কে boolean এ কনভার্ট করবে 
+    এবং false পাবে ।<br>
+    তারপর true এর আশায় সে 5 কে boolean এ কনভার্ট করবে । এবং সে true পাবে । তাই পরবর্তী operand 2 কে নিয়ে আর কাজ করবে না সে 5 retrun করে দিবে । 
+
+  </div>
+  </section>
+  
+    <div class="span1">
+      <h1></h1>
+      <span></span>
+    </div>
+   
+  </body>
+</html>
+<br><br> <br> 

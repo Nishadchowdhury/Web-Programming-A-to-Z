@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .border{
+        border-top: red 3px solid;
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+      .imgw{
+        width: 470px;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript " <span class="minispan">Ternary/Question mark</span> "</h1>
+
+    <div class="p">
+      <h2>>>> Ternary operator ( ? ) <<< <br> <span class="minispan">Question mark operator</span>  ( ? ) </h2>
+    
+      এই questionmark operator কে ternary operator বলার কারন হল । <br><br>
+
+      যেমন 1 টা operand নিয়ে কাজ করলে unary<br>
+      2 টা operand নিয়ে কাজ করলে binery<br>
+      ঠিক তেমনি  3 টা operand নিয়ে কাজ করলে Ternary বলে । <br><br>
+
+      questionmark 3 টা operand নিয়ে কাজ করে তাই একে বলে tarnery operator । 
+    </div>
+
+    <div class="p">
+      <h2>>>> working progress <<<</h2>
+      <p>
+       
+        <h2 class="border" ></h2>
+       ternary operator মুলত  if _ Else এর কাজ অনেক শর্টকাটে করে । <br><br>
+
+      structure of Ternary Operator:-
+        <img src="ifile/1.png" alt=""> <br><br>
+        এখানে structure এর <br>
+        
+        expression এর জায়গায় if এর condition অর্থাৎ যেটা check করতে চাইছি সেটা দিতে হবে । <br><br>
+        আর value1 এর জায়গায় দিতে হয় if এর মেইন বা প্রথম result টা । <br>
+        আর value2 তে দিতে হয় else বা দ্বিতীয় result টা । 
+
+
+ 
+
+
+        <br><br><br>
+        জেমনঃ- 
+        এটা একটা if _ else statemant<br>
+        <img class="imgw" src="ifile/2.png" alt=""><br>
+        এটা if _ else statemant কে ternary এর নিয়মে লিখা রুপ । <br>
+        <img class="imgw" src="ifile/3.png" alt=""><br><br>
+        ternary operator এর presidance সব থেকে কম তাই 
+        ternary operator এ প্রথমে first braket এ থাকা condition টার কাজ হবে আর condition এর ভেতরে যেহেতু এখন comparison operator আছে সেটার কাজ সবার আগে হবে এবং এখানে check হবে যে condition টা true কিনা । এবং এই ternary operator এখানে true বা false পাবে ।<br>
+         তারপর <br>
+        true পেলে value1 retrun করবে । <br>
+       আর false পেলে value2 retrun করবে । এবং প্রয়োজনে ternary operator এর retrun করা value টা কোন ভারিএবলে store করতে পারব এবং ইত্যাদি । value এর মধ্যে চাইলেই (string,number,variable,true_false & etc ) . <br><br>
+
+       ternary operator এর if _ else এর সাথে চাইলে <br> else _ if ও ব্যেবহার করতে পারি <br>
+       জেমনঃ- <br>
+       <img src="ifile/5.png" alt=""><br>
+       কিন্তু এমনটা করা ঠিক না , else এর মধ্যে যদি else if condition অ্যাড করার দরকার পরে তবে ternary এর পরিবর্তে ef _ else ব্যেবহার করাই ভাল । 
+       তবে এটার একটা উদাহরন <span class="number">js line:-3 </span> দেওয়া আছে । 
+        
+
+      
+      </p>
+    </div>
+
+    <div class="span1">
+      <h1>attention</h1>
+      <div class="p">
+        <p>
+          ternary operator এর ভেতর alert operand হিসেবে ব্যেবহার করা উচিত না । <br>
+          <img src="ifile/6.png" alt=""><br>
+          কারন এতে করে ternary operator retrun করবে (null , undefiend)<br>
+
+          <br><br>
+          সবথেকে ভাল উপায় হল এটার  retrun value কে কোন ভ্যেরিএভলে store করা বা সরাসরি alert করা । 
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

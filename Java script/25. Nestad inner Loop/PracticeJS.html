@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      .border{
+        border-top: red 1px solid;
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+      .minispan{
+        font-size: 17px;
+      }
+      .Sminispan{
+        font-size: 12px;
+        color: red;
+      }
+      .i{
+        width: 470px;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript <span class="minispan"> "Nested , in , inner loop"</span></h1>
+
+    <div class="p">
+      <h2>>>> Nested loop <<<</h2>
+      <p>
+      আমরা জানি যখন একই কাজ বার বার করার দরকার হয় তখন loop এর সাহায্যে তা করতে হয় । <br><br>
+      আর যখন একটা loop এর ভেতর আর কার অনেকবার করতে হয় তখনি এই Nested loop এর ব্যেবহার করতে হয় । <br>
+      জেমনঃ-<br>
+      
+     <div class="list">
+      <ol>
+        <li>List 1
+          <ul>
+            <li>User 1</li>
+            <li>User 2</li>
+          </ul>
+        </li>
+        
+        <li>List 2<ul>
+            <li>User 1 
+              <ul>
+                <li>child</li>
+                <li>child</li>
+              </ul>
+            </li>
+            <li>User 2</li>
+          </ul>
+        </li>
+        <li>List 3<ul>
+            <li>User 1<ul>
+                <li>child</li>
+                <li>child</li>
+              </ul>
+            </li></li>
+            <li>User 2</li>
+          </ul>
+        </li>
+      </ol> </div> 
+
+      এখানে list তৈরির কাজ করা হয়েছে normal ,, loop দ্বারা আর list গুলার মধ্যে যে __ user 1 __ user 2 <br> list গুলো আছে সে গুলো করার ক্ষেত্রে ব্যেবহার হয় nested loop <br>
+      আবার যদি দরকার হয় যে inner loop গুলার মধ্যেও আরো loop দিতে হবে তখন inner loop এর ভেতর আর inner loop দিতে হবে । <br>
+       যেমন এখানে 2. List এর ভেতর inner loop দ্বারা তৈরি user 1 এর ভেতর যে 2 টা child নামের list আছে এই list গুলু inner loop এর ভেতর আবার inner loop দিয়ে তৈরি করা <br>(অর্থাৎ Nested loop এর ভেতর Nested loop ) । <br>
+
+      </p>
+    </div>
+
+
+  <div class="p">
+    <h2>>>> working process <<<</h2>
+    <p>
+      nested loop যেকোনো loop এর সাহায্যে করা যায় । <br>
+      <img class="i" src="ifile/nested1.png" alt=""> <br><br>
+      এখানে 2 number লাইনের loop টা একটা সাধারণ loop এর নিয়মেই iteration শুরু করবে ।  <br>
+     প্রথমে 2 number লাইনের for loop  initialistion এর কাজ করবে । <br> 
+     তারপর true পেয়ে console.log রান করবে ।<br>
+     তারপর 4 number লাইনের <br>
+     nested , in , inner loop হিসেবে থাকা for loop রান হবে । <br>
+     তারপর nested loop প্রথমে userNested এর মধ্যে 1 store করবে । <br> তারপর condition থেকে true পাবে তারপর <br>
+     5 number লাইনের console.log রান করবে । <br>
+     তারপর inner loop এর stepping এর কাজ হবে তারপর  inner loop er এর দ্বিতীয় iteration শুরু হবে এবং যেহেতু userNested = 2 তাই  condition true পেয়ে আবার 5 number লাইনের console.log  রান হবে ।<br> এখানে condition যেহেতু userNested <= 3 সেহেতু তৃতীয় loop টাও complete হবে । <br>
+       তারপর 4 number ,, iteration এর<br>
+     ক্ষেত্রে condition ,, false হওয়াতে inner loop থেকে js বের হয়ে যাবে তারপর 2 number লাইনের console.log রান হবে<br>
+      এবং outer loop এর দ্বিতীয় iteration এর কাজ শুরু হয়ে যাবে । <br>
+      এ ক্ষেত্রেও outer loop ,, condition true পাবে এবং console.log রান করবে এবং এবারো inner loop টা আগের মতই কাজ করবে ।
+      <br>
+      এভবে nested loop টা ততক্ষণ রান হবে যতক্ষণ outer loop এর condition true হয়ে iteration চলতে থাকবে । <br><br>
+
+      result:-<br>
+         <img src="ifile/nested2.png" alt=""><br>
+         এখানে ক্রমিক নং দ্বারা চিহ্নিত করে দেওয়া হয়েছে প্রথম 2 টা iteration এর ক্ষেত্রে কোন output এর পর কোন output আসবে । <br>  
+
+
+
+ 
+
+      </p>
+    </div>
+
+
+    <div class="span1">
+      <h1></h1>
+      <span></span>
+    </div>
+  </body>
+</html>

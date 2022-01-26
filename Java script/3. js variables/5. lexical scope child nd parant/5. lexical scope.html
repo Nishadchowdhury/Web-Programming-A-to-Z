@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="5. lexical scope.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+      }
+      .span1 { margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript (Js lexical scope)</h1>
+    <p class="p">
+      lexical scope <br /><br />
+      এটিতে একটি প্যারেন্ট এবং এক বা একাদিক child function থাকতে পারে ।<br /><br />
+      সাধারনত কোন লোকাল টার্গেটেড ভ্যালু কে গ্লোবালি এসাইন করা জায়না । <br />কিন্তু lexical scope এর ক্ষেত্রে
+      প্যারেন্টের ভেরিএবেল child function গুলি ইউজ করতে পারবে । <br /><br />এবং প্যারেন্টের ভেরিএবেল গুলির ভ্যালু
+      প্যারেন্টের child function এ আপডেট বা রিএসাইন করা যাবে ।
+    </p>
+
+    <div class="span1">
+      <h1>ATTENTION</h1>
+      <span>viwe the js is a code editor</span>
+    </div>
+  </body>
+</html>

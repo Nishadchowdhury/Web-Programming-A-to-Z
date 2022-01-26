@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      body{
+        text-transform: capitalize;
+      }
+
+      /* attention Div's css */
+      h2 {
+        text-align: center;
+        color: red;
+      }h3 {
+        text-align: center;
+        color: red;
+      }h4 {
+        text-align: center;
+        color: red;
+      }
+      .span1 {
+        margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .number{
+        color: red;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: large;
+        background: rgb(190, 184, 197);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .p2{
+        padding: 0;
+        margin: 0;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <h1>hello javascript</h1>
+    <div class="p">
+      <h2>>>> comparison operator <<<</h2>
+      <p>
+        দুইটা value এর মধ্যে তুলনা করার ক্ষেত্রে comparison operator ব্যাবহার করা হয় । <br>
+        অন্যভাবে বলাযায় value এবং variable এর মধ্যে তুলনা করতে ও সম্পর্ক নির্ণয়ের ক্ষেত্রে ব্যেবহার করা যায় । <br>
+        comparison operator মুলত conditional statement গুলুতে বিভিন্ন value এর মধ্যে তুলনা করতে এবং ফলাফলের উপর ভিত্তি করে সিদ্দান্ত নিতে সাহায্য করে । <br> 
+
+        <br><br>
+        comparison operator ছয় প্রকার ।<br> 
+        1. greater than ( > ) <br>
+        2. less than ( < ) <br>
+        3. greater than or equal ( >= ) <br>
+        4. less thanor equal ( <= ) <br>
+        5. equal equal ( == ) <br>
+        6. not equal ( != ) <br>
+
+      </p>
+    </div>
+
+    <div class="p">
+      <h2>>>> greater than ( > ) <<<</h2>
+      <p>
+        greater than একটা ভ্যালু আর একটা ভ্যালুর থেকে বড় কিনা সেটা চেক করে ।
+      </p>
+      ex:- <br>
+      <img src="i file/1.png" alt=""><br>
+      result = true <br>
+      <br>
+      if , 2 greater tahn 1 = true <br>
+      or , 1 greater than 2 = false<br>
+    </div>
+
+
+
+    <div class="p">
+      <h2>>>> less than ( < ) <<<</h2>
+      <p>
+         less than একটা ভ্যালু আর একটা ভ্যালুর থেকে ছোটো কিনা সেটা চেক করে ।
+      </p>
+      ex:-<br>
+      <img src="i file/2.png" alt=""><br>
+      result = true <br><br>
+
+      if , 2 greater than 5 = false<br>
+      if , 2 less than 5 = true<br>
+    </div>
+
+
+    <div class="p">
+      <h2> <h4> >>> greater than or equal( >= ) <<<</h4> </h2>
+
+      এটা মুলত বা পাশের value এর তুলনায় ডান পাশের value ছোট কিংবা সমান কিনা সেটা চেক করার কাজে ব্যাবহার করা হয় । <br><br>
+
+      
+      এখানে দুটা প্রশ্ন করা হয় ।<br>
+      1. greater than <br>
+      2. or equal <br>
+      এখানের যেকোনো একটা প্রশ্নের উত্তর যদি true আসে তবে মুল result আসবে true । 
+      <p>
+       <div class="p p2"> ex:-<br>
+        <img src="i file/3.png" alt=""><br>
+        এটা বোঝায় যে 8 কি 2 এর থেকে ছোটো বা সমান । <br><br></div>
+        <div class="p p2">
+        ex2:-<br>
+        <img src="i file/4.png" alt=""><br>
+        result = true<br><br>
+        if , 8 greater than or equal 8 = true <br>
+      cz equal = true</div>
+        
+        <div class="p p2">
+          ex3:- <br>
+          <img src="i file/5.png" alt=""><br>
+          result = false <br><br>
+
+          if , 8 greater than or equal 9 = false <br><br>
+
+          cz greater than = false<br>
+          &  equal = false 
+        
+       </div></p> </div>
+
+
+     <div class="p">
+       <h3>>>> less than or equal ( <= ) <<<</h3>
+       <p>
+        এটা মুলত বা পাশের value এর তুলনায় ডান পাশের value বড় কিংবা সমান কিনা সেটা চেক করার কাজে ব্যাবহার করা হয় । <br>
+        <br>
+      এখানে দুটা প্রশ্ন করা হয় । <br>
+      1. less Than<br>
+      2. Or Equal<br>
+      এখানের যেকোনো একটা প্রশ্নের উত্তর যদি True আসে তবে  মুল Result আসবে True ।
+     </p>
+     <p>
+       ex:-<br>
+       <img src="i file/6.png" alt=""><br>
+       result = true<br><br>
+       পুরো কাজের পদ্ধতি greater than এর মত কিন্তু বিপরিত ।<br> </p>  </div>
+
+       <div class="p">
+       <h2>>>> double equal ( == ) <<<</h2>
+       <p>
+       double equal দ্বারা উভয় পাশের operator সমান বা একই কিনা সেটা যাচাই করা হয় । <br><br>
+
+       ex:-<br>
+       <img src="i file/7.png" alt=""><br>
+       result = true <br><br>
+
+       if , 5 = 5 so result = true <br>
+
+       if , 5 = 4 or something eals so result = false .<br><br> 
+
+       ex2:-<br>
+         <img src="i file/8.png" alt=""><br>
+         result = false 
+
+       </p>  </div>
+
+       <div class="p">
+         <h2>not equal ( != )</h2>
+         <p>
+           এখানে বলা হয় যে expression এর উভয় পাশের ভ্যালু সমান নয় । <br>
+
+
+           যে <img src="i file/11.png" alt=""> এখানে 8 , 8 এর সমান তাই <br> result = false <br>
+           cz এখানে 8 , 8 এর সমান ।
+         </p> 
+         <p>
+         not equal দ্বারা একটা expression এর উভয় পাশের ভ্যালু একই কিনা তা জানা যায় । <br><br>
+         ex:-<br>
+         <img src="i file/12.png" alt=""><br>
+         result = true <br>
+         cz এখানে 4 , 8 এর সমান নয় , যা ( != ) not equal । 
+
+         </p>
+       </div>
+
+
+
+    <div class="span1">
+      <h1>attention</h1>
+      <img src="i file/13.png" alt="">
+      <span>all comparison operator তার string type oprand কে নাম্বার এ কনভার্ট করে এবং তারপর সে তার কাজ করে । </span>
+    </div>
+  </body>
+</html>
+
+<br><br><br><br><br<br><br><br><br><br><br><br><br>
