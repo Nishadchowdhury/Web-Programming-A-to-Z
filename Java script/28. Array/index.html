@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <h2>Array</h2> <br>
+        <p> Array হল এক প্রকারা ভেরিএবল , <br>
+        কোন একটা ভেরিএবলের মধ্যে একাধিক ডাটা রাখলে সেটাকে Array বলে । </p>
+        <p> একটা Array এর ডাটা third braket [ ] এর মধ্যে থাকে । </p>
+        <div class="img"><img src="./imgs/Array 1.png" alt=""></div>
+        <br> <hr> <br>
+
+        <p>কোনো Array এর মধ্যে থাকা উপাদান সংখ্যা জানতে <span><img src="./imgs/Array Legnth.png" alt=""></span> এই exprassion ব্যেবহার করতে হবে । </p> 
+        <div class="img"><img src="./imgs/Array Legnth 1.png" alt=""></div> 
+        <br> <hr> <br>
+
+
+<!-- -------------------------array index started  -->
+
+
+        <h1 class="red">Array Index</h1>
+
+        <p>প্রতিটা বইতে যেমন index বা সূচি-পত্র থাকে । একই ভাবে Array এর ক্ষেত্রেও সূচি-পত্র আছে । <br> </P>
+            <p>Array তার Elements বা উপাদান গুলাকে পজিসনিং করে নিচের নিয়মে ,<br>
+                অর্থাৎ 0 হতে শুরু করে  ।</p>
+           <div class="img"><img src="./imgs/Array index.png" alt=""></div> 
+           <hr>
+       <P> যেমন একটা বই এর সূচি-পত্র এর সাহায্যে বইটির কোন অংশে কি আছে সেটা সেটা জানা ও খুঁজে নেয়া যায় <br> একই ভাবে Array এর মধ্যে থাকা Element গুলার যেকোনো রকম access নিতে হয় Array এর index এর সাহায্যে । 
+        
+        </p>
+      
+
+        <p>
+            কোন Array Element এর অবস্থান জানতে হলে <br><br> <img src="./imgs/Array index 2.png" alt=""><br>
+            এখানে 'gaan' Element এর অবস্থান 3 দেখানোর কারন হোল Array তার Element গুলাকে count করে 0 হতে । 
+            সে হিসাবে 'gaan' এর অবস্থান 3 ।
+            
+        </p>
+        <hr>
+        <p>
+        কোন Array Element এর অবস্থান চেক কারার সময় যদি তার অবস্থান -1 অর্থাৎ Negative value মানে 0 এর কম , তাহলে বুজতে হবে যে অই Array এর মধ্যে Element টার কোন অবস্থান নেই । <br>
+        যেমন । <br>
+        <div class="div700"> <img width="70%" src="./imgs/Array index 3.png" alt=""> <img width="50%" src="./imgs/Array index 3.5.png" alt=""></div>
+        </p>
+        <hr>    
+
+        <p>কোন Array's Element এর index এর সাহায্যে সেই Element কে change ও করা যায় । 
+        <img src="./imgs/Array Value Change.png" alt="">    
+        </p>
+        <hr>
+        
+        <p>
+            কোন Array এর কোনো নির্দিষ্ট Element কে কোন আলাদা ভারিএবলের ভেতর রাখতে হলে । <br>
+             একটা আলাদা ভারিএবল নিতে হবে তারপর সেটার মধ্যে , ভ্যেলু এর জায়গায় -- যেই Array এর থেকে কোন Element নেওয়া হবে তার name দিতে হবে <br> এবং পাশে third braket এর মধ্যে index অনুযায়ী কত নাম্বার Element রাখব সেটার নাম্বার লিখতে হবে ।<br> <br>
+            <img src="./imgs/Array Value assing in other vari.png" alt="">
+        </p>
+
+<!-- -------------------Array index end  -->
+
+        <!-- ---------------pop push started -->
+        <h1 class="red">pop push </h1>
+        <p>Array একটা Collection , যার মধ্যে থাকে অনেক গুলা Element <br>
+        Array এর Collection গুলার এর মধ্যে কোন Element কে নতুন করে যোগ করাকে বলে push <br> বের করা বা বাদ দেয়া কে বলে pop ।
+
+        </p>
+        
+        <h1 class="blue">push</h1>
+        <p>
+           
+            push করতে হলে array এর নাম লিখতে হবে , <br> তারপর .push() দিতে হবে  __ name.push(anything) __ <br>
+            এবং এই first braket এর মধ্যে নতুন করে যে টাইপের data দিতে চাই সেটা দিতে হবে । <br>
+            এবং এই Element টা সবার শেষে গিয়ে add হবে । <br>
+            <img src="./imgs/push.png" alt="">
+
+            .push এর সাহায্যে কোন Element যোগ করলে সেটা সব Element এর শেষে যোগ হয় । <br>
+            তো শুরুতে যোগ করতে হলে .push এর যায়গায় .unshift ব্যেবহার করতে হবে । <br>
+            <img src="./imgs/add first unshift.png" alt="">
+
+            
+        </p>
+        <h1 class="blue">pop</h1>
+        <p>
+        pop করতে হলে array এর নাম লিখতে হবে , <br> তারপর .pop() দিতে হবে  __ name.pop() __ <br>
+        এবং এই first braket এর মধ্যে কোন data দিতে হবে না । <br>
+        এবং ঐ array এর শেষ Element টাকে বের করে দিবে । <br> <br>
+        <img src="./imgs/pop.png" alt=""> <br>
+
+
+        .pop এর সাহায্যে কোন Element বের করলে সব Element এর শেষে Element বের হয় । <br>
+        তো শুরুর element বের করতে হলে .pop এর যায়গায় .shift ব্যেবহার করতে হবে । 
+        <img src="./imgs/remove first shift.png" alt="">
+        <br> <br>
+        <p>pop এর সাহায্যে যে Element টাকে বের করা হয়েছে সেটাকে চাহিলে আবার অন্য একটা ভেরিএবলের মধ্যে জমা করা যায় । 
+            <br> <br>
+            <img src="./imgs/pop 2.png" alt="">
+        </p>
+        </p>
+
+        <!-- ----------pop push end  -->
+</body>
+</html>
