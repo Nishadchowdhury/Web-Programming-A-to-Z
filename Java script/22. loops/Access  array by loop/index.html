@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acces array by a loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1></h1>
+
+        <p>একটা Array এর মধ্যে থাকা Element গুলাকে acces নিয়ে কোন লুফে ব্যেবহার করতে হলে , <br>
+        প্রথমে একটা variable নিতে হবে । <br>
+        কোন Array এর Element নিয়ে সেটা কোন loop এর ব্যেবহার করার ক্ষেত্রে সাধারনত for loop ব্যেবহার করা হয় । <br>
+        তাই এখানেও for loop ই ব্যেবহার করছি ।
+        
+    </p>
+    <h1 class="blue">acces start</h1>
+    <p>প্রথমে একটা array নিতে হবে <br> <br> 
+    <img src="./ifile/1st.png" alt=""> <br> <br>
+    
+    <br> এখানে <span class="tl">i</span> variable টার সাহায্যে array এর Element সংখ্যার অনুযায়ী প্রাথমিক ভাবে একটা condition নিয়েছি <br>
+     যা একদম সঠিক নিয়ম না । কারন এটা ততক্ষণ কাজ করবে যতক্ষণ পর্যন্ত এই array এর element সংখ্যা 7 থাকবে , <br>
+    
+    কিন্তু পরবর্তীতে যদি এই array এর মধ্যের কোন Element কে বাদ দেয়া হয় বা অ্যাড করা হয় তখন সমস্যা হবে । <br> <br><img src="./ifile/take a for loop.png" alt=""> <br><br> তাই condition টা হওয়া উচিৎ i < variable.length । <br><br>
+    <img src="./ifile/take a for loop3.png"  alt="">  </p><br><hr><br>
+
+    
+    <h1 class="red">main part</h1> <br>
+    <p>
+        
+    <img src="./ifile/take a for loop2.png" alt=""> <br>  
+    এখানে element নামের variable এর মধ্যে ranna array এর element index number [4] ,, store করাতে output এ <span class="text-low">rosun</span> ,, element টা condition অনুযায়ী 7 বার print হয়েছে ।  
+    <br><br>
+    
+    <img src="./ifile/take a for loop4.png" alt=""> <br><br>
+    এবার loop এর ভেতরের <span class="text-low">element</span> নামের variable এর মধ্যে <span class="text-low"> ranna[i] </span>
+    <br> ভ্যেলুটা store করাতে Loop iteration এর সময় <span class="tl">i</span> এর মান হিসাবে যে সংখ্যা থাকে সেই ranna array এর index অনুযায়ী সেই element টা print হয় । <br> অর্থাৎ Loop iteration এর সময় loop এর condition এ থাকা variable এর মধ্যে যদি 3 store হয় তবে output এ array index অনুযায়ী 3 নাম্বার element টা print হবে ।
+    <br><br>
+    </p>
+
+</body>
+</html>
