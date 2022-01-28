@@ -1,3 +1,6 @@
-var nishad = new Date();
+// var nishad = new Date();
 
-console.log(nishad.toFixed);
+// console.log(nishad);
+
+var kolaPrice = 5;
+var bunPrice = 10;
