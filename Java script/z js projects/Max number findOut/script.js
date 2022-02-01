@@ -29,3 +29,6 @@ function findLargest(my,mi){
 
 let result = findLargest(200,400);
 console.log(result);
+
+
+console.log( Math.floor( 13.67) );

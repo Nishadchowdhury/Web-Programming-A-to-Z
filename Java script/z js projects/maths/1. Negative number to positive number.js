@@ -2,4 +2,6 @@
 
 let num = -10;
 let converted = Math.abs(num);
-console.log(converted); 
+console.log( converted); 
+
+var a=2; var b=3; if(a<b){console.log('Hello');}
