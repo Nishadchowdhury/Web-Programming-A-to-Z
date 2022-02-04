@@ -1,3 +1,4 @@
+// video --> 22-2
 // কোন array এর থেকে duplicate element কে বের করে দেওয়া দেখানো হল ।
 // function removeDuplicate(names){
 //   let unique = [];
@@ -39,7 +40,6 @@ function removeDuplicate(names){
   }
   return unique;
 }
-
 
 const names = [ 'abul', 'nanul', 'babul', 'sabil', 'ebul', 'kabul', 'babul', 'ebul', 'nanul' ];
 

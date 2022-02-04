@@ -9,5 +9,34 @@ const phones =[
 
 let cheapest = phones[0];
 for(const phone of phones){
-    console.log(phone);
+    // conpare price only 
+   if(phone.price < cheapest.price){
+       cheapest = phone;
+   }
 }
+
+// an other way 
+let phones = [
+    {name:"Nokia pathorPhone",price:3},
+    {name:"mi mix",price:20},
+    {name:"Samsung note 20",price:35},
+    {name:"iphone 13 pro max",price:5},
+    {name:"vivo n17",price:9},
+]
+// find the lowest price
+function leastPrice(inputX){
+   let firstPrice = inputX[0];
+
+   for(let i = 0; i < inputX.length; i++){
+       let thisIslowestPrice = inputX[i]
+       if(firstPrice.price > thisIslowestPrice.price ){
+        firstPrice = inputX[i].price;
+    }else{
+           firstPrice = inputX[0].price;
+       }
+   }
+   return firstPrice;
+}
+
+let calling = leastPrice(phones);
+console.log(calling)
