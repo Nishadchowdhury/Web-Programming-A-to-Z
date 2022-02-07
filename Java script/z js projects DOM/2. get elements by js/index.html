@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style .css" />
+  </head>
+  <body>
+    <header>
+      <h1>wellcome to my blog website</h1>
+    </header>
+
+    <section>
+      <article>
+        <h3>My Awesome Blog-1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. optio?</p>
+
+        <p class="red">acces by js</p>
+      </article>
+    </section>
+    <p>যেমন এখানে js এর মধ্যে একটা object নি</p>
+
+    <p>তারপর array টাকে অনেক ভাবেই পাওয়া যাবে যেমন name লিখে দিলে পুরো আররায়-টাকে পাওয়া যাবে</p>
+    <img src="/ifile/2.png" alt="" />
+    <p>আবার চাইলে সেটার নির্দিষ্ট কোন property কে কল করে যেকোনো একটা value নেয়া যায় যেমন</p>
+    <img src="./ifile/3.png" alt="" />
+    <h1 class="h1"></h1>
+    <p class="p green">
+      একই ভাবে DOM যেহেতু পুরো HTMl কে একটা object রুপান্তর করে তাই একই নিয়মে HTMl এর যেকোনো element কে পাওয়া যাবে
+    </p>
+
+    <p class="red">
+      html এ কোন element কে তার id এর সাহায্যে পেতে হলে , (যেহেতু এইচটিএমএল document আকারে আছে ) <br />
+      সেহেতু লিখতে হবে <span class="lt green">document.getElementById</span>
+    </p>
+
+    <p class="red">
+      html এ এক ব একাধিক element কে তার class এর সাহায্যে পেতে হলে , (যেহেতু এইচটিএমএল document আকারে আছে ) <br />
+      সেহেতু লিখতে হবে <span class="lt green">document.getElementsByClass</span>
+    </p>
+    <br />
+    <p class="h1">some more</p>
+    <img src="./ifile/4.png" alt="" /> <br />
+
+    <p class="p red">
+      যেমন <span class="green tl">document.getElementsByTagName</span> এ ক্ষেত্রে এটা একটা function হিসাবে কাজ করবে এবং
+      সেটাকে কল করতে হবে ।
+    </p>
+    <p><img src="./ifile/5.png" alt="" /></p>
+    <br />
+    <p class="p red">
+      function paremeter এর মধ্যে string আকারে tag name দিলাম । এবং element গুলাকে একটা array মত করে return করে দিছে ।
+    </p>
+    <p><img src="./ifile/6.png" alt="" /></p>
+    <br />
+    <p class="red p">এখানে h1 এর মধ্যে কোন চিলড্রেন নেই , তাই অন্য একটা ট্যাগ ব্যেবহার করছি ।</p>
+    <img src="./ifile/7.png" alt="" /> <br />
+    <p class="green p">এ ক্ষেত্রে তার চিলড্রেন গুলাকেও পাবে ।</p>
+    <p class="green p">অর্থাৎ আমরা চাইলে html এর মধ্যে থাকা elements গুলাকে js এর সাহায্যে নিয়ে আসতে পারি ।</p>
+
+    <br />
+    <hr />
+    <br />
+
+    <p class="p">
+      আমরা চাইলে সেটা উপরের js গুলা কোন script file এর মধ্যে করতে পারি তবে টা loop করে করতে হবে নিচের নিয়মে । <br />
+      <script>
+        let anyThing = document.getElementsByTagName("h1");
+        console.log(anyThing);
+      </script>
+      <img src="./ifile/8.png" alt="" />
+    </p>
+
+    <p class="green p">আমরা চাইলে সব গুলা এইচটিএমএল কে একটা লুপ করেও দেখাতে পারি নিচের নিয়মে</p>
+    <img src="./ifile/9.png" alt="" />
+    <script>
+      let anyThings = document.getElementsByTagName("h1");
+      for (let h3 of anyThings) {
+        console.log(h3.innerText);
+      }
+    </script>
+    <p class="p ">যদি ঐ h3 tag এর মধ্যে থাকা text টাকে পেতে চাই তবে নিচের নিয়মে h3.innerText যোগ করে দিতে হবে ।</p>
+    <img src="./ifile/11.png" alt="">
+
+    <script>
+      const student = { name: "kismot ali ", age: 16, height: 60 };
+      console.log(document);
+    </script>
+  </body>
+</html>
