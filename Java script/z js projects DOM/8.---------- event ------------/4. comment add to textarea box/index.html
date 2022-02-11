@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comments</title>
+    <link rel="stylesheet" href="style .css" />
+  </head>
+  <body>
+    <h2 class="red">add your comments, plese !!</h2>
+
+    <section>
+      <h4>your comments</h4>
+      <div class="" id="comment-container">
+        <p>(commet 1 by HTML.)</p>
+        <p>(comment 2 by HTML .)</p>
+      </div>
+
+      <!-- second section -->
+
+      <div class="">
+        <textarea name="" id="new-comment" placeholder="add your comment, here ." cols="60" rows="4"></textarea> <br />
+        <button id="Submit-comment">post</button>
+      </div>
+
+      <script>
+        //1. add button event handler
+        document.getElementById("Submit-comment").addEventListener("click", function () {
+          // 2. get user comment
+          const textIn = document.getElementById("new-comment");
+
+          // 3. creat element to store new comment by (P)
+
+          const newComment = document.createElement('p');
+          newComment.innerText = textIn.value;
+
+          //4. append the comment (the ,p, element)
+          const commentPusher = document.getElementById("comment-container");
+          commentPusher.appendChild(newComment); // add as child of ( commentPusher )
+
+          //5.make the comment BOX empty .
+          textIn.value = "";
+        });
+      </script>
+
+      <br />
+      <br />
+      <p class="p ">
+        বক্স এর ভেরত যা ইনপুট করা হবে তা উপরের লাইনের সাথে যোগ করতে হবে । <br />
+        তারা সে জন্য <br />
+        ১> textarea এর id-কে button এর id এর সাথে connect করতে হবে । <br />
+        ২> user comment কে পাওয়ার জন্য সেটাকে একটা variable এর মধ্যে store করতে হবে । <br />
+        ৩> একটা element , diclare করত হবে যার মধ্যে পরে comment গুলা store হয়ে অ্যাড হবে । <br />
+        ৪> comment কে কোন একটা element এর child হিসাবে অ্যাড করতে হবে । তাই সেই parent element কে একটা variable এর মধ্যে
+        store করতে হবে । <br />
+        এবং সেটার child হিসাবে add করে দিতে হবে । <br />
+        ৫> comment হওয়ার পরে যাতে , (যেই box এ comment লিখা হয়েছে ) সেটা আবার খালি বা পরিস্কার হয়ে যায় সে জন্য <br />
+        button এর addEventListener , function এর মধ্যে ,,, <span class="tl">variableName.value = ' '; </span> করতে হবে ।
+
+        <br />
+        <img src="./ifile/" alt="" />
+      </p>
+    </section>
+
+    <!-- ***********************scripts  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
