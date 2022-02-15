@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>js</title>
+    <script src="PracticeJS_js.js"></script>
+    <style>
+      .p {
+        border: 1px solid red;
+        padding: 5px;
+        background: black;
+        color: white;
+        width: 350px;
+        margin-bottom: 20px;
+        font-weight:400;
+      }
+      
+      /* attention Div's css */
+      .span1 { margin-top: 50px;
+        width: 200px;
+        background: rgb(79, 46, 155);
+      }
+      .span1 h1 {
+        background: red;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      .span1 span {
+        background: black;
+        color: white;
+      }
+      .spanh3{
+        font-size: 20px;
+      }
+      h3{
+        color: red;
+        text-align: center;
+        border-top: 1px red solid;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1>hello javascript "<span class="spanh3">String Concatenation</span>" </h1>
+    <div class="p">
+      <h3> >>> String Concatenation <<<</h3>
+<p>
+  String Concatenation হল একটা String এর সাথে আন্য একটা String কে অন্য একটা string এর সাথে যোগ করা । <br>
+  ( + ) বা Addition operator এর সাহায্যে String Concatenation করা হয় । <br><br>
+   যখন এই Addition operator টা string এর ক্ষেত্রে ব্যাবহার করব তখন সেটা String Concatenation এর কাজ করবে ।<br>
+  <br>
+  <br>
+  ২ টা string এর মধ্যে String Concatenation করার সময় এদের মধ্যে ফাঁকা বা space দিতে চাইলে এই নিয়মে করতে হবে  <br><br>{( "string " + "string" ) বা ("string" + " " + "string")} <br>
+  এখানে উভয় ক্ষেত্রে <br> result = string string <br><br>
+  Ex:- 
+  let hi = "red" +" "+ "blue " + "Green" ; <br>
+  console.log(hi);<br>
+  result = redblue Greenbr
+
+</p></div>
+
+    <div class="span1">
+      <h1>attention</h1>
+     <div>
+        <p class="p">javascript এ String Concatenation এর সময় কোন number String  এর সাথে কোন number কে যোগ করলে বা Addition (+) করলে পুরো result কেই String বানিয়ে পেলবে । <br> এটা শুদু Addition operator এর ক্ষেত্রে  <br><br> কিন্তু subtraction বা অন্য সব operator এর ক্ষেত্রে string number কে javascript number হিসেবেই ধরবে <br> যেমন :- <br>
+        let hi = 3 + "2"; <br>
+        result + 32 ।
+        <br><br>
+        আবার :- <br>
+        let hi = 5 - "2" ; <br>
+        result = 3 ।
+        </p>
+     </div>
+    </div>
+    <br><br>
+    
+     <h1 class="h1 red">concat</h1>
+        <p class="p"> 
+          string concat মানে হল দুইটা আলাদা আলাদা string কে একসাথে জোড়া দেওয়া । <br>
+          string যেহেতু immutable তাই এটাকে কোন variable এর মধ্যে রেখে তারপর দুইটা  variable কে এক সাথে যোগ করতে হবে । 
+          <br>
+          <img src="./Screenshot_1.png" alt="">
+        </p>
+       
+    <br><br>
+  </body>
+</html>
