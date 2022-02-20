@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.player-name{
+			font-size: 1.5em;
+			font-weight: 600;
+			color: goldenrod;
+		}
+	
+	</style>
+</head>
+<body>
+	<header>
+
+		<div style="background-color: dodgerblue;">
+		কোন একটা element কে geiID দিয়ে js এর মধ্যে পেয়ে সেটাকে style দেয়া যায় । <br>
+		কিন্তু যদি geiclassName দিয়ে পাই তবে সেটাকে সরাসরি style দেয়া যায়না , সেটাকে loop করে style দিতে হয় । <br>
+		যেমন:- <br> <img src="./ifile/1.png" alt=""> <br> result <br> <img src="./ifile/2.png" alt="">
+		<br> এখন চাইলেই style add করা যাবে ।   <br> <br>
+		তারপর একটা button নি , যেটায় ক্লিক করলে এক একটা করে player যোগ করেবে । <br> click করলে একটা করে player যোগ করাতে হলে <br>
+		এখানে div এর ভেতরে সব আছে , তো  চাইলে div এর ভেতরে একটা h1 ,, p লিখে সেটাকে সরাসরি অ্যাড করতে পারি <br>
+		অথবা সরাসরি innerHtml এর মধ্যে রেখেও সেটাকে অ্যাড করতে পারি  `` bactic  এর মধ্যে রেখে । <br><br>
+
+		যেহেতু আমরা button এর মধ্যে onclikc কল করে রাখচি তাই সরাসরি function বানিয়ে ফেললাম - 
+		এবং সেটার মধ্যে <br>
+		<img src="./ifile/3.png" alt="">	
+		<img src="./ifile/4.png" alt="">	
+		<br>
+
+		১০ নাম্বার লাইনে প্রথমে player গুলা যেখানে আছে তাদের perante কে নিলাম । <br>
+		তারপর ১১ নম্বর লাইনে একটা element , div বানালাম ।  <br>
+		তারপর ১২ নাম্বার লাইনে সেই div এর একটা class সেট করলাম (xyz.classlist.add('xyz');) দিয়ে ।  <br><br>
+		এখন button এর মধ্যে click করলেই একটা নতুন element ,, console এ পাচ্ছি  ।  <br>
+
+		{{এখন চাইলে একটা একটা করে element বানায় তারপর player এর মধ্যে appendChild করতে পারি }}  <br>
+		 <br>
+		তারপর player এর innerHtml এর মধ্যে একটা player ,,  div  এর sturcture দিয়ে দি। । <br>
+		এবং তারপর সেটাকে playerContainer   অর্থাৎ player দের parent এর মধ্যে appendChild করে দি ।  <br> 
+		এ ক্ষেত্রে স্টাইল টা অ্যাড হবে যেহেতু ২৫ নাম্বার লাইনে function টাকে call করা হয়েছে ।  <br>
+		ক্লিক করে background color টা yellow করতে হলে । আবার 11 নাম্বার লাইনের addEventL কে copy করতে হবে ,,  <br>
+		অথবা আমরা bubble এর ব্যেবহার করতে পারি । <br>
+		<img src="./ifile/5.png" alt="">
+		আমরা জানি , এখানে প্রতিটা player আছে তাদের perante এর ভেতরে । <br>
+		
+		এখন আমরা যদি player এর উপর ক্লিক করি তবে সেটা এক সময় তার perante এর কাছে Event handler টা যায় । <br>
+		তাইলে আমরা player এর parente এর মধ্যে event টাকে set করবো । <br>
+		যেহেতু আমরা event buble সরাসরি player এর মধ্যে দিবনা । অর্থাৎ যেতাকে ক্লিক করবে সেটাকে দিব । <br> 
+		তারপর 
+		তারপর function এর মধ্যে একটা perameter নিব । , (এই perameter টা browser যখন click পাবে , তখনি সে দিএয় দিবে । ) 
+		<img src="./ifile/6.png" alt=""> <br> 
+		এবার আমরা যাকে ক্লিক করবো তাকেই event হিসাবে দিবে । <br>
+		
+		একটা event এর অনেক কিছু থাকে ।  তার মধ্যে একটা থাকে tergat (অর্থাৎ যাকে click করা হইছে । )
+
+		<br> <br><br> <br><br> <br><br> <br>
+		</div>
+
+		<h1>Player Stats</h1>
+	</header>
+	<main>
+	<section id="players">
+		<div class="player">
+			<h4 class="player-name">player - 1</h4>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus fugit itaque nulla repellendus debitis, rem voluptatibus mollitia eligendi obcaecati, doloremque totam quaerat in iste, temporibus quae. Aperiam, consequuntur sed!</p>
+		</div>
+		<div class="player">
+			<h4 class="player-name">player - 2</h4>
+			<p>Fugiat iure aperiam reprehenderit ut delectus provident sed repudiandae. Sint earum, quasi modi explicabo dolorum delectus nihil dolor facere omnis fugit sunt sed! Qui ea nemo tempora aperiam quae necessitatibus!</p>
+		</div>
+		<div class="player">
+			<h4 class="player-name">player - 3</h4>
+			<p>Repellat reprehenderit modi, reiciendis, officiis minima velit quidem dolorum iure corporis sunt quia illo at culpa maxime ducimus aliquid id perferendis voluptates commodi suscipit numquam obcaecati. Quis accusantium doloremque architecto.</p>
+		</div>
+		<div class="player">
+			<h4 class="player-name">player - 4</h4>
+			<p>Recusandae suscipit, minima, fuga beatae velit facilis, similique quos alias quis voluptatem dolores repellendus. Recusandae ducimus pariatur neque fugiat sint. Beatae quam cupiditate ullam maiores nesciunt, repellat eveniet sapiente vitae.</p>
+		</div>
+		
+	</section>
+	<button onclick="addPlayer()" >Add player</button>
+	</main>
+
+	<script src="./script.js"></script>
+</body>
+</html>
