@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Destructuring</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 class="h1 red">Map</h1>
+	<p class="p">
+		কোন একটা array এর মধ্যে থাকা number গুলাকে নিয়ে তাদের দিগুন করে নতুন একটা array এর মধ্যে store করতে হলে <br>
+		for loop দিয়ে করা যায় 
+		<img src="./ifile/1.png" alt=""> <br>
+		<br>
+		 কিন্তু সেটা অনেক সহজে করা যায় একটা arrow function এর সাহায্যে ।  <br>
+		 <img src="./ifile/2.png" alt=""> 
+		 এখানে মোট ৩ টা কাজ করছি । <br>
+		 1. loop তৈরি <br>
+		 2. element দিয়ে function কে call করছি । <br>
+		 3. result কে একটা array এর মধ্যে push করছি ।  <br><br>  
+		<span style="font-size: 1.5rem;" class="green">_____________ Map started _____________</span> <br>
+		 এখন এই তিনটা কাজ এক সাথে shortcut এ করতে চাইলে ব্যেবহার করতে হলে 
+		 map এর বেয়বহার করতে হবে । <br>
+		 map উপরের এই তিনটা কাজ এক লাইনে করবে (4 number line) <br>
+		 <img src="./ifile/3.png" alt=""> <br>
+		 অর্থাৎ কোন array এর নামের পরে যদি .map লিখি তবে সে <br>
+		 1. array এর সব গুলা elements এর loop করে ফেলে <br>
+		 2. এবং braket এর মধ্যে যে function কে দিছি সে তাকেও call করবে , <br>
+		 3. তারপর যে result টা পাবে সেটাকে variable এর নাম যেটা দিছি তার নামের একটা array বানিয়ে তার মধ্যে store করবে ।  <br><br>
+
+		 আবার চাইলে function কে call করার জায়গায় পুরো function কেও বসিয়ে দেওয়া যায় । <br>
+		<img src="./ifile/4.png" alt=""> <br>
+		 
+	</p>
+	<h1 class="h1 g">Map string Array</h1>
+	<p class="p">
+		<img src="./ifile/5.png" alt="">
+	<br>
+		<img src="./ifile/6.png" alt="">
+		<br> এখন আমি চাচ্ছি যে এখানে যে products এর নাম আছে সেগুলাকে একটা array এর মধ্যে store করতে । <br>
+		simple উপায়ে করলে সেটা করা যায় , <br>
+		( আমি চাই ) --> একটা loop করে  products.name করে নাম গুলাকে আলাদা করে নিয়ে একটা array এর মধ্যে store করতে । <br>
+		তো এত গুলা কাজ একটা লাইনে করা যায় , .map এর সাহায্যে । <br>
+		সেটা করতে হলে , প্রথমে <br>
+		const variable = arrayNmae.map(xyz => xyz.name); <br>
+		<img src="./ifile/7.png" alt=""> <br> <br>
+
+
+
+	</p> 
+	<h1 class="h1 g">forEach()</h1>
+	<p class="p">
+		যেমন উপরের ক্ষত্রে আমরা return নিছি তাই .map ইউজ করছি । <br>
+		.map টা for loop এর কাজ করে । <br>
+		তো যখন কোন retrun নিবনা তখন forEach() ব্যেবহার করা উচিৎ হবে । <br>
+		forEach() = মানে প্রতিটা element এর জন্য কিছু একটা করা । <br>
+		<img src="./ifile/8.png" alt=""> <br>
+		<br>
+		map আর forEach এর মধ্যে একটাই তফাৎ , <br>
+		যে map যে কাজটা করার সেটা করে পুরা একাটা array return করবে । <br>
+		কিন্তু forEach কোন return করবে না , সে প্রতিটা elements এর সাথে কোন নির্দিষ্ট কাজ করে , যেমন কোন function কে কল করা  বা log করা । <br>
+		 
+	</p>
+</body>
+</html>

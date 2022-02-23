@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="h1 r">(Fetch) = getData , & store </h1>
+ 
+    <p class="p">
+      fetch দিয়ে কোন ডাটা-কে কোন server থেকে নেয়া হয় । <br><br>
+      <img src="./ifile/1.png" alt="" /> <br />
+
+      এখানে , <br />
+      line 1. fetch('https://xyz.com') দিয়ে কোন site থেকে কোন ডাটা নিএয় আসছি ।
+      <a target="_blank" href="https://jsonplaceholder.typicode.com/todos/1"><button>see Data</button></a><br />
+      line 2. .then(response => response.json()) লিঙ্ক থেকে ডাটা নিয়ে সেটাকে convert করছি <br />
+      line 3. .then(json => console.log(json)) তারপর converted data টাকে json এ স্টোর হবে এবং সেটা log হবে ।<br />
+
+      <button onclick="playit()"> data log কর</button> <br><br>
+
+      <button onclick="loadUsers()"> Load users</button> <br><br>
+
+      <button onclick="loadPost()"> Load Posts</button> <br><br>
+
+      fetch এর সাহায্যে কোন ডাটাকে নিয়ে সেটাকে convert করে চাইলে সেটাকে একটা function এর মধ্যে send করতে পারব  । <br>
+      <img src="./ifile/2.png" alt="">
+
+    </p>
+
+    <p class="p">
+      এখন যে object টাকে পেলাম সেটার মধ্য থেকে ইউজার দের নাম পেতে চাই তবে নিচের মত করতে হবে । <br>
+      <img src="./ifile/3.png" alt=""> <br><br>
+      <button onclick="loadUsers()"> Load users</button> <br>
+       এখানে click করলে user এর data গুলা page এ add হতে থাকবে । <br>
+       
+
+       <ul id="users">
+         
+       </ul>
+
+       <img src="./ifile/4.png" alt="">
+    </p>
+
+    <script src="./script.js"></script>
+  </body> 
+</html>

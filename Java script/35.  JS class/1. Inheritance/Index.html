@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="h1 r">Inheritance</h1>
+    <p class="p">
+      Inheritance মানে হল নিয়ে আসা , <br />
+      যেমন আমার মায়ের থেকে কিছু বৈশিষ্ট আমি Inheritance করেছি । আমার মা তার মা থেকে Inheritance করেছে । <br />
+      বংশের শুরুতে জিনি আছেন তার থেকেই আমরা Inheritance করে করে আসছি । <br />
+      class ও একই ভাবে Inheritance কন্সেপ্ট টা নিয়ে কাজ করে । <br />
+
+      <br />
+      <br />
+    </p>
+    <br />
+    <img style="width: 26%" src="/ifile/1.png" alt="" />
+    <p class="p tl">
+      <br />
+      উপরের 3 টা class এর ক্ষেত্রে যা কিছু common ( মার্ক করা হয়েছে ) তাদেরকে একটা common class এর মধ্যে নিয়ে আসা
+      <br /><br />
+      একটা common class নিলাম , যার একটা constructor আছে , আর property আছে ২_টা , (name , address) । <br />
+      যখন constructor টাকে call করা হয় তখন সে perameter হিসাবে name এবং address কে পায় । <br />
+      চাইলে এখানে এখানে একটা method ও থাকতে পারে । <br />
+
+      <img src="./ifile/2.png" alt="" /><br />
+      <br />
+      এখন অন্য একটা class থেকে এটাকে Inheritance করা যাবে । <br /><br />
+
+      যেমন এখানে একটা class নিলাম ঃ- <br />
+      <img src="./ifile/3.png" alt="" />
+
+      এখন যদি চাই যে এই xxx class টা উপরের common class এর সব বৈশিষ্ট পাক ,তাহলে এভাবে লিখতে হবে <br />
+      <img src="./ifile/4.png" alt="" />
+      অর্থাৎ তাকে বলে দিতে হবে যে সে তার ভেতর কোন class এর বৈশিষ্ট গুলা নিজের মধ্যে extend করবে । <br />
+      যেহেতু TeamMember এর বৈশিষ্ট ব্যেবহার করবো সেহেতু extend এর পরে সেই class এর নাম লিখে দিতে হবে । এতে করে
+      TeamMember এর সমস্ত বৈশিষ্ট Support এর মধ্যে চলে আসলো <br />
+      <img width="29%" src="./ifile/5.png" alt="" /> <br />
+      <br />
+
+      এমন হতে পারে যে class টা common class কে call করছে । সেটার একটা Specific property আছে , <br />
+      সে ক্ষেত্রে একটা constructor এর দরকার হবে <br />
+      <img src="./ifile/6.png" alt="" />
+      এই ক্ষেত্রে একটা error আসবে <br />
+      this.groupSupportTime = time; <br />
+      এটা execute করতে পারছেনা , কারন ,, ( this.xyz ) <br>
+
+	  this ইউজ করার আগে যদি extend করি তবে constructor এর ভেতর this ব্যেবহার করার আগে 
+      আগে super() কে call করতে হবে । <br>
+	  super() কে call করতে হলে name এবং address লাগবে দুইটাই লাগবে ।<br>
+	  super() এর মধ্যে common class এর property গুলা লিখতে হবে । <br><br>
+	  <img src="/ifile/7.png" style="width:39%;" alt="">
+	  এখানে কাজ হচ্ছে , ৩টা  property পাঠাচ্ছি support কে ,,, এখন support নিজে বেবহার করছে 1ta = ( time ) কে , <br>
+	  আর বাকি ২টা পাঠাচ্ছে super(name , address) কে ,  <span class="g">[________super হল common class এর constructor________]</span>
+
+
+    </p>
+	<h1 class="h1 g">Final Form</h1>
+	<img style="display: inline;" src="/ifile/8.png" alt="">
+	<img style="display: inline;" width="45%" src="/ifile/9.png" alt="">
+  </body>
+</html>
