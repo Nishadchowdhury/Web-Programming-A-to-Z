@@ -5,6 +5,11 @@
     <title>js</title>
     <script src="PracticeJS_js.js"></script>
     <style>
+      body{
+        display:flex;
+        flex-direction: row;
+        
+      }
       .i{
         width:470px;
       }
@@ -16,21 +21,40 @@
         width: 350px;
         margin-bottom: 20px;
       }
+      .left-div{
+        float: left;
+      }  .right-div{
+        float: left;
+      }
+      .mid-div{
+      width: 33%;
+      padding: 20px;
+      }
+      .mid-div p {
+        
+      border:1px solid red ;
+      background-color: black;
+      color: white;
+      padding: 0px 5px;
+      }
     </style>
   </head>
   <body>
-    <h1>hello javascript</h1>
+    <div class="left-div">
+      <h1>hello javascript</h1>
     <div class="p">
       <h1>Primitives Data Type</h1>
       <p>
         Primitives Data Type হল যে সকল ডাটা টাইপের মধ্যে at a time শুধু মাত্র একটা টাইপের dataই রাখা যায় ।  <br /><br />
         Primitive data type সাধারনত ৬ প্রকার <br /><br />
+        সহজ সরল type <br>
+        যেমন কোন variable এ যেকোনো এক type এর ডাটা রাখা , (১টা string ,, একটা number ,, true / false)
 
         1. Boolean <br />
         2. Number <br />
         3. String<br />
         4. Null<br />
-        5.Undefined<br />
+        5. Undefined<br />
         6. Symbol<br />
       </p>
     </div>
@@ -111,5 +135,64 @@
     <div class="p">
       <p></p>
     </div>
+    </div>
+
+    <!-- --------------
+        mid div start 
+    ---------------- -->
+
+
+    <div class="mid-div">
+      <h2 style="text-align: center;">Some Notes</h2>
+      <p>number এর মধ্যে 0 একমাত্র false <br><br>
+
+      sny string include '' and WhiteSpace are true
+      
+      </p>
+      <p></p>
+    </div>
+
+    <!-- --------------
+      mid div end 
+    ---------------- -->
+
+    <div class="right-div">
+      <h1>hello javascript</h1>
+      <div class="p">
+        <img src="/ifile/1.png" alt="">
+        এখানে 2 number লাইনে b আর a এর মান সমান । <br>
+        কিন্তু তারপরও a এর মান যখন change করতেছি b এর নাম change হচ্ছেনা । <br>
+        ঐটা আগের মানই রয়ে যাচ্ছে ।<br>
+        
+        এখানে একটু পরে a এর মান পরিবর্তন হলেও b এর মান পরিবর্তন হয় নাই কারন <br>
+        যখন কোন variable diclare করি তার মধ্যে কোন ডাটা থাকে ।
+
+        <br>
+        computer এ ডাটাটা স্টোর থাকে । <br>
+        আমি যখন বলছি , যে a এর মান টা b এর মধ্যেও আছে । <br>
+        কিছুখন পর a আর মানটা chnage করে ফেললাম , কিন্তু b আগের যায়গায়ই রয়ে গেছে । <br>
+        এই জন্য এটাকে(premetive type)  বলে immutable , এগুলা initial value কে change করে না ।  <br>
+        মোট কোথা যে গুলার single , একটা মান থাকে তাই premitive data type । <br><br>
+
+
+      </div>
+      <div class="p">
+        premitive এর oposite হল nonePremitve <br>
+        যেমন object <br>
+        <img src="./ifile/2.png" alt="">
+        এখানে change করছি শুধু মাত্র x এর মানটাকে , <br>
+        আমি কিন্তু y কে chnage করিনাই । <br>
+        কিন্তু তাও এখানে y এর মানও change হয়ে গেছে । <br>
+        <img src="./ifile/3.png" alt="">
+        এখানে y এর মান chnage করাতেও 2 টা variable এর মান-ই change হয়ে গেছে । <br>
+        কারন nonePremitve data তারা একটা reference ধরে রাখে , <br>
+        ঐ reference এর মধ্যে কোন একটা অংশ কে পরিবর্তন করলে ,এখানে যেহেতু দুইটাই same , <br>
+        তাই nonePremitve এর একটার মধ্যে অন্য একটা থাকে ,<br> যেকোনো একটা মান change করলেই 2 টা মান chnage হয়ে যায় । <br>
+
+      </div>
+    </div>
+
+
+
   </body>
 </html>

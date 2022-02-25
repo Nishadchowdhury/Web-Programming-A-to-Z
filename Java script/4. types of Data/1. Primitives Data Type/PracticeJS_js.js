@@ -1,4 +1,5 @@
-"use strict";
-
-let name = "red , it's the mame \" of a color";
-console.log(name);
+const x = {job : 'Web Developer'}
+const y = x ;
+console.log(x , y);
+y.job = 'front End Developer'
+console.log(x , y);
