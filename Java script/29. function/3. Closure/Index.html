@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body class="container">
+<main>
+   <h1 class="h1 r"> Closure</h1>
+  <p class="p">
+   
+  <img src="./ifile/0.1.png" alt="">
+
+  এখানে clock1 কে log করলে , একটা annoymous function দেখায় । কারন এটা একটা function , <br><br>
+  
+  এবং চাইলে এটাকে call করা যাবে । <br>
+  <img src="./ifile/1.png" alt=""><br>
+  এতে করে আমারা 1 পাচ্ছি <br> <br>
+
+  <img  src="./ifile/2.png" alt="">
+  ২ বার call করাতে , প্রথম call এ 1 ২য় call এ 2 পাচ্ছি । <br>
+  <img src="./ifile/3.png" alt="">
+  এবং ৩ বার call করলে একই function কিন্তু 3 পাচ্ছি । <br> <br>
+   
+  এর কারন হচ্ছে , এখনে 10nl থেকে যখন call করার ফলে clock1 এর ভেতর যেহেতু একটা function stored আছে সেহেতু <br>
+  সেটা call হয়  <br> 
+  2nl এর counter এর মান 0 সেট করে । <br>
+  তারপরে counter এর Reference সহ 3nl এর function কে return করছে । অর্থাৎ এটার একটা Reference থাকছে , যেটাকে সে পাঠায় দিচ্ছে  <br>
+    
+  তারপর থেকে যতবার call করে সেটাকে এক এক করে বারাতেই থকে । <br>
+
+  </p> 
+
+  <h1 class="r h1">closure main part started</h1>
+  <p class="p">
+    জতবার stopWatch কে কল করছি সে, নিজস্ব একটা closure তৈরি করতেছে । <br>
+  মানে প্রথমবার যে কাজ করছে সেটার Reference সে রেখে দিচ্ছে clock1 এর মধ্যে । <br><br>
+  এখন একটা পরে যখন আবার clock2 এর সাহায্যে call করেছি সে আবার নতুন করে counter এর মান সেট করেছে এবং , <br>
+  সেটা 1 থেকে শুরু হয়েছে । কারন এখনে Reference  টা শুধু মাত্র clock1 এর জন্যই তৈরি হয়েছে । <br> <br>
+
+
+  
+
+</p>
+
+<p style="border: 3px solid red;" class="p">
+  কখনো কখনো interViwe তে closure related প্রশ্ন জিজ্ঞাসা করতে পারে <br>
+  <br>
+  সে ক্ষেত্রে perfact answer হবে , যে ।
+
+  যদি কোন একটা function এর ভেতরে কোন একটা function use করি , বা retur করি এবং parent fucntion যদি outSide এর কোন variable কে access করে <br>
+  তাহলে টার নিজস্ব একটা Encapsulation , closure , private variable diclare করে ফেলে । <br>
+
+  এবং বাহির থেকে যত গুলা variable এর মধ্যে  store করা হবে প্রত্ত্যেকের জন্যই আলাদা আলাদা Reference তৈরি করবে । <br>
+
+  (তাই counter কে বাহির থেকে পাওয়া যাবেনা । ) <br><br><br>
+
+shortCut:- একটা function থেকে আর একটা function কে  return করি , তাহলে তারা নিজস্ব একটা Encapsulation তৈরি হবে  বা একটা privete Reference তৈরি করে । . <br>
+
+
+</p>
+
+
+
+
+</main>
+
+<script src="./script.js"></script>
+  <script src="./ifile/bootstrap.bundle.min.js"></script>
+  </body> 
+</html>
