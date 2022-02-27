@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <main>
+      <h1 class="h1 r">Loop through an object using for in, for of, object entries</h1>
+      <p class="p">
+        <span class="g rem">________ for in _________</span>
+        <img src="./ifile/1.png" alt="" />
+        এই object কে loop through করতে হলে for in ব্যেবহার করতে হবে । <br /><br />
+
+        <img src="./ifile/2.png" alt="" />
+        তাহলে key গুলা পাবো । <br /><br />
+        object এর ভেতর থেকে value গুলা পাওয়া যায় 3 ভাবে । <br />
+        <img src="./ifile/3.png" alt="" />
+        <br /><br />
+
+        object এর সব গুলা value গুলা পেতে হলে
+        <img src="./ifile/4.png" alt="" /> <br /><br />
+        object এর সব key এবং value গুলা পেতে হলে
+        <img src="./ifile/5.png" alt="" /> <br /><br />
+
+        যদি সব গুলা keys(property Nmae) কে লুপ through করতে চাই <br />
+        const keys = Object.keys(bottle); করলে <br />
+        সব গুলা key একটা array হিসাবে পাবো । <br />
+        <img src="./ifile/6.png" alt="" />
+        এখন কোন array কে loop করলে <span class="g">____ for of ____</span> করতে হবে । <br />
+
+        <img src="./ifile/7.png" alt="" /> <br />
+        এভাবে value কেও পাওয়া যাবে const keys = Object.value(bottle); করলে <br /><br />
+
+        entries দিয়েও করা যায় , entries 2D array দেয় , অর্থাৎ array of array দেয় । <br />
+        <img src="./ifile/9.png" alt="" />
+        তাই এই ক্ষেত্রে for of ব্যেবহার করতে হবে । <br />
+        যখন loop through করবো তখন perante array থেকে এক একটা array একবার করে আসবে । <br />
+        <img src="./ifile/8.png" alt="" />
+        প্রত্যেকটা element হল এক একটা array , তারপর সেটাকে Destructuring চাইলে করা যায় সে জন্য [key , value] দিয়ে
+        Destructuring করে ফেললাম । <br />
+
+        Destructuring , করার পর প্রথম টার ক্ষেত্রে [key , value] = ['color' , 'yellow']; আসবে <br /><br />
+      </p>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="./ifile/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

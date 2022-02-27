@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <main>
+      <h1 class="h1 r">Keys , value , entries , dalete , seal , freeze</h1>
+
+      <img src="./ifile/1.png" alt=""><br>
+      <p class="p tl">
+        
+    একটা object এ অনেক গুলা key থাকতে পারে ,  <br>
+    যেমন এখানে , color , hold , price . এগুলা এক একটা key আর yellow , water , 50 এগুলা হল তাদের value . <br>
+
+    <img src="./ifile/2.png" alt="">
+    
+কখনো কখনো কোন object এর সব গুলা key এর name কে নেয়ার দরকার হয় , সে ক্ষেত্রে  <br>
+Object.keys(ObjectName); এটা দিয়ে নিতে হবে । <br><br>
+
+<img src="./ifile/3.png" alt="">
+
+আর value পেতে হলে   <br>
+Object.values(ObjectName); এটা দিয়ে নিতে হবে  । <br><br>
+
+<img src="./ifile/4.png" alt=""> <br>
+যদি আমি চাই যে key আর value দুইটা এক সাথে পেতে চাই তাহলে  <br>
+Object.entries(ObjectName); এটা দিয়ে নিতে হবে । এটার output হিসাবে array পাচ্ছি যা 2D array । <br>
+কারন এখানে array এর ভেতরে অনেক গুলা array ।   <br>
+
+যদি জোড়ায় জোড়ায় key এবং value কে পেতে চাই , তাহলে entries গুলাকে নিতে হবে ।  <br>
+entries মানে হল যত গুলা Entry আছে ।  <br><br>
+
+
+<img src="./ifile/5.png" alt="">
+
+যদি কোন Property কে delete করতে চাই তবে উপরের নিয়ম follow করতে হয় ।  <br>
+
+ <span class="g tl rem2">_____delete objectNmae.propertyName;_____</span> <br><br>
+
+        <img src="./ifile/6.png" alt=""> 
+        
+যদি চাই যে কোন property কে কেউ delete করতে পারবে না । কোন ভাবে । তাহলে সেই object কে seal করতে হবে । <br>
+Object.seal(objectName); তাহলে পরবর্তীতে bottle(object) এর কোন property কে চেষ্টা করেও delete করা যাবেনা । <br>
+কিন্তু value change করা যাবেনা । <br><br>
+
+
+<img src="./ifile/7.png" alt="">
+
+        যদি এমনটা চাই যে , কোন object এর কোন value কে update , delete , Add কিছুই করতে পারবেনা তবে । <br>
+        object টাকে freeze করতে হবে । <br>
+        Object.freeze.(objectName);<br>
+
+      </p>
+ 
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="./ifile/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

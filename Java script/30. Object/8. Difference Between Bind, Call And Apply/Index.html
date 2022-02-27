@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <h1 class="h1 r">___________  Difference between bind, call and apply ___________</h1>
+    <main>
+      <p class="p">
+        <span class="g rem">______ call ______</span> <br>
+        bind দিয়ে call করতে হলে আগে bind expression কে একটা variable এর মধ্যে store করতে হতো , <br>
+         তারপর সেটাকে আলাদা করে call করে তারমধ্যে parameter দিতে হত । <br>
+
+         কিন্তু bind এর পরিবর্তে call expression ব্যেবহার করলে কোন variable এর মধ্যে store করা লাগেনা , <br>
+         এক লাইনেই expression + call + parameter set সব করা যায় <br>
+        এবং muiltiple parameter set করা যায় । <br><br>
+
+         <img src="./ifile/1.png" alt=""> <br> <br>
+        <span class="g rem">______ apply ______</span><br>
+         call এর সাথে apply 90% same শুধু মাত্র এক যায়গায় একটু তফাৎ আছে সেটা হল , <br>
+         parameter গুলাকে একটা array এর মধ্যে করে পাঠাতে হয় । <br>
+         <img src="./ifile/2.png" alt="">
+      </p>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="./ifile/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

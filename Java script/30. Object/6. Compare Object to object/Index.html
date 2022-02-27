@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <main>
+      <h1 class="h1 r">Compare objects, referential integrity</h1>
+      <p class="p">
+        <img src="./ifile/1.png" alt="">
+       এই দুইটা object কে দেখতে একই মনে হলেও । <br>
+       js এদেরকে different বলবে । <br>
+       <img src="./ifile/2.png" alt="">
+
+      কারন js object এর compare করতে গেলে তখন তার referential integrity তাকে check করে । <br>
+      মানে হল object গুলা দেখতে একই হলেও কিছু যায় আসেনা । <br>
+      সে দেখে যে জায়গায় আছে সেটা একই জায়গায় কিনা । <br>
+      এখন যদি const third = first; এবার যদি ___ === ___ চেক করি তবে এবার object are equal বলবে । <br>
+      কারন এখানে 2টা same Reference ধারন করছে । <br>
+      অর্থাৎ 2টা দেখতে এক হলে কিছু যায় আসেনা , অদের ভেতরের Reference এক হতে হয় । <br> <br>
+
+
+      কিছু কিছু ক্ষেত্রে এমন হয় যে এই 2টাকে compere করতেই হবে । কুন্তু তাদের নাম আলাদা , Reference আলাদা আছে । <br>
+      সে ক্ষেত্রে অনেক গুলা way আছে , সে ক্ষেত্রে <br><br>
+
+      ১, object কে stringfy করে তারপর compere করা । 
+      <img src="./ifile/3.png" alt="">
+      এটা string এ convert হওয়ার পরে string কে কিন্তু আর Reference দিয়ে check করেনা ।<br> 
+      এক ক্ষেত্রে দেখে value টা ঠিক আছে কিনা বা type টা ঠিক আছে কিনা । <br>
+      কিন্তু এ ক্ষেত্রে একটা সমস্যা আছে যে যদি value গুলার Position পরিবর্তন করি তবে । <br>
+      সেটা not equal দিবে কারন এখানে object হিসাবে ঠিক আছে কিন্তু string এর index position change হয়ে যাওয়াতে সেটাকে false পায় । <br>
+      <img src="./ifile/4.png" alt=""> <br> <br>
+      <br>
+      
+      2, অনেক সময় ধরে ধরে একটু একটু করে সেটাকে check করে । function এর সাহায্যে <br>
+      সেটার parameter হিসাবে 2 টা object নিতে হবে । <br>
+      তার মধ্যে সে প্রথমে দেখবে যে 2 টা object ,, same কিনা 2 object একই হতে হলে তাদের সমান সংখ্যক keys থাকতে হবে ।<br>
+      keys চেক করার জন্য 5nl এর statement <br>
+      property  চেক করার জন্য 8nl এর loop<br> 
+      loop এর ভেতর statement check করা হয়েছে( !== __ strict not equal __ ) দিয়ে তাই সেটা value এর type ও check করবে । <br>
+      এই দুইটা false হলে সেটাকে true return করবে ।<br>
+      <img src="./ifile/5.png" alt="">
+        
+      </p>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="./ifile/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
