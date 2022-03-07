@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Session Storage Local Storage</title>
+  </head>
+  <body>
+    <h1 class="g">Session Storage Local Storage</h1>
+    <p class="p">
+      <img src="./ifile/Local Storage Session Storage.png" alt="" />
+      এটাকে পাওয়া যায় devtool/application এর মধ্যে <br />
+
+      getitem() ব্যেবহার করে Session Storage এবং Local Storage থেকে কোন নির্দিষ্ট মান retrun করা যায় । <br />
+      setitem() ব্যেবহার করে Session Storage এবং Local Storage এর মধ্যে কোন নির্দিষ্ট মান সেট করা যায় । <br />
+      যেমন setitem('keyNmae' , value); <br /><br />
+
+      তবে সেটা শুধু মাত্র একটা key যখন একটা value store করে । <br />
+
+      তাই যারা string আকারে আছে তাদের ব্যেবহার যোগ্য করতে হলে আগে তাদের keyName.JSON এ convert করতে হবে । <br />
+      তারপর সেটার মধ্যে data read , write করতে পারবে । <br />
+
+      <br />
+      <span class="g">read</span>
+      <img src="./ifile/add values.png" alt="" />
+
+      <span class="g">Write</span>
+      <img src="./ifile/add values 2.png" alt="" /> <br /><br />
+
+      এখানে normal value যদি set করতে চাই তবে setItem() দিয়ে সেট করা যায় <br />
+      কিন্তু যদি কোন একটা key এর value হিসাবে object কে সেট করতে চাই তবে সেট করার আগে সে obejct টাকে stringfied করে ।
+      <br />
+      আবার কোন একটা key কে read করতে চাই এবং সেটার value যদি কোন obejct হয় তবে সেটাকে নিয়ে JSON.parse করে সেটাকে
+      ব্যেবহার করতে পারবো কারন obejct গুলা stringfied অবস্থায় থাকে । <br />
+      <img src="./ifile/add values 2.9.png" alt="" />
+      <img src="./ifile/add values 3.png" alt="" /> <br />
+      <br />
+
+      <span class="g rem">____________ Session Storage ___________</span> <br />
+      browser জতখন থাকবে অর্থাৎ আমি জতখন use করতেছি ততক্ষণ থাকবে , বন্ধ করে দিলে চলে যাবে । <br />
+      আবার পরে আবার logIn করলে পরে আবার ব্যেবহার করতে পারবো ।
+      <br /><br />
+
+      <span class="g rem">____________ Local Storage __________</span> <br />
+      localStorage এর মধ্যে ডাটা গুলা থাকে , যেমন youtube এর কে mute kore দিলে এই ডাটা store হয় <br />
+      <img src="./ifile/store of localStorage.png" alt="" />
+      এবং এটা reload করলেও থাকে । <br />
+    </p>
+    <p class="p">
+      <span class="g">locakStorage এবং SessionStorage কে একই ভাবে Access করা যায়</span>
+    </p>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>promise</title>
+</head>
+<body>
+    <h1 class="h1 r">promise</h1>
+    <p class="p">
+    <span class="r">________promise কি ?_______</span> <br>
+    <span class="g">________promise is an Asynchronize stuff</span> <br>
+    promise হল কিছু করার একটি promise , যদি condition , true হয় তবে কাজটা করবে যদি false হয় তবে promise faild <br>
+    js এর ভাষায় কোন promise যদি রাখা যায় তবে তবে (promise has been reserved) , or false = (Promise Has been rejected ) <br>
+    promise ব্যেবহার হয় মুলত কোন একটা Asynchronize operation handle করার জন্য <br><br>
+
+    promise দিয়ে কোন একটা code block এর Executions <br>
+
+    <img src="./ifile/1.png" alt=""> 
+    promise structure <br>
+    promise function টা একটা callback function Receive করে সেই function টা আবার 2 টা function Receive করে যেকোনো নামের  <br>
+    যদি তার condition টা true হয় তবে resive কে call করবে আর যদি false হয় তবে reject কে call করবে <br>
+    <img class="w-500"  src="./ifile/2.png" alt=""> <br><br><br>
+    
+    <img class="w-500"  src="./ifile/3.png" alt="">
+
+    এখানে promise এর মধ্যে একটা Anonymous , function পাবো যদি যদি কোন condition true বা false হয় তবে সে হয় resolve কে call করবে অথবা reject কে call করবে ।<br><br>
+    
+    promise কে use করতে হলে 2ta জিনিকে cain করব , একটা হচ্ছে  <span class="g">promise.then</span> অন্যটা হচ্ছে  <span class="g">promise.catch</span><br> <img  class="w-500" src="./ifile/4.png" alt="">
+    যদি resolve হয়ে  তবে .then call হবে ,, আর reject হলে .catch কল হবে 
+    <img class="w-500" src="./ifile/5.png" alt="">
+    <img src="./ifile/6.png" alt=""> <br> <br>
+
+    যেহেতু  কেখানে hasMeeting false হচ্ছিলো সেহেতু resolve পাচ্ছিলাম 
+    <img class="w-500"  src="./ifile/7.png" alt="">
+
+    যদি hasMeeting true হতো <img class="w-500"  src="./ifile/8.png" alt="">
+
+    </p>
+   
+
+<script src="./script.js"></script>
+</body>
+</html>

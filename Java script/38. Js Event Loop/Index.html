@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Js Event Loop</title>
+    
+</head>
+<body>
+    <h1 class="h1 r">Js Event Loop</h1>
+    <p class="p tn">
+        <a target="_blank" href="https://youtu.be/juHkuCtMGtQ"> <button >Explain of Sumith  <img src="./ifile/yt.png" width="16px" style="display: inline-block; margin-top:2px; " alt=""></button></a> 
+        <a target="_blank" href="https://youtu.be/8aGhZQkoFbQ"> <button >Explain of Philip Roberts <img src="./ifile/yt.png" width="16px" style="display: inline-block; margin-top:2px; " alt=""> (JS)</button></a> <br><br>
+
+        <!------------------------- started -------------------->
+        
+        <span class="g rem">আসলে javascript যে ভাবে চলে ,    </span><br><br>
+        <img src="./ifile/js event loop .svg" alt=""> <br><br>
+        
+        javascript একটা stake of frame mantain করে <br>
+        আমরা জানি javascript এ দুই ধরনের কাজ হয় <br> <br>
+        1. Synchronize (যাদের execution এ কোন delay করানো যায়না ) <br>
+        2. Asynchronize (যাদের execution এ delay হয় বা করানো যায় ) <br><br>
+        js প্রথমে সবগুলা <span class="g">synchronize  expression</span> দের নিয়ে একটা <span class="g">stake of frame </span> তৈরি করে <span class="b">blue box </span> তারপর একটা একটা করে কাজ করে করে <br>
+
+        তারপর Queue মানে হল , এটা এক ধরনের waiting লাইনের মত <br>
+        js প্রথমে তার stake এর সব গুলা কাজ করে তারপর queue এর মধ্যে delay হওয়া কাজ গুলা তাদের সময় অনুসারে করে <br>
+        যেমন , এখানে আগে <span class="r">red box</span> এর বাইরের <span class="g">synchronize  expression</span> গুলাকে execute করবে । <br>
+        তারপর <br>
+        <img src="./ifile/Asynchronize.png" class="w-700" alt="">
+        <span class="r">red box</span> এর মধ্যে থাকা <span class="g">Asynchronize expression</span> দের তাদের delay আনুযায়ী আগে পরে execute করে । <br><br>
+        
+        অর্থাৎ synchronize expression গুলা চলে যাবে stake লিস্টে এক একেটা frame হিসাবে । <br>
+        আর Asynchronize expression গুলা চলে গেছে Queue(waiting/Delay ) লিস্টে message হিসাবে । <br><br><br>
+
+        <span class="g rem2"> Picture aabhi baki hain </span>
+           
+
+
+    </p>
+    <script src="./script.js"></script>
+</body>
+</html>

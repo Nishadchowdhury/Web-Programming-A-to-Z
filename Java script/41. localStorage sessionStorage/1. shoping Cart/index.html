@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="g"> Add to Cart </h1>
+    
+    <p class="p">
+    <input type="text" id="product-name">
+    <button onclick="addItem()"> ADD Iteam </button>
+    <br>
+    <br>
+    
+    <p class="p">
+        <ul id="products"></ul>
+    </p>
+
+    <p class="p">
+        
+    <button onclick="placeOrder()">place Order</button>
+
+    </p>
+
+    <p class="p">
+        কোন product কে cart এ যোগ করতে হলে নিচের নিয়মে করে হবে <br><br>
+    <img class="w-700" src="./ifile/1.png" alt="">
+    <br>
+    উপরের নিয়মে cart এর সাথে webpage এর মধ্যেও সেটা দেখা জাচ্ছে , <br>
+     কিন্তু reload করার সাথে সাথে বা browser ,close করি তবে localStorage এ data থাকলেও সেটা display হয়না  
+
+    সে জন্য একটা function নিতে হবে । <br>
+    <img src="./ifile/2.png" alt=""> <br>
+
+    এটার প্রথম কাজ হবে check করা যে ঐখানে cart নামের কিছু আছে কিনা ।<br>
+    যদি কিছু থাকে সে object কে নিয়ে loop করে <br>
+
+    তারপর যদি Object পায় তার প্রত্যেকটা আইটেম কে loop করবে  <br>
+    <span class="g"> cart = object name</span>  <span class="g"> name = property </span> 
+    name গুলাকে নিয়ে displayProduct কে call করে function সেটাকে display করে দেওয়া 
+    <img src="./ifile/3.png" alt="">
+    </p></p>
+
+    <p class="p">
+        এখন placeOrder করার মাধ্যমে DOM থেকে এবং localStorage থেকে cart কে clear করতে হলে <br>
+        একটা function নিতে হবে <br>
+        <img src="./ifile/4.png" alt=""> <br>
+    </p>
+
+    <p class="p">
+        <span class="g rem2">filter similer item </span>
+        এ ক্ষেত্রে addProductToCart , function এর মধ্যে একটা condition নিতে হবে <br>
+        যাদি cart[name] এর মধ্যে যদি name থাকে তবে আগের যে Quantity আছে সে Quantity র সাথে 1 যোগ করতে হবে । <br>
+        <span class="g">cart[name] = cart[name]+1 ;</span>
+
+        আর যদি না থাকে তবে else দিয়ে <span class="g"> cart[name] = 1 ;</span> সেট করে দিবো । <br>
+        
+    </p>
+
+<script src="./script.js"></script>
+</body>
+</html>

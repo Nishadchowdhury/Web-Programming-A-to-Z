@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>setTimeout setInterval</title>
+  </head>
+  <body>
+    <h1 class="h1 r">setTimeout() setInterval()</h1>
+    <h1 class="h1 g">setTimeout()</h1>
+    <p class="p">
+      <img src="./ifile/setTimeout.png" alt="" /> <br><br>
+
+      কোন কাজ কে কিছু সময় পর করাতে চাইলে setTimeout() এর ব্যেবহার করতে হয় । <br>
+       setTimeout() এর মধ্যে 2 parameter দেওয়া যায়  <br>
+      । প্রথম parameter হিসাবে function করতে হবে , পরের parameter হিসাবে যত ms delay করাতে চাই সেটা দিবো । <br>
+    এটা Asynchronous অর্থাৎ এটা কজা করতে delay হলে js বসে না থেকে অন্য কাজ করে । <br>
+    তারপর এটা করার সময় হলে সে কাজ তা করে ।  <br>
+    একই ভাবে fetch টাও কাজ করে । <br>
+    </p>
+
+    <h1 class="h1 g">setInterval()</h1>
+    <p class="p">
+      <img src="./ifile/setInterval.png" alt="" /> <br><br>
+
+    setTimeout() এর কাজ হল কোন একটা কাজ কে নির্দিষ্ট সময় পর একবার করা ।  <br>
+
+ 
+    আর setInterval() এর কাজ হল কোন একটা কাজকে একটা নির্দিষ্ট সময় পর পর করাতে ব্যেবহার করা হয়  <br><br>
+
+    setInterval সাধারনত Infinite loop এর মত চলতে থাকে । এটাকে থামাতে হলে vscode এ ctrl + c দিয়ে থামাতে হয়  <br>
+    
+    আর একটা পর্যায় গিয়ে থামতে চাইলে কোন setTimeout() functuion কে কোন variable এর মধ্যে রেখে তারপর <br>
+    কোন condition এর মধ্যে clearInterval() রেখে তার মধ্যে parameter হিসাবে function এর variable কে পাঠাতে হবে । <br>
+    যেমন <br>
+    <img src="./ifile/setInterval 2.png" alt="">
+
+    </p>
+  </body>
+</html>
