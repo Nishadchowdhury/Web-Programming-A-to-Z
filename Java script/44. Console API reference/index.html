@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console API reference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="h1 r">Console API reference</h1>
+    <p class="p tn">
+        <span class="g rem">_____ console.assert()  ______</span> <br>
+        এটা দিয়ে loagic টা true নাকি false সেটা check করে । <br>
+        true হলে কিছুই হয়না , কিন্তু false হলে একটা error মেসেজ show করে । <br>
+        <img src="./ifile/console.assert.png" alt=""> <br>
+        যেমন :- <img src="./ifile/console.assert 2.png" alt=""> <br> <br>
+
+        <span class="g rem">_____ console.clear()  ______</span> <br>
+        এটা console এর মধ্যে যা কিছু আছে সেটাকে clear করার কাজ করে থাকে <br>
+        <img src="./ifile/condole.clear.png" alt=""> <br> <br> 
+
+        <span class="g rem">_____ console.count()  ______</span> <br>
+        যখন একটা function কতবার করা হয়েছে অথবা কোন কাজ কতবার করা হয়েছে সেটা চেক করতে হয় তখন এটার ব্যেবহার করতে হয় <br> <br>
+        একবার call করলে সেটা value 1 দেখাবে , দুইবার call করলে 2 দেখাবে । <br>
+        <img src="./ifile/console.count.png" alt="">
+
+        এটা কাজ করে এরকম :- <br> <img src="./ifile/console.count2.png" alt=""><br>
+
+
+        <span class="g rem">_____ console.countReset()  ______</span> <br>
+        console.count() এর value কে Reset করার জন্য ব্যেবহার করা হয় <img src="./ifile/console.countReset.png" alt="">  <br>
+        
+        <span class="g rem">_____ console.debug()  ______</span> <br>
+        console এর কয়েকটা level আছে। আমরা যেভাবে console.warn() দিয়ে warning level এ একটা message দেখাতে পারি। সেভাবে console.debug() দিয়ে verbose level এ একটা massage দেখাতে পারি। <br>
+        <img class="w-700" src="./ifile/console.debug.png" alt=""> <br> <br>
+
+
+        <span class="g rem">_____ console.dir()  ______</span> <br>
+        Prints a JSON representation of the specified object. এটা কোন object কে JSON রুপে দেখতে হলে এটার বেয়বহার করতে হয় <br>
+        <img src="./ifile/console.dir.png" alt=""> <br><br>
+
+
+        <span class="g rem">_____ console.dirxml()  ______</span> <br>
+        Prints an XML representation of the descendants of Node <br>
+        console.dirxlm() কোনো একটা html element কে interactive object এর মতো করে return করে। এতে করে সেটা দেখতে সুবিধা হয়।  <br>
+        <img src="./ifile/" alt=""> <br>
+
+        <span class="g rem">_____ console.table()  ______</span> <br>
+        কোন object কে table আকারে দেখতে হলে এটা ব্যেবহার করতে হয় । <br>
+        <img src="./ifile/console.table.png" alt=""><br>
+
+        <span class="g rem">_____ console.warn()  ______</span> <br>
+        
+        এটা ব্যেবহার করা হয় warning level এ  warning message দেখানোর ক্ষেত্রে ?  <br><br>
+        
+        
+
+        <span class="g rem">_____ console.error()  ______</span> <br>
+        
+        এটা ব্যেবহার করা হয় error level এ  error message দেখানোর ক্ষেত্রে ? <br><br>
+        
+        
+
+        <span class="g rem">_____ console.info()  ______</span> <br>
+        
+        এটা ব্যেবহার করা হয় info level এ  info message দেখানোর ক্ষেত্রে ? <br><br>
+        
+        
+        <span class="g rem">_____ console.time()  ______</span> <span class="g rem">_____ console.timeEnd()  ______</span> <br>
+        
+        এটা দিয়ে একটা কোড run হতে মোট কত সময় লেগেছে সেটা দেখা হয় । <br>
+        <img src="./ifile/condole.tine ,, condole.tineEnd.png" alt=""> <br>
+        
+        <span class="g rem">_____ console.group()  ______</span>  <span class="g rem">_____ console.groupEnd()  ______</span> <br>
+        এটা দিয়ে কিছু data কে একটা group এর মধ্যে রেখে সেটাকে আলাদা করে দেখা যায়  <br>
+        <img src="./ifile/console.group.png" alt=""> <br> 
+
+
+        <span class="g rem">_____ console.trace()  ______</span> <br>
+        এটার সাহয্যে কোন এটা function কে কোন পর্যায়ে call করা হয়েছে সেটা দেখা হয় 
+        <img src="./ifile/console.trace.png" alt="">
+    </p>
+    <script src="./script.js"></script>
+</body>
+</html>
