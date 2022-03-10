@@ -29,10 +29,10 @@ const showImages = (images) => {
 }
 
 const getImages = (query) => {
-  fetch(`https://pixabay.com/api/?key=${KEY}=${query}&image_type=photo&pretty=true`)
+  const url = `https://pixabay.com/api/?key=${KEY}=${query}&image_type=photo&pretty=true`;
+  fetch(url)
     .then(response => response.json())
-    .then(data => showImages(data.hitS))
-    .catch(err => console.log(err))
+    .then(data => showImages(data.hits))
 }
 
 let slideIndex = 0;
@@ -54,6 +54,14 @@ const createSlider = () => {
     alert('Select at least 2 image.')
     return;
   }
+
+  const duration = document.getElementById('duration').value || 1000;
+  console.log(duration);
+  if(duration < 200){ 
+    alert('plese add more than 200ms');
+    return;
+  }
+
   // crate slider previous next area
   sliderContainer.innerHTML = '';
   const prevNext = document.createElement('div');
@@ -67,7 +75,7 @@ const createSlider = () => {
   document.querySelector('.main').style.display = 'block';
   // hide image aria
   imagesArea.style.display = 'none';
-  const duration = document.getElementById('duration').value || 1000;
+
   sliders.forEach(slide => {
     let item = document.createElement('div')
     item.className = "slider-item";
