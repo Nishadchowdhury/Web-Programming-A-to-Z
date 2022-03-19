@@ -1,0 +1,28 @@
+:root {
+  --purple: #9c75f4;
+  --dark-gray: #141414;
+  --light-gray: #a5a6a6;
+  --motion: all ease-in-out 300ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+header h1 {
+  font-family: "Libre Baskerville", serif;
+  color: var(--purple);
+}

@@ -1,0 +1,8 @@
+#sliderContainer {
+    opacity:1;
+    transition: opacity 1 s; 
+}
+
+#sliderContainer.fadeOut {
+    opacity:0;
+}

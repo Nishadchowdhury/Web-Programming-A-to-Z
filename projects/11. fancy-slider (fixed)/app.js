@@ -8,10 +8,28 @@ const sliderContainer = document.getElementById('sliders');
 let sliders = [];
 
 
+
+
 // If this key doesn't work
 // Find the name in the url and go to their website
 // to create your own api key
 const KEY = '15674931-a9d714b6e9d654524df198e00&q';
+
+
+// search with enter btn pressing
+const searchBtnForEnter = document.getElementById("search-btn");
+const searchInput =  document.getElementById("search");
+
+searchInput.addEventListener("keypress", function(event) {
+  // event.preventDefault();
+  if (event.key == 'Enter'){
+      console.log('tumi tipso hoilo ' , event.key);
+        searchBtnForEnter.click();
+      }
+});
+
+
+
 
 // show images 
 const showImages = (images) => {

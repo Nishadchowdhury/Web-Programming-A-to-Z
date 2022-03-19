@@ -91,7 +91,7 @@ let food1 = money>100? 'biryani' : 'cha Biscuit';
 let drink =( money > 100 && myVar > 100)? 'coke' : 'cha Biscuit';
 
 // console.log(drink);
-
+ 
 //conv text to string
 const num1 = 52;
 console.log(num1);
