@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FireBase intorduction </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="p">
+      <h1 class="g">Create Firebase project</h1>
+    <p class="p">
+
+      <ol class="p">
+        <li>Go to Firebse.com /// got to console /// create Project </li>
+        <li> reEnter firebse.com /// Go To console /// open the project i want </li>
+        <li> Go To Docs </li>
+        <li>  for authentication hover 'build' /// go to authentication  /// click web /// ( time to install ) </li>
+        <li> Go To (install the Firebase JS SDK and initialize Firebase) </li>
+        <li> <strong>Install the SDK and initialize Firebase</strong> </li>
+        <li> then To configure firebase in my project Go to Firebse Project Configuration  </li>
+        <li> To add firebse in my project , go to Web</> from the Console page </li>
+        <li> Write project's name /// and check Firebase hosting /// Go To - Get start </li>
+        <li> Go To Console page /// open project /// project setting /// scroll down /// get <Strong>SDK setup and configuration</Strong> </li>
+        <li>install in by npm /// copy the configuration /// create a js file on react src and past here the config /// export default (Var name of the Config) ; </li>
+        <li>import config file on app js</li>
+        <li>initialize auth on app js ( const auth = getAuth(app); )</li>
+        <li>import auth first ( import { getAuth } from "firebase/auth"; )</li>
+        <li>Go To authentication (from console page) /// get Started /// get lot's of options to authentication </li>
+        <li>Add name /// add gmail to get update about support === <strong>( google sing in option done )</strong> </li>
+        <li>Create Google provider (add - import { GoogleAuthProvider } from "firebase/auth"; / const provider = new GoogleAuthProvider();  )  at app.js</li>
+        <li>then put it inside of the button handler function <br>
+          <pre style="height: 100px; overflow: scroll; background-color: gray; color: white; width: fit-content;" >
+  const handleGoogleSingIn = () =>{
+
+    signInWithPopup(auth, provider)
+    .then((result) => {
+      const user = result.user;
+      console.log(user);
+    })
+    .catch(error =>{
+      console.log(error);
+    })
+  }
+
+
+          </pre>
+        </li>
+
+      </ol>
+
+    </p>
+    </div>
+
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
