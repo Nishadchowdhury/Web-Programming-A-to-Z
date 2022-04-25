@@ -23,14 +23,17 @@ const app = express();
 
 //middleware
 app.use(cors())
-app.use(express.json());
+app.use(express.json());  // if we send data of a number to the client site we should send data as json or an object res.send({number}) or [res.json(number)
+                                             for use .json we need that middleware ] 
 	
  // and create a root route of the server
- 
+
+//it's a good practice to set a root route 
  app.get('/', (req,res)=>{
     res.send('running Server Genius')
 })
 
+// create/add listen to find the server
 app.listen(port, () => {
     console.log('listening to port' , port);
 })
@@ -214,7 +217,81 @@ app.listen(port, () => {
  //
  //
  //
- //
+
+** pagination part const pages = [...Array(pageCountOfDB ).keys()]     {{{ Detailed video in module - 67 }}}
+
+ // 1. 
  //
 
+ // 
+ // 
+ //
+ //
+ //
+ // 
+
+** load data for cart from db  {{{ Detailed video in module - 67 }}}
+
+const useCart = () => {
+    const [cart, setCart] = useState([]);
+    useEffect(() => {
+        const storedCart = getStoredCart();
+        const savedCart = [];
+
+        const keys = Object.keys(storedCart);
+
+        fetch('http://localhost:5000/productByKeys', {
+            method: "POST",
+            headers: {
+                'content-type': 'application/json'
+            },
+            body:  JSON.stringify(keys)
+        })
+        .then(res => res.json())
+        .then(products => {
+            console.log(products);
+            
+        for (const id in storedCart) {
+            const addedProduct = products.find(product => product._id === id);
+            if (addedProduct) {
+                const quantity = storedCart[id];
+                addedProduct.quantity = quantity;
+                savedCart.push(addedProduct);
+            }
+        }
+        setCart(savedCart);
+        })
+
+    }, []);
+
+    return [cart, setCart];
+
+ //then (in server site) we need to load data to keys -> src ( $in mongodb)
+ //then diclare a query = { field: { $in: [<value1>, <value2>, ... <valueN> ] } } ->  it's mean , which field you want to find out , there is some obj in data base ,
+ // so which property of objects you want to find , put that in place of field . and put all the values in the centerd array [...value] .
+
+ // use post to get products by ids
+        app.post('/productByKeys' , async(req, res) => {
+            const keys = req.body; // recive clint site ids
+
+            const ids = keys.map(id => ObjectId(id)) // normaly as items of array mongobd can't understand that's why we need to wrap it like this .
+
+            const query = {_id: {$in: ids}} // diclared query.
+
+            const cursor = productCollection.find(query);
+
+            const products = await cursor.toArray();
+
+            res.send(products); // send to clint site
+        })
+
+
+// use this => const [cart, setCart] = useCart(); to get data in every page .  
+
+ 
+
+
+
+
+ 
 */
