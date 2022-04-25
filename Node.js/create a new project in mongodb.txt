@@ -1,0 +1,8 @@
+first create a new project .
+
+we need to set few things 
+1. database access (make a database with name and password).
+
+2. network access (add ip).
+
+3. Database init (create claster if(!user){create user})
