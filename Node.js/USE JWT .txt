@@ -1,0 +1,69 @@
+JWT = jsonwebtoken .
+
+JWT এর একটা token আছে , টোকেন issue করতে হবে । 
+clint site এ এটা থাকবে , clint site থেকে একটা পাঠাতে হবে । তারপর এটাকে verified করবো যদি টোকেন 
+না পাওয়া যায় তবে server সাইট থেকে বলব যে না আমি চিনিনা , ডাটা দিবোনা । 
+যদি টোকেন পাওয়া যায় তবে সেটাকে check করে দেখতে হবে , সে সেটা ঠিক আছেকিনা (expiry date ) আছে কিনা  
+
+user যখন systam এর মধ্যে আসবে তখন তাকে একটা টোকেন দিবো একটা টোকেনের মেয়াদ (যেকোনো পরিমান সময়ের হতে পারে )
+depends on security policy .
+
+একটা user এর জন্য 2 টা টোকেন issue করে হয় 
+1. access token (user কে permissoin এর জন্য , অল্প কিছুক্ষণ থাকবে । ) 
+2. refresh token (যদি access token , expir হয়ে যায় । তবে refresh token valid থাকে তবে তবে user কে আরেকে টা access টোকেন দিয়ে দেয় ।) refresh token এর মেয়াদ 1 - 24 মাস পর্যন্ত হতে পারে । 
+
+/ *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *  /
+
+login করলেই user কে একটা token তৈরি করে দিতে হলে 
+
+*** //in server site 
+
+1. require / imprt JWT ( const jwt = require('jsonwebtoken'); )
+	
+
+ ## token তৈরি করতে গেলে user এর information লাগবে  তার সাথে একটা private key লাগবে ।
+	to genarate private key , go to node tarminal -> 	require('crypto').randomBytes(64).toString('hex') 
+	past it and get .
+ 
+
+    app.post('/login', async(req, res) => {
+            const user = req.body;
+            const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET , {expiresIn: '1d'});
+
+            res.send({accessToken});
+
+        });
+
+
+*** //in clint site 
+
+ clint site থেকে এটাকে আবার set করতে হবে । 
+
+//in login page of clint site 
+
+// do it on login page
+
+ const {data} = await axios.post('http://localhost:5000/login', {email})
+ console.log(data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
