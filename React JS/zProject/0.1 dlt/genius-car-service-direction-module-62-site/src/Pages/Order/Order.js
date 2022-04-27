@@ -11,8 +11,6 @@ const Order = () => {
     const [orders, setOrders] = useState([]);
     const navigate = useNavigate();
 
-
-
     useEffect(() => {
 
         const getOrders = async () => {
@@ -33,6 +31,7 @@ const Order = () => {
             }
         }
 
+        
         getOrders()
     }, [user])
 
