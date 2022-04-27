@@ -1,0 +1,40 @@
+heroku deployment . 
+
+		{
+
+		------- one  time -------
+		1. create heroku 
+		2. verify email 
+		3. install heroku CLI
+		4. run on the cmd of the server project -> heroku login -> enter (in browser) -> click login .
+
+		}
+
+
+
+-------- for each time ---------
+
+1. in case of server must add -> const port = process.env.PORT || 5000; (process.env.PORT ) this line . to get heroku's provided port .
+
+2. in package.json file must add the script -> "start": "node index.js",
+
+3. must add this as root API of the server -> 
+
+app.get('/', (req, res) => {
+    res.send('running Server Genius')
+}) ;
+
+4. check run locally -> npm run start-dev .
+
+5. run -> heroku create -> check on heroku site's dashboard is a project created or not .
+
+5. make sure a perfect git push .
+
+6. then run -> git push -u origin main
+
+7. then run -> git push heroku main (if not work) -> heroku git:remote -a your-app-name 
+(in heroku dashboard) .
+
+8. copy the remote: https://XXX.herokuapp.com/ form the cmd
+
+9. 
