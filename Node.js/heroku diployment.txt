@@ -30,11 +30,34 @@ app.get('/', (req, res) => {
 
 5. make sure a perfect git push .
 
-6. then run -> git push -u origin main
+6. then run -> git push heroku main
 
 7. then run -> git push heroku main (if not work) -> heroku git:remote -a your-app-name 
 (in heroku dashboard) .
 
-8. copy the remote: https://XXX.herokuapp.com/ form the cmd
+8. copy the remote: https://XYZ.herokuapp.com/ form the cmd
 
-9. 
+9. Go to heroku dashboard > currentProject > settings > reveal config vars
+
+10. copy and paste configVars from your .env file 
+
+11. Make sure you you have whitelisted all ip address to access mongodb .
+
+12. Connect server with client 
+
+13. 
+
+--------------------
+	UPDATE SERVER 
+--------------------
+1. Make Changes 
+2. make sure a perfect git push .
+3. then run -> git push heroku main
+
+-----------------------------------
+	UPDATE Client Site & Deploy
+-----------------------------------
+
+1. replace localhost by heroku link
+2. run -> npm run build 
+3. run -> firebase deploy
