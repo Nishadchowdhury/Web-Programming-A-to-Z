@@ -1,0 +1,111 @@
+// fetch করতে হলে 
+//
+// first -> 
+
+        fetch(`url`, {
+            method: 'POST' etc,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({ email, password })
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+
+// fetch for get with authorization
+           fetch('http://localhost:5000/orders' , {
+            method: "GET",
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('accessToken')}`
+            }
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+        })
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//

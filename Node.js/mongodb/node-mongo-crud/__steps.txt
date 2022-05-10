@@ -2,14 +2,14 @@
  * 1. Create a node server with 5 steps
  * 1.1. create folder
  * 1.2. npm init -y
- * 1.3. npm i express cors mongodb
+ * 1.3. npm i express cors mongodb nodemon
 	( express for express ,,, 
 	cors for Communicate With two different server ,,,
 		mongodb for mongodb ,,,
 		dotenv for Environment variable 
 	)
  * 1.4. "start" : "node index.js",
-     // "start-dev" : "nodemon index.js",
+        "start-dev" : "nodemon index.js",
  * 1.5. create index.js
  * 1.6. use 5 steps to create a node server
 	(
@@ -73,21 +73,22 @@ app.listen(port, () => {
  //then we do it with the ( async await fucntion )
  //frist we should diclare a fucntion and in the end should call the function  
  
-//  async function run(){
-//
-//  	try{
-//			await clint.connect();
-//		}
-//		finally{
-//		
-//		}
-//  }
-//
-//  run().catch(console.dir);
+      async function run(){
+
+      	try{
+    			await clint.connect();
+    		}
+    		finally{
+    		
+    		}
+      }
+
+      run().catch(console.dir);
 
 //to get collection with clint (do inside try) ,,, await clint.connect();
 //then we should found collection 
 //(do inside try) const name+Collection = //(find databse in client) client.db('userName').collection('collectionName') name locate in (collections)
+//then make app.xyz() 
 // then make a query ,, keep it empty object when need every data.
 //as we want all items of collections
 // so we should do ->  const cursor = name+Collection.find(query);
@@ -216,6 +217,36 @@ app.listen(port, () => {
 
  //
  //
+/////////////////// UPDATE
+
+   //update data of Quantity or else 
+        app.put('/Update/:id', async (req, res) => {
+            const id = req.params.id;
+            const carData = req.body;
+            console.log('from put method' + id);
+
+            const find = { _id: ObjectId(id) };
+
+            console.log(req.body);
+
+
+            const updateDoc = {
+                $set: {
+                    picture: carData.picture,
+                    name: carData.name,
+                    email: carData.email,
+                    about: carData.about,
+                    price: carData.price,
+                    quantity: carData.quantity,
+                    supplierName: carData.supplierName
+                },
+            };
+
+            const result = await carsCollection.updateOne(find, updateDoc);
+            res.send(result)
+
+        });
+
  //
 
 ** pagination part const pages = [...Array(pageCountOfDB ).keys()]     {{{ Detailed video in module - 67 }}}

@@ -25,4 +25,7 @@
  * 4. npm run build (every time you want to deploy)
  * 5. firebase deploy (every time you want to deploy)
  * 
-*/
+ *
+ *!!!!!!!! DONT PRESS 'Y' HERE
+? File build/index.html already exists. Overwrite? No
+**/
