@@ -8,11 +8,11 @@ const Home = () => {
 
     useEffect(() => {
         fetch('data.json')
-        .then(res => res.json())
-        .then(data => setVolunteer(data))
+            .then(res => res.json())
+            .then(data => setVolunteer(data))
     }, [])
 
-    console.log(volunteers);
+    //console.log(volunteers);
 
     return (
         <>
@@ -20,9 +20,9 @@ const Home = () => {
             <div className='p-4' >
                 <div className='grid grid-cols-5 gap-5' >
 
-                {
-                    volunteers.map(volunteer => <SingleVolunteer key={volunteer._id} data={volunteer}  />)
-                }
+                    {
+                        volunteers.map(volunteer => <SingleVolunteer key={volunteer._id} data={volunteer} />)
+                    }
 
                 </div>
             </div>

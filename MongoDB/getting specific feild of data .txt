@@ -1,0 +1,16 @@
+to get specific Field's data while query  (phm 76-2) 
+
+---> like  , 
+const user = {
+	name: "Nishad",
+	age:21,
+	country: "Bangladesh",
+	isStudent: "yes",
+	Religion : "Islam"
+}
+
+const cursor = userCollection.find({}).project({name: 1, age: 1, isStudent: 0})
+
+cursor = { name: "Nishad", age: 21 } 
+
+ !!!!!  (isStudent is Missing cz we use 0 for) 
