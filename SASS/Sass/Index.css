@@ -51,3 +51,13 @@
   color: black;
   margin-bottom: 2px yellow solid;
 }
+
+.para--1 {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.para--1:hover {
+  background: #000;
+}
