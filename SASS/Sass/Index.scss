@@ -64,9 +64,12 @@
     }
 }
 
-@mixin para {
+
+
+//mixin
+@mixin para ($color) {
     font-size: 20px;
-    color: $primary;
+    color: $color;
     font-weight: bold;
 
     &:hover {
@@ -75,5 +78,32 @@
 }
 
 .para--1 {
-    @include para;
+    @include para($info);
+}
+
+.heaedlast {
+    @include para(purple);
+}
+
+.btn {
+    background: red;
+    padding: 10px;
+    border-radius: 8px;
+
+    transition: all .3s;
+
+    &:active {
+        animation: alternate-reverse;
+        transform: scale(0.9)
+    }
+
+    &:focus {
+        outline: 4px solid green;
+        outline-offset: 2px
+    }
+}
+
+.login {
+    @extend .btn;
+
 }

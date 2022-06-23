@@ -54,10 +54,39 @@
 
 .para--1 {
   font-size: 20px;
-  color: red;
+  color: yellow;
   font-weight: bold;
 }
 
 .para--1:hover {
   background: #000;
+}
+
+.heaedlast {
+  font-size: 20px;
+  color: purple;
+  font-weight: bold;
+}
+
+.heaedlast:hover {
+  background: #000;
+}
+
+.btn, .login {
+  background: red;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn:active, .login:active {
+  animation: alternate-reverse;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.btn:focus, .login:focus {
+  outline: 4px solid green;
+  outline-offset: 2px;
 }
