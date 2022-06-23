@@ -1,16 +1,5 @@
-$primary:red;
-$secondary:blue;
-$info:yellow;
-
-//all element's dedfault style
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
-    border: none;
-
-}
+@import './global';
+@import './varibale';
 
 .myName {
     color: red;
@@ -32,9 +21,33 @@ $info:yellow;
         color: magenta;
     }
 
-    background: red;
 
     .div___two {
+
+        h2 {
+            color: $secondary;
+
+            &:nth-child(3) {
+                background: $info;
+
+
+                &::after {
+                    content: ' red after';
+                    color: red;
+
+                    // &:hover {
+                    //     background: salmon;
+                    // }
+                }
+            }
+
+            &:hover {
+                background: $secondary;
+                color: black;
+            }
+
+
+        }
 
         .div___three {
             h3 {

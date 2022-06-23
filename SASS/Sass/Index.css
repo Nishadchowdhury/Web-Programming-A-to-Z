@@ -21,12 +21,26 @@
   background: red;
 }
 
-.div___one {
-  background: red;
-}
-
 .div___one h2 {
   color: magenta;
+}
+
+.div___one .div___two h2 {
+  color: blue;
+}
+
+.div___one .div___two h2:nth-child(3) {
+  background: yellow;
+}
+
+.div___one .div___two h2:nth-child(3)::after {
+  content: ' red after';
+  color: red;
+}
+
+.div___one .div___two h2:hover {
+  background: blue;
+  color: black;
 }
 
 .div___one .div___two .div___three h3 {
