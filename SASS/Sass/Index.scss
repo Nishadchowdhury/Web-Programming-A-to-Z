@@ -1,0 +1,51 @@
+$primary:red;
+$secondary:blue;
+$info:yellow;
+
+//all element's dedfault style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+
+}
+
+.myName {
+    color: red;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+        color: green;
+    }
+}
+
+.para-1 {
+    background: $primary;
+}
+
+
+// nesting
+.div___one {
+    h2 {
+        color: magenta;
+    }
+
+    background: red;
+
+    .div___two {
+
+        .div___three {
+            h3 {
+                color: $info;
+
+                &:hover {
+
+                    color: black;
+                    margin-bottom: 2px $info solid;
+                }
+            }
+        }
+    }
+}

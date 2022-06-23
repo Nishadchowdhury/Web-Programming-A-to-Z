@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  border: none;
+}
+
+.myName {
+  color: red;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.myName:hover {
+  color: green;
+}
+
+.para-1 {
+  background: red;
+}
+
+.div___one {
+  background: red;
+}
+
+.div___one h2 {
+  color: magenta;
+}
+
+.div___one .div___two .div___three h3 {
+  color: yellow;
+}
+
+.div___one .div___two .div___three h3:hover {
+  color: black;
+  margin-bottom: 2px yellow solid;
+}
