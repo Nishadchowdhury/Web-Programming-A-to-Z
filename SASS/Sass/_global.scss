@@ -6,3 +6,25 @@
     outline: 0;
     border: none;
 }
+
+.redok {
+    height: 250px;
+    background: lightblue;
+
+
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: orange;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        border: 1px solid rgb(36, 92, 214);
+    }
+}

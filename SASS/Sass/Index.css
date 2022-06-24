@@ -7,6 +7,26 @@
   border: none;
 }
 
+.redok {
+  height: 250px;
+  background: lightblue;
+  overflow: auto;
+}
+
+.redok::-webkit-scrollbar {
+  width: 3px;
+}
+
+.redok::-webkit-scrollbar-track {
+  background: orange;
+}
+
+.redok::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid #245cd6;
+}
+
 .myName {
   color: red;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -53,9 +73,9 @@
 }
 
 .para--1 {
-  font-size: 20px;
   color: yellow;
   font-weight: bold;
+  font-size: 30px;
 }
 
 .para--1:hover {
@@ -63,9 +83,9 @@
 }
 
 .heaedlast {
-  font-size: 20px;
   color: purple;
   font-weight: bold;
+  font-size: 50px;
 }
 
 .heaedlast:hover {
@@ -89,4 +109,6 @@
 .btn:focus, .login:focus {
   outline: 4px solid green;
   outline-offset: 2px;
+  -webkit-transition: all .09s;
+  transition: all .09s;
 }
