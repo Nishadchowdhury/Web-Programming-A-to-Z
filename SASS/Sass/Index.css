@@ -27,6 +27,20 @@
   border: 1px solid #245cd6;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: orange;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid #245cd6;
+}
+
 .myName {
   color: red;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -102,6 +116,8 @@
 
 .btn:active, .login:active {
   animation: alternate-reverse;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
@@ -111,4 +127,12 @@
   outline-offset: 2px;
   -webkit-transition: all .09s;
   transition: all .09s;
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+.col-4 {
+  width: 33.33%;
 }
