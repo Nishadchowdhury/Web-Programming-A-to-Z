@@ -1,0 +1,23 @@
+Typescript is Superset of Javascript created my Microsoft.
+js is inside of Typescript, typescript made with js and some more functionality.
+
+it's provides strict typing. extra features:- interfaces, enums, tuples, generics.
+
+typescript will compile modred js to normal js at older version (vanilla js) so TS at the same time a compiler and programing language.
+
+TS based on .NET harmony specification.
+
+
+---------reasons to create TS-----------
+Not suitable for large application.
+lacks strong typing.
+weird inheritance, unfamiliar syntax.
+only errors during runtime.
+suffers type coercion.
+
+
+---------importance or typescript-----------
+TS = JS.
+Compiles to Javascript and runs everywhere.
+Familiar OO Programming.
+New Features work everywhere.
