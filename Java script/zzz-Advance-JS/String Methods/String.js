@@ -1,9 +1,25 @@
 // >>>>>>>>>>>>>>>>>>>>>>>>> All String Method returns a new string >>>>>>>>>>>>>>>>>>>>>>>>>
 // Strings are immutable: Strings cannot be changed, only replaced.
 
+// charAt(x) //=> it's work like arr[index]
+// concat(v1,v2..) //=> to concat to string together
+// charCodeAt(x) //=> returns the unicode of the character UTF-16
+// fromCharcode(c1,c2) //=> returns the unicode of an array the characters
+
+// replace(regexp/substr, replacetext) //=> replace string with a string.
+// search(regexp) //=> search string with the help of regexp
+// slice(start, [end]) //=> to slice a string 
+// split(delimiter, [limit]) //=>  divide a string into a array. 
+// substr(start, [length]) //=> first value of index second value for the length of the extracted part.
+// substring(from, [to]) //=> same as substr but can't take negative value.
+// toLowerCase() //=> make string lowercase
+// toUpperCase() //=> make string uppercase
+// repeat() //=> it's used to repeat string 
+// valueOf() //=> to get value from an object type string
+// trim() //=> method removes whitespace from both sides of a string
+
 
 var t = "ABCDE, FGHIJ, KLMNOP, QRSTUV, WXYZ";
-
 //--------------------length
 let length = t.length;
 // console.log(length);
@@ -63,4 +79,56 @@ var t = "ABCDE";
 // console.log(t.split('')); //=> ['A', 'B', 'C', 'D', 'E'] ,,,, split(" withoutValue ") 
 
 var t = "ABCDE, EfGh";
-// console.log(t.split()); //=> ['ABCDE, EfGh'] ,,,, split(" withoutValue ")
+// console.log(t.split()); //=> ['ABCDE, EfGh'] ,,,, split(empty")
+
+// console.log(t.repeat(2)); //=> ABCDE, EfGhABCDE, EfGh it's used to repeat string 
+
+
+
+
+
+//-------------------------------string search------------------------------- (case sensitive)
+// String indexOf() //=> it used tom get the index of a character.
+// String lastIndexOf() //=> it used tom get the index of a character in a reverse way.
+// String startsWith() //=> it used to check is is start with the specific value or not startWith('srt', startPoint)
+// String endsWith() //=> it's works like startWith but reverse way. 
+// String search() //=>  it's used to search a specific string with the help of regexp 
+// String includes() //=> used to check is there the specific word exist or not (true of false)
+
+var t = "Please locate where 'locate' occurs!";
+// String indexOf() 
+// console.log(t.indexOf('e')); //=> 2 ,,,, fist later's index 
+// console.log(t.indexOf('locate')); //=> 7 ,,,, fist word's index 
+
+
+// methods searches backwards, if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+// ---------------String lastIndexOf()
+// ---------------String endsWith()
+
+// console.log(t.lastIndexOf('e')); //=> 26 ,,,, last later's index 
+
+// String ----------------search() => it's can take regexp.
+// console.log(t.search('locate'));
+
+
+// console.log(t.match(/e/g));  //=> return all the matches as an array ['e', 'e', 'e', 'e', 'e', 'e'].
+
+// String includes() //=> returns true or false (used to check is there the specific word exist or not)
+// console.log(t.includes('lo', 16)); //=> true (theValue , startingPoint)
+
+// let text = "Hello world, welcome to the universe.";
+
+// text.startsWith("world")    // Returns false
+// let text = "Hello world, welcome to the universe.";
+
+// text.startsWith("world", 5)    // Returns false
+// let text = "Hello world, welcome to the universe.";
+
+// text.startsWith("world", 6)    // Returns true
+
+// console.log(t.startsWith('lo', 7)); //=> true
+
+
+// String ------------------------endsWith()
+
+// console.log(t.endsWith('te', 13)); //=> true  (string.endsWith(searchValue, length))
