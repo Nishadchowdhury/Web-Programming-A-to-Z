@@ -20,7 +20,6 @@ let length = t.length;
 //--------------------substr(start, length)
 // console.log(t.substr(2, 2)); //=> CD => first value of index second value for the length of the extracted part.
 
-
 var t = "ABCDE, FGHIJ, KLMNOP, QRSTUV, WXYZ";
 //--------------------replace()  replaces a specified value with another value in a string (it will replace the first matches) (case sensitive) .
 // const newStr = t.replace('FGHIJ', 'AEIOU')
