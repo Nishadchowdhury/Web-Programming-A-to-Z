@@ -26,7 +26,7 @@ var cars = ["Saab", "Volvo", "BMW"];
 
 // array[index] = newValue; //=> replace element in specific indexes. 
 // array[array.length] = Value; //=> add element in last indexes. 
-// delete array[index] //=> it will replace element with the empty/undefined value in an array. (it)
+// delete array[index] //=> it will replace element with the empty/undefined value in an array. (it will make array hole)
 
 console.log(delete cars[10], cars);
 
