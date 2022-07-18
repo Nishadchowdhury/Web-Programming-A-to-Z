@@ -13,9 +13,15 @@ var cars = ["Saab", "Volvo", "BMW"];
 
 // toString() // conv arr to string cars.toString() //=> Saab,Volvo,BMW 
 // join() //  conv arr to string cars.join(' /') //=> Saab /Volvo /BMW
-// 
-// console.log(cars.unshift('lol'))
-// 
+
+// splice() // used to add more element specifically arr.splice(positionForInput, removeElementNumber, list of elements) 
+//=> return removed    element. it will change main arr.
+//cars.splice(1, 1, 'korola', 'sim') //=> ) ['Saab', 'korola', 'sim', 'BMW'] ,,, also we can remove elements by splice //=> arr.splice(index, n)
+
+// concat() //=> used to merging multiple arr to single arr //=> const arr3 = arr1.concat(arr2). ti's can take newArr.concat(arr, arr, string) /=> it doesn't change main arr.
+
+// slice() //=> that method will slices out a piece of an array .this can take two arguments like slice(1, 3) or no end argument like slice(3) //=> slice first 2 elements. then selects elements from the start argument, and up to (but not including) the end argument.(1 to 2) /=> it doesn't change main arr. //=> cars.slice(0, 2) //=>  ['Saab', 'Volvo'] 
+
 // 
 // 
 // 
@@ -28,7 +34,7 @@ var cars = ["Saab", "Volvo", "BMW"];
 // array[array.length] = Value; //=> add element in last indexes. 
 // delete array[index] //=> it will replace element with the empty/undefined value in an array. (it will make array hole)
 
-console.log(delete cars[10], cars);
+// console.log(delete cars[2], cars);
 
 
 
