@@ -33,15 +33,39 @@ var points = [40, 100, 1, 5, 25, 10];
 // console.log(points.sort(function (a, b) { return 0.5 - Math.random() })); //=> it will sort the array randomly
 
 // there is no methods to get highest or lowest value from an array. 
-// we can sort the array normally with a compare function and take the last element or first element. ,,, but it's not the efficient way 
-// the efficient way is below.
+/* we can sort the array normally with a compare function and take the last element or first element. ,,, but it's not the efficient way 
+the efficient way is below. */
 // for height value Math.max.apply(null, arr) is equivalent to Math.max(...arr).
 // for lowest value Math.min.apply(null, arr) is equivalent to Math.max(...arr).
 
-console.log(cars.toString());
 
-// 
-// 
+//-----------------------Array iteration Methods
+var cars = ["Saab", "Volvo", "BMW"];
+// forEach() //=> this will calls a function (a callback function) once for each array element. with those props(value, index, array)
+// map() //=> this will method creates a new array by performing a function on each array element //=> it will return a new array. (when we expect return some ) props(value, index, array)
+// filter() //=>  props(value, index, array) return a new array //=> used to filter specified elements.
+// find() //=> it will returns the value of the first array element that passes a test function.
+// findIndex() //=> it will returns the index of the first array element that passes a test function.
+
+// every() //=> this will check if all array values pass a test. example check if all array values are larger than a number or not //=> (true, false) 
+// some() //=> this will check if some or single array value pass a test. example check if all array values are larger than a number or not //=> (true, false)  
+
+// indexOf() //=> used to get the index of an array's element.
+// LastIndexOf() //=> used to get the index of an array's element but it returns the position of the last occurrence of the specified element. .
+// includes() //=> used to check is the value exist or not ?
+
+// Array.from() method returns an Array object from any string/object with a length property or any iterable object like (new String).
+
+// Array.keys() it's provides us a new object there we can iterate and we can loop through it.
+
+/* reduce() //=> runs a function on each array element to produce (reduce it to) a single value. props(total, value, index, array) 
+            The total (the initial value / previously returned value) by default total is 0 for first iteration but we can set it by sending while call the callBack function arr.reduce(func, 10) //=> initial total will be 10 not 0.
+            it works left-to-right.
+
+   reduceRight() //=> everything is same but it work right-to-left.
+            
+
+*/
 
 
 //------------------------------ Array modification
