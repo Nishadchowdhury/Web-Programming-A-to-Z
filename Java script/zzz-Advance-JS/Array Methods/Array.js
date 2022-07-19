@@ -14,15 +14,32 @@ var cars = ["Saab", "Volvo", "BMW"];
 // toString() // conv arr to string cars.toString() //=> Saab,Volvo,BMW 
 // join() //  conv arr to string cars.join(' /') //=> Saab /Volvo /BMW
 
-// splice() // used to add more element specifically arr.splice(positionForInput, removeElementNumber, list of elements) 
+// splice() // used to add more element specifically arr.splice(positionForInput, ToRemoveElementsNumber, list of elements) 
 //=> return removed    element. it will change main arr.
 //cars.splice(1, 1, 'korola', 'sim') //=> ) ['Saab', 'korola', 'sim', 'BMW'] ,,, also we can remove elements by splice //=> arr.splice(index, n)
 
-// concat() //=> used to merging multiple arr to single arr //=> const arr3 = arr1.concat(arr2). ti's can take newArr.concat(arr, arr, string) /=> it doesn't change main arr.
+// concat() //=> used to merging multiple arr to single arr //=> const arr3 = arr1.concat(arr2). ti's can take multiple parameter newArr.concat(arr, arr, string) /=> it doesn't change main arr.
 
 // slice() //=> that method will slices out a piece of an array .this can take two arguments like slice(1, 3) or no end argument like slice(3) //=> slice first 2 elements. then selects elements from the start argument, and up to (but not including) the end argument.(1 to 2) /=> it doesn't change main arr. //=> cars.slice(0, 2) //=>  ['Saab', 'Volvo'] 
 
-// 
+var cars = ["Saab", "Volvo", "BMW"];
+// sort() //=> used to sorts an array alphabetically. (cars.sort() => ['BMW', 'Saab', 'Volvo']
+// reverse() //=> used to sorts an array reversely. (cars.reverse() => ['BMW', 'Volvo', 'Saab']
+
+// -------------------Numeric short ,,, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".Because of this, the sort() method will produce incorrect result when sorting numbers. ro fix this we can providing a compare function.
+var points = [40, 100, 1, 5, 25, 10];
+// console.log(points.sort(function (a, b) { return (a - b) })); //=>  [1, 5, 10, 25, 40, 100] ,,, normally
+// console.log(points.sort(function (a, b) { return (b - a) })); //=>  [100, 40, 25, 10, 5, 1] ,,, reverse/descending way
+// console.log(points.sort(function (a, b) { return 0.5 - Math.random() })); //=> it will sort the array randomly
+
+// there is no methods to get highest or lowest value from an array. 
+// we can sort the array normally with a compare function and take the last element or first element. ,,, but it's not the efficient way 
+// the efficient way is below.
+// for height value Math.max.apply(null, arr) is equivalent to Math.max(...arr).
+// for lowest value Math.min.apply(null, arr) is equivalent to Math.max(...arr).
+
+console.log(cars.toString());
+
 // 
 // 
 
@@ -70,7 +87,7 @@ fruits[fruits.length] = 'lol';
 
 
 // -------------------------To avoid (new arr() & associative array) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// const points = new Array(); //=> Good
-// const points = []; //=> Bad
+// const points = new Array(); //=> Bad
+// const points = []; //=> Good
 
 // console.log(Array.isArray(fruits));
